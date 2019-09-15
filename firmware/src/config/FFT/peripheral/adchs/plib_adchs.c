@@ -56,16 +56,18 @@ void ADCHS_Initialize()
 {
     ADCCON1bits.ON = 0;
 
+    ADC2CFG = DEVADC2;
+    ADC2TIME = 0x3000001;
 
-    ADC7CFG = DEVADC7;
+
 
     ADCCON1 = 0x600000;
-    ADCCON2 = 0x10000;
+    ADCCON2 = 0x0;
     ADCCON3 = 0x0;
 
     ADCTRGMODE = 0x0;
 
-    ADCTRG1 = 0x0; 
+    ADCTRG1 = 0x20000; 
     ADCTRG2 = 0x0; 
     ADCTRG3 = 0x0; 
     
@@ -81,18 +83,19 @@ void ADCHS_Initialize()
     
 
     /* Input scan */
-    ADCCSS1 = 0x818000;
-    ADCCSS2 = 0x4;
+    ADCCSS1 = 0x0;
+    ADCCSS2 = 0x0;
 
     /* Turn ON ADC */
     ADCCON1bits.ON = 1;
     while(!ADCCON2bits.BGVRRDY); // Wait until the reference voltage is ready
     while(ADCCON2bits.REFFLT); // Wait if there is a fault with the reference voltage
 
-    /* ADC 7 */
-    ADCANCONbits.ANEN7 = 1;      // Enable the clock to analog bias
-    while(!ADCANCONbits.WKRDY7); // Wait until ADC is ready
-    ADCCON3bits.DIGEN7 = 1;      // Enable ADC
+    /* ADC 2 */
+    ADCANCONbits.ANEN2 = 1;      // Enable the clock to analog bias
+    while(!ADCANCONbits.WKRDY2); // Wait until ADC is ready
+    ADCCON3bits.DIGEN2 = 1;      // Enable ADC
+
 }
 
 

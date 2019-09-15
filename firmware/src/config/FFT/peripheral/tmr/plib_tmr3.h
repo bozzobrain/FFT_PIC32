@@ -1,17 +1,20 @@
 /*******************************************************************************
-  Output Compare (OCMP) Peripheral Library Interface Header File
+  Data Type definition of Timer PLIB
 
   Company:
     Microchip Technology Inc.
 
   File Name:
-    plib_ocmp2.h
+    plib_tmr3.h
 
   Summary:
-    OCMP PLIB Header File
+    Data Type definition of the Timer Peripheral Interface Plib.
 
   Description:
-    None
+    This file defines the Data Types for the Timer Plib.
+
+  Remarks:
+    None.
 
 *******************************************************************************/
 
@@ -38,95 +41,60 @@
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
 
-#ifndef _PLIB_OCMP2_H
-#define _PLIB_OCMP2_H
+#ifndef PLIB_TMR3_H
+#define PLIB_TMR3_H
 
 #include <stddef.h>
-#include <stdbool.h>
 #include <stdint.h>
 #include "device.h"
-#include "plib_ocmp_common.h"
+#include "plib_tmr_common.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
+
     extern "C" {
+
 #endif
 // DOM-IGNORE-END
 
-
-// *****************************************************************************
-// Section: Interface
 // *****************************************************************************
 // *****************************************************************************
-
-/*************************** OCMP2 API ****************************************/
+// Section: Data Types
 // *****************************************************************************
-/* Function:
-   void OCMP2_Initialize (void)
-
-  Summary:
-    Initialization function OCMP2 peripheral
-
-  Description:
-    This function initializes the OCMP2 peripheral with user input
-	from the configurator.
-
-  Parameters:
-    void
-
-  Returns:
-    void
-*/
-void OCMP2_Initialize (void);
+// *****************************************************************************
 
 // *****************************************************************************
-/* Function:
-   void OCMP2_Enable (void)
-
-  Summary:
-    Enable function OCMP2 peripheral
-
-  Description:
-    This function enables the OCMP2 peripheral
-
-  Parameters:
-    void
-
-  Returns:
-    void
-*/
-void OCMP2_Enable (void);
+// *****************************************************************************
+// Section: Interface Routines
+// *****************************************************************************
+// *****************************************************************************
 
 // *****************************************************************************
-/* Function:
-   void OCMP2_Disable (void)
+void TMR3_Initialize(void);
 
-  Summary:
-    Disable function OCMP2 peripheral
+void TMR3_Start(void);
 
-  Description:
-    This function disables the OCMP2 peripheral.
+void TMR3_Stop(void);
 
-  Parameters:
-    void
+void TMR3_PeriodSet(uint16_t);
 
-  Returns:
-    void
-*/
-void OCMP2_Disable (void);
+uint16_t TMR3_PeriodGet(void);
 
+uint16_t TMR3_CounterGet(void);
 
+uint32_t TMR3_FrequencyGet(void);
 
-uint16_t OCMP2_CompareValueGet (void);
+void TMR3_InterruptEnable(void);
 
-uint16_t OCMP2_CompareSecondaryValueGet (void);
-void OCMP2_CompareSecondaryValueSet (uint16_t value);
+void TMR3_InterruptDisable(void);
 
+void TMR3_CallbackRegister( TMR_CALLBACK callback_fn, uintptr_t context );
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility
+
     }
 #endif
-
 // DOM-IGNORE-END
-#endif // _PLIB_OCMP2_H
+
+#endif /* PLIB_TMR3_H */

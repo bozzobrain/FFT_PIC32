@@ -86,23 +86,13 @@ extern "C" {
 // Section: Driver Configuration
 // *****************************************************************************
 // *****************************************************************************
-/* USART Driver Instance 2 Configuration Options */
-#define DRV_USART_INDEX_2                  2
-#define DRV_USART_CLIENTS_NUMBER_IDX2      1
-#define DRV_USART_QUEUE_SIZE_IDX2          5
-
-/* USART Driver Instance 1 Configuration Options */
-#define DRV_USART_INDEX_1                  1
-#define DRV_USART_CLIENTS_NUMBER_IDX1      1
-#define DRV_USART_QUEUE_SIZE_IDX1          5
-
+/* USART Driver Global Configuration Options */
+#define DRV_USART_INSTANCES_NUMBER         1
 /* USART Driver Instance 0 Configuration Options */
 #define DRV_USART_INDEX_0                  0
 #define DRV_USART_CLIENTS_NUMBER_IDX0      1
 #define DRV_USART_QUEUE_SIZE_IDX0          5
 
-/* USART Driver Global Configuration Options */
-#define DRV_USART_INSTANCES_NUMBER         3
 
 
 // *****************************************************************************

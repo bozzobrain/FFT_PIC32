@@ -60,16 +60,10 @@
 
 
 void TIMER_2_InterruptHandler( void );
-void OUTPUT_COMPARE_2_InterruptHandler( void );
+void TIMER_3_InterruptHandler( void );
 void UART1_FAULT_InterruptHandler( void );
 void UART1_RX_InterruptHandler( void );
 void UART1_TX_InterruptHandler( void );
-void UART2_FAULT_InterruptHandler( void );
-void UART2_RX_InterruptHandler( void );
-void UART2_TX_InterruptHandler( void );
-void UART4_FAULT_InterruptHandler( void );
-void UART4_RX_InterruptHandler( void );
-void UART4_TX_InterruptHandler( void );
 
 
 
@@ -81,9 +75,9 @@ void TIMER_2_Handler (void)
     TIMER_2_InterruptHandler();
 }
 
-void OUTPUT_COMPARE_2_Handler (void)
+void TIMER_3_Handler (void)
 {
-    OUTPUT_COMPARE_2_InterruptHandler();
+    TIMER_3_InterruptHandler();
 }
 
 void UART1_FAULT_Handler (void)
@@ -99,36 +93,6 @@ void UART1_RX_Handler (void)
 void UART1_TX_Handler (void)
 {
     UART1_TX_InterruptHandler();
-}
-
-void UART2_FAULT_Handler (void)
-{
-    UART2_FAULT_InterruptHandler();
-}
-
-void UART2_RX_Handler (void)
-{
-    UART2_RX_InterruptHandler();
-}
-
-void UART2_TX_Handler (void)
-{
-    UART2_TX_InterruptHandler();
-}
-
-void UART4_FAULT_Handler (void)
-{
-    UART4_FAULT_InterruptHandler();
-}
-
-void UART4_RX_Handler (void)
-{
-    UART4_RX_InterruptHandler();
-}
-
-void UART4_TX_Handler (void)
-{
-    UART4_TX_InterruptHandler();
 }
 
 

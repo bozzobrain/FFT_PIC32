@@ -30,65 +30,14 @@
 #include "app.h"
 #include "config/FFT/peripheral/gpio/plib_gpio.h"
 #include "config/FFT/driver/usart/drv_usart.h"
+#include "config/FFT/peripheral/adchs/plib_adchs.h"
+#include "config/FFT/peripheral/tmr/plib_tmr3.h"
 #include "neopixel.h"
+#include "FFT.h"
+#include <stdio.h>
 
-// *****************************************************************************
-// *****************************************************************************
-// Section: Global Data Definitions
-// *****************************************************************************
-// *****************************************************************************
-
-// *****************************************************************************
-/* Application Data
-
-  Summary:
-    Holds application data
-
-  Description:
-    This structure holds the application's data.
-
-  Remarks:
-    This structure should be initialized by the APP_Initialize function.
-
-    Application strings and buffers are be defined outside this structure.
-*/
 
 APP_DATA appData;
-
-// *****************************************************************************
-// *****************************************************************************
-// Section: Application Callback Functions
-// *****************************************************************************
-// *****************************************************************************
-
-/* TODO:  Add any necessary callback functions.
-*/
-
-// *****************************************************************************
-// *****************************************************************************
-// Section: Application Local Functions
-// *****************************************************************************
-// *****************************************************************************
-
-
-/* TODO:  Add any necessary local functions.
-*/
-
-
-// *****************************************************************************
-// *****************************************************************************
-// Section: Application Initialization and State Machine Functions
-// *****************************************************************************
-// *****************************************************************************
-
-/*******************************************************************************
-  Function:
-    void APP_Initialize ( void )
-
-  Remarks:
-    See prototype in app.h.
- */
-
 
 void setupUART(void);
 
@@ -111,13 +60,24 @@ void APP_USARTBufferEventHandler(
 TaskHandle_t TX_Task_Handle;
 void TX_Task();
 
+volatile double vReal[SAMPLES];
+volatile double vImag[SAMPLES];
+volatile double vRealSmoother[SAMPLES];
+uint16_t sampleCounter = 0;
+
+void setupFFT(void);
+TaskHandle_t FFT_Task_Handle;
+void FFT_Task(void);
+bool doFFT = false;
+
 void APP_Initialize ( void )
 {
     /* Place the App state machine in its initial state. */
     appData.state = APP_STATE_INIT;
 
-    setupUART();
+    //setupUART();
     setupNeopixel();
+    setupFFT();
 }
 
 
@@ -149,8 +109,21 @@ void APP_Tasks ( void )
 
         case APP_STATE_SERVICE_TASKS:
         {
-            vTaskDelay(1000/portTICK_PERIOD_MS);
-            
+            if(doFFT)
+            {
+                vTaskResume(FFT_Task_Handle);
+            }
+            vTaskDelay(75/portTICK_PERIOD_MS);
+//            static uint8_t red = 0;
+//            red++;
+//            if(red>255)
+//                red = 0;
+//            int i=0;
+//            for (i=0;i<NUMBER_LEDS;i++)
+//            {
+//                setLEDColor(i+1,red,0,0);
+//            }
+//            updateNeoData();
             LED1_Toggle();
             //U1TX_GPIO_Toggle();
             break;
@@ -165,6 +138,86 @@ void APP_Tasks ( void )
             /* TODO: Handle error in application's state machine. */
             break;
         }
+    }
+}
+
+void TMR3_Interrupt_Callback(void)
+{   
+    if(ADCHS_ChannelResultIsReady(CHANNEL_2))
+    {
+        LED2_Toggle();
+        vReal[sampleCounter]=(double)ADCHS_ChannelResultGet(CHANNEL_2);
+        vImag[sampleCounter]=0;
+        sampleCounter++;
+        if(sampleCounter > SAMPLES)
+        {
+            LED3_Toggle();
+            sampleCounter = 0;
+            //ADCHS_ChannelResultInterruptDisable(CHANNEL_2);
+            doFFT = true;
+            //vTaskResume(FFT_Task_Handle);
+            TMR3_Stop();
+            
+        }
+    }
+    ADCHS_ChannelConversionStart(CHANNEL_2);
+    //ADCHS_GlobalLevelConversionStart();
+    LED4_Toggle();
+}
+//void AN2_Interrupt_Callback(void)
+//{
+//    //if(ADCDSTAT1bits.ARDY2)
+//    vReal[sampleCounter++]=ADCHS_ChannelResultGet(CHANNEL_2);
+//    vImag[sampleCounter]=0;
+//    if(sampleCounter > SAMPLES)
+//    {
+//        LED3_Set();
+//        sampleCounter = 0;
+//        //ADCHS_ChannelResultInterruptDisable(CHANNEL_2);
+//        vTaskResume(FFT_Task_Handle);
+//    }
+//    else
+//    {        
+//        //ADCHS_ChannelConversionStart(CHANNEL_2);
+//    }
+//}
+
+void setupFFT(void)
+{
+    TMR3_CallbackRegister((TMR_CALLBACK)TMR3_Interrupt_Callback,1);
+    TMR3_Start();
+    //ADCHS_CallbackRegister(CHANNEL_2, (ADCHS_CALLBACK) AN2_Interrupt_Callback, 1);
+    //ADCHS_ModulesEnable(ADCHS_MODULE2_MASK);
+    //ADCHS_ChannelResultInterruptEnable(CHANNEL_2);
+    //ADCHS_ChannelConversionStart(CHANNEL_2);
+     xTaskCreate((TaskFunction_t) FFT_Task,
+                "FFT_Task",
+                2048,
+                NULL,
+                1,
+                &FFT_Task_Handle);
+}
+
+void FFT_Task(void)
+{
+    vTaskSuspend(NULL);
+    while(1)
+    {
+//        int i=0;
+//        for(i=0;i<SAMPLES;i++)
+//        {
+//             vRealSmoother[i]=(vRealSmoother[i]*WEIGHT_PREVIOUS + vReal[i]*(1.0-WEIGHT_PREVIOUS));
+//        }
+        //TMR3_Stop();
+        //ADCHS_ChannelResultInterruptDisable(CHANNEL_2);
+        Compute(vReal, vImag, SAMPLES, FFT_FORWARD); /* Compute FFT */
+        ComplexToMagnitude(vReal, vImag, SAMPLES); /* Compute magnitudes */        
+        DisplayFFT(vReal);        
+        updateNeoData();
+//        printFFT(vReal);
+        TMR3_Start();
+        //ADCHS_ChannelConversionStart(CHANNEL_2);
+        vTaskSuspend(NULL);
     }
 }
 
@@ -228,7 +281,7 @@ void TX_Task()
             // Error handling here
             LED2_Toggle();
         }
-        LED3_Toggle();
+        //LED3_Toggle();
         vTaskDelay(1000/portTICK_PERIOD_MS);
     }
 }
@@ -247,7 +300,7 @@ void APP_USARTBufferEventHandler(
     {
         case DRV_USART_BUFFER_EVENT_COMPLETE:
             // This means the data was transferred.
-            LED4_Toggle();
+            //LED4_Toggle();
             break;
 
         case DRV_USART_BUFFER_EVENT_ERROR:

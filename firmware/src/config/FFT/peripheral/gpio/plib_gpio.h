@@ -61,30 +61,6 @@
 // *****************************************************************************
 // *****************************************************************************
 
-/*** Macros for GPIO_RC1 pin ***/
-#define GPIO_RC1_Set()               (LATCSET = (1<<1))
-#define GPIO_RC1_Clear()             (LATCCLR = (1<<1))
-#define GPIO_RC1_Toggle()            (LATCINV= (1<<1))
-#define GPIO_RC1_Get()               ((PORTC >> 1) & 0x1)
-#define GPIO_RC1_OutputEnable()      (TRISCCLR = (1<<1))
-#define GPIO_RC1_InputEnable()       (TRISCSET = (1<<1))
-#define GPIO_RC1_PIN                  GPIO_PIN_RC1
-/*** Macros for GPIO_RC4 pin ***/
-#define GPIO_RC4_Set()               (LATCSET = (1<<4))
-#define GPIO_RC4_Clear()             (LATCCLR = (1<<4))
-#define GPIO_RC4_Toggle()            (LATCINV= (1<<4))
-#define GPIO_RC4_Get()               ((PORTC >> 4) & 0x1)
-#define GPIO_RC4_OutputEnable()      (TRISCCLR = (1<<4))
-#define GPIO_RC4_InputEnable()       (TRISCSET = (1<<4))
-#define GPIO_RC4_PIN                  GPIO_PIN_RC4
-/*** Macros for GPIO_RG6 pin ***/
-#define GPIO_RG6_Set()               (LATGSET = (1<<6))
-#define GPIO_RG6_Clear()             (LATGCLR = (1<<6))
-#define GPIO_RG6_Toggle()            (LATGINV= (1<<6))
-#define GPIO_RG6_Get()               ((PORTG >> 6) & 0x1)
-#define GPIO_RG6_OutputEnable()      (TRISGCLR = (1<<6))
-#define GPIO_RG6_InputEnable()       (TRISGSET = (1<<6))
-#define GPIO_RG6_PIN                  GPIO_PIN_RG6
 /*** Macros for LED1 pin ***/
 #define LED1_Set()               (LATGSET = (1<<13))
 #define LED1_Clear()             (LATGCLR = (1<<13))

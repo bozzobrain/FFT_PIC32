@@ -119,144 +119,6 @@
 // Section: Driver Initialization Data
 // *****************************************************************************
 // *****************************************************************************
-// <editor-fold defaultstate="collapsed" desc="DRV_USART Instance 2 Initialization Data">
-
-static DRV_USART_CLIENT_OBJ drvUSART2ClientObjPool[DRV_USART_CLIENTS_NUMBER_IDX2];
-
-/* USART transmit/receive transfer objects pool */
-static DRV_USART_BUFFER_OBJ drvUSART2BufferObjPool[DRV_USART_QUEUE_SIZE_IDX2];
-
-const DRV_USART_PLIB_INTERFACE drvUsart2PlibAPI = {
-    .readCallbackRegister = (DRV_USART_PLIB_READ_CALLBACK_REG)UART4_ReadCallbackRegister,
-    .read = (DRV_USART_PLIB_READ)UART4_Read,
-    .readIsBusy = (DRV_USART_PLIB_READ_IS_BUSY)UART4_ReadIsBusy,
-    .readCountGet = (DRV_USART_PLIB_READ_COUNT_GET)UART4_ReadCountGet,
-    .writeCallbackRegister = (DRV_USART_PLIB_WRITE_CALLBACK_REG)UART4_WriteCallbackRegister,
-    .write = (DRV_USART_PLIB_WRITE)UART4_Write,
-    .writeIsBusy = (DRV_USART_PLIB_WRITE_IS_BUSY)UART4_WriteIsBusy,
-    .writeCountGet = (DRV_USART_PLIB_WRITE_COUNT_GET)UART4_WriteCountGet,
-    .errorGet = (DRV_USART_PLIB_ERROR_GET)UART4_ErrorGet,
-    .serialSetup = (DRV_USART_PLIB_SERIAL_SETUP)UART4_SerialSetup
-};
-
-const uint32_t drvUsart2remapDataWidth[] = { 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0x0, 0x6 };
-const uint32_t drvUsart2remapParity[] = { 0x0, 0x2, 0x4, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF };
-const uint32_t drvUsart2remapStopBits[] = { 0x0, 0xFFFFFFFF, 0x1 };
-const uint32_t drvUsart2remapError[] = { 0x2, 0x8, 0x4 };
-
-const DRV_USART_INTERRUPT_SOURCES drvUSART2InterruptSources =
-{
-    /* Peripheral has more than one interrupt vector */
-    .isSingleIntSrc                        = false,
-
-    /* Peripheral interrupt lines */
-    .intSources.multi.usartTxCompleteInt   = _UART4_TX_VECTOR,
-    .intSources.multi.usartTxReadyInt      = -1,
-    .intSources.multi.usartRxCompleteInt   = _UART4_RX_VECTOR,
-    .intSources.multi.usartErrorInt        = _UART4_FAULT_VECTOR,
-};
-
-const DRV_USART_INIT drvUsart2InitData =
-{
-    .usartPlib = &drvUsart2PlibAPI,
-
-    /* USART Number of clients */
-    .numClients = DRV_USART_CLIENTS_NUMBER_IDX2,
-
-    /* USART Client Objects Pool */
-    .clientObjPool = (uintptr_t)&drvUSART2ClientObjPool[0],
-
-    .dmaChannelTransmit = SYS_DMA_CHANNEL_NONE,
-
-    .dmaChannelReceive = SYS_DMA_CHANNEL_NONE,
-
-    /* Combined size of transmit and receive buffer objects */
-    .bufferObjPoolSize = DRV_USART_QUEUE_SIZE_IDX2,
-
-    /* USART transmit and receive buffer buffer objects pool */
-    .bufferObjPool = (uintptr_t)&drvUSART2BufferObjPool[0],
-
-    .interruptSources = &drvUSART2InterruptSources,
-
-    .remapDataWidth = drvUsart2remapDataWidth,
-
-    .remapParity = drvUsart2remapParity,
-
-    .remapStopBits = drvUsart2remapStopBits,
-
-    .remapError = drvUsart2remapError,
-};
-
-// </editor-fold>
-// <editor-fold defaultstate="collapsed" desc="DRV_USART Instance 1 Initialization Data">
-
-static DRV_USART_CLIENT_OBJ drvUSART1ClientObjPool[DRV_USART_CLIENTS_NUMBER_IDX1];
-
-/* USART transmit/receive transfer objects pool */
-static DRV_USART_BUFFER_OBJ drvUSART1BufferObjPool[DRV_USART_QUEUE_SIZE_IDX1];
-
-const DRV_USART_PLIB_INTERFACE drvUsart1PlibAPI = {
-    .readCallbackRegister = (DRV_USART_PLIB_READ_CALLBACK_REG)UART2_ReadCallbackRegister,
-    .read = (DRV_USART_PLIB_READ)UART2_Read,
-    .readIsBusy = (DRV_USART_PLIB_READ_IS_BUSY)UART2_ReadIsBusy,
-    .readCountGet = (DRV_USART_PLIB_READ_COUNT_GET)UART2_ReadCountGet,
-    .writeCallbackRegister = (DRV_USART_PLIB_WRITE_CALLBACK_REG)UART2_WriteCallbackRegister,
-    .write = (DRV_USART_PLIB_WRITE)UART2_Write,
-    .writeIsBusy = (DRV_USART_PLIB_WRITE_IS_BUSY)UART2_WriteIsBusy,
-    .writeCountGet = (DRV_USART_PLIB_WRITE_COUNT_GET)UART2_WriteCountGet,
-    .errorGet = (DRV_USART_PLIB_ERROR_GET)UART2_ErrorGet,
-    .serialSetup = (DRV_USART_PLIB_SERIAL_SETUP)UART2_SerialSetup
-};
-
-const uint32_t drvUsart1remapDataWidth[] = { 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0x0, 0x6 };
-const uint32_t drvUsart1remapParity[] = { 0x0, 0x2, 0x4, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF };
-const uint32_t drvUsart1remapStopBits[] = { 0x0, 0xFFFFFFFF, 0x1 };
-const uint32_t drvUsart1remapError[] = { 0x2, 0x8, 0x4 };
-
-const DRV_USART_INTERRUPT_SOURCES drvUSART1InterruptSources =
-{
-    /* Peripheral has more than one interrupt vector */
-    .isSingleIntSrc                        = false,
-
-    /* Peripheral interrupt lines */
-    .intSources.multi.usartTxCompleteInt   = _UART2_TX_VECTOR,
-    .intSources.multi.usartTxReadyInt      = -1,
-    .intSources.multi.usartRxCompleteInt   = _UART2_RX_VECTOR,
-    .intSources.multi.usartErrorInt        = _UART2_FAULT_VECTOR,
-};
-
-const DRV_USART_INIT drvUsart1InitData =
-{
-    .usartPlib = &drvUsart1PlibAPI,
-
-    /* USART Number of clients */
-    .numClients = DRV_USART_CLIENTS_NUMBER_IDX1,
-
-    /* USART Client Objects Pool */
-    .clientObjPool = (uintptr_t)&drvUSART1ClientObjPool[0],
-
-    .dmaChannelTransmit = SYS_DMA_CHANNEL_NONE,
-
-    .dmaChannelReceive = SYS_DMA_CHANNEL_NONE,
-
-    /* Combined size of transmit and receive buffer objects */
-    .bufferObjPoolSize = DRV_USART_QUEUE_SIZE_IDX1,
-
-    /* USART transmit and receive buffer buffer objects pool */
-    .bufferObjPool = (uintptr_t)&drvUSART1BufferObjPool[0],
-
-    .interruptSources = &drvUSART1InterruptSources,
-
-    .remapDataWidth = drvUsart1remapDataWidth,
-
-    .remapParity = drvUsart1remapParity,
-
-    .remapStopBits = drvUsart1remapStopBits,
-
-    .remapError = drvUsart1remapError,
-};
-
-// </editor-fold>
 // <editor-fold defaultstate="collapsed" desc="DRV_USART Instance 0 Initialization Data">
 
 static DRV_USART_CLIENT_OBJ drvUSART0ClientObjPool[DRV_USART_CLIENTS_NUMBER_IDX0];
@@ -375,22 +237,16 @@ void SYS_Initialize ( void* data )
     CFGCONbits.ECCCON = 3;
 
 
-    OCMP2_Initialize();
-
     ADCHS_Initialize();
-
-	UART4_Initialize();
 
 	UART1_Initialize();
 
-	UART2_Initialize();
-
     TMR2_Initialize();
 
+    TMR3_Initialize();
 
-    sysObj.drvUsart2 = DRV_USART_Initialize(DRV_USART_INDEX_2, (SYS_MODULE_INIT *)&drvUsart2InitData);
+    OCMP2_Initialize();
 
-    sysObj.drvUsart1 = DRV_USART_Initialize(DRV_USART_INDEX_1, (SYS_MODULE_INIT *)&drvUsart1InitData);
 
     sysObj.drvUsart0 = DRV_USART_Initialize(DRV_USART_INDEX_0, (SYS_MODULE_INIT *)&drvUsart0InitData);
 

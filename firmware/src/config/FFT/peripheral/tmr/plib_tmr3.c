@@ -1,20 +1,23 @@
 /*******************************************************************************
-  Output Compare (OCMP) Peripheral Library Interface Header File
+  TMR Peripheral Library Interface Source File
 
-  Company:
+  Company
     Microchip Technology Inc.
 
-  File Name:
-    plib_ocmp2.h
+  File Name
+    plib_tmr3.c
 
-  Summary:
-    OCMP PLIB Header File
+  Summary
+    TMR3 peripheral library source file.
 
-  Description:
-    None
+  Description
+    This file implements the interface to the TMR peripheral library.  This
+    library provides access to and control of the associated peripheral
+    instance.
 
 *******************************************************************************/
 
+// DOM-IGNORE-BEGIN
 /*******************************************************************************
 * Copyright (C) 2019 Microchip Technology Inc. and its subsidiaries.
 *
@@ -37,96 +40,106 @@
 * ANY WAY RELATED TO THIS SOFTWARE WILL NOT EXCEED THE AMOUNT OF FEES, IF ANY,
 * THAT YOU HAVE PAID DIRECTLY TO MICROCHIP FOR THIS SOFTWARE.
 *******************************************************************************/
+// DOM-IGNORE-END
 
-#ifndef _PLIB_OCMP2_H
-#define _PLIB_OCMP2_H
 
-#include <stddef.h>
-#include <stdbool.h>
-#include <stdint.h>
+// *****************************************************************************
+// *****************************************************************************
+// Section: Included Files
+// *****************************************************************************
+// *****************************************************************************
+
 #include "device.h"
-#include "plib_ocmp_common.h"
+#include "plib_tmr3.h"
 
-// DOM-IGNORE-BEGIN
-#ifdef __cplusplus  // Provide C++ Compatibility
-    extern "C" {
-#endif
-// DOM-IGNORE-END
+static TMR_TIMER_OBJECT tmr3Obj;
 
 
-// *****************************************************************************
-// Section: Interface
-// *****************************************************************************
-// *****************************************************************************
+void TMR3_Initialize(void)
+{
+    /* Disable Timer */
+    T3CONCLR = _T3CON_ON_MASK;
 
-/*************************** OCMP2 API ****************************************/
-// *****************************************************************************
-/* Function:
-   void OCMP2_Initialize (void)
+    /*
+    SIDL = 0
+    TCKPS =0
+    T32   = 0
+    TCS = 0
+    */
+    T3CONSET = 0x0;
 
-  Summary:
-    Initialization function OCMP2 peripheral
+    /* Clear counter */
+    TMR3 = 0x0;
 
-  Description:
-    This function initializes the OCMP2 peripheral with user input
-	from the configurator.
+    /*Set period */
+    PR3 = 49999U;
 
-  Parameters:
-    void
+    /* Enable TMR Interrupt */
+    IEC0SET = _IEC0_T3IE_MASK;
 
-  Returns:
-    void
-*/
-void OCMP2_Initialize (void);
-
-// *****************************************************************************
-/* Function:
-   void OCMP2_Enable (void)
-
-  Summary:
-    Enable function OCMP2 peripheral
-
-  Description:
-    This function enables the OCMP2 peripheral
-
-  Parameters:
-    void
-
-  Returns:
-    void
-*/
-void OCMP2_Enable (void);
-
-// *****************************************************************************
-/* Function:
-   void OCMP2_Disable (void)
-
-  Summary:
-    Disable function OCMP2 peripheral
-
-  Description:
-    This function disables the OCMP2 peripheral.
-
-  Parameters:
-    void
-
-  Returns:
-    void
-*/
-void OCMP2_Disable (void);
+}
 
 
+void TMR3_Start(void)
+{
+    T3CONSET = _T3CON_ON_MASK;
+}
 
-uint16_t OCMP2_CompareValueGet (void);
 
-uint16_t OCMP2_CompareSecondaryValueGet (void);
-void OCMP2_CompareSecondaryValueSet (uint16_t value);
+void TMR3_Stop (void)
+{
+    T3CONCLR = _T3CON_ON_MASK;
+}
+
+void TMR3_PeriodSet(uint16_t period)
+{
+    PR3  = period;
+}
+
+uint16_t TMR3_PeriodGet(void)
+{
+    return (uint16_t)PR3;
+}
+
+uint16_t TMR3_CounterGet(void)
+{
+    return (uint16_t)(TMR3);
+}
 
 
-// DOM-IGNORE-BEGIN
-#ifdef __cplusplus  // Provide C++ Compatibility
+uint32_t TMR3_FrequencyGet(void)
+{
+    return (100000000);
+}
+
+void TIMER_3_InterruptHandler (void)
+{
+    uint32_t status;
+    status = IFS0bits.T3IF;
+    IFS0CLR = _IFS0_T3IF_MASK;
+
+    if((tmr3Obj.callback_fn != NULL))
+    {
+        tmr3Obj.callback_fn(status, tmr3Obj.context);
     }
-#endif
+}
 
-// DOM-IGNORE-END
-#endif // _PLIB_OCMP2_H
+
+void TMR3_InterruptEnable(void)
+{
+    IEC0SET = _IEC0_T3IE_MASK;
+}
+
+
+void TMR3_InterruptDisable(void)
+{
+    IEC0CLR = _IEC0_T3IE_MASK;
+}
+
+
+void TMR3_CallbackRegister( TMR_CALLBACK callback_fn, uintptr_t context )
+{
+    /* Save callback_fn and context in local memory */
+    tmr3Obj.callback_fn = callback_fn;
+    tmr3Obj.context = context;
+}

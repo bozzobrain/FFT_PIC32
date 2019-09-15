@@ -60,28 +60,24 @@ void GPIO_Initialize ( void )
     /* PORTA Initialization */
 
     /* PORTB Initialization */
-    LATB = 0x0; /* Initial Latch Value */
-    TRISBCLR = 0x8; /* Direction Control */
-    ANSELBCLR = 0xc7e0; /* Digital Mode Enable */
-
+    ANSELBCLR = 0x28; /* Digital Mode Enable */
+    ANSELBbits.ANSB2=1;
+    TRISBbits.TRISB2=1;
     /* PORTC Initialization */
-    ANSELCCLR = 0x301e; /* Digital Mode Enable */
+    ANSELCCLR = 0x4; /* Digital Mode Enable */
 
     /* PORTD Initialization */
-    ANSELDCLR = 0xc000; /* Digital Mode Enable */
 
     /* PORTE Initialization */
     LATE = 0x0; /* Initial Latch Value */
     TRISECLR = 0x1c; /* Direction Control */
-    ANSELECLR = 0x330; /* Digital Mode Enable */
+    ANSELECLR = 0x110; /* Digital Mode Enable */
 
     /* PORTF Initialization */
-    ANSELFCLR = 0x3000; /* Digital Mode Enable */
 
     /* PORTG Initialization */
     LATG = 0x0; /* Initial Latch Value */
     TRISGCLR = 0x2000; /* Direction Control */
-    ANSELGCLR = 0x1c0; /* Digital Mode Enable */
 
 
     /* unlock system for PPS configuration */
@@ -91,51 +87,11 @@ void GPIO_Initialize ( void )
     CFGCONbits.IOLOCK = 0;
 
     /* PPS Input Remapping */
-    U2RXR = 12;
-    U4RXR = 13;
     U1RXR = 8;
-    IC1R = 5;
-    IC2R = 7;
-    IC5R = 2;
-    IC3R = 5;
-    IC7R = 6;
-    IC6R = 9;
-    INT3R = 3;
-    INT2R = 0;
-    INT4R = 7;
-    INT1R = 6;
-    SDI1R = 0;
-    IC4R = 12;
-    U3RXR = 1;
 
     /* PPS Output Remapping */
-    RPC2R = 2;
-    RPE9R = 2;
     RPB3R = 1;
-    RPF12R = 12;
-    RPB14R = 12;
-    RPB15R = 11;
-    RPD14R = 11;
-    RPD15R = 11;
-    RPF3R = 13;
-    RPF2R = 11;
-    RPD3R = 5;
-    RPD12R = 5;
-    RPG8R = 1;
-    RPC2R = 14;
-    RPG8R = 9;
-    RPE9R = 13;
-    //RPB3R = 8;
-    RPF12R = 2;
-    RPB14R = 11;
-    RPB15R = 12;
-    RPD14R = 11;
-    RPD15R = 4;
-    RPF4R = 12;
-    //RPF2R = 11;
-    RPD3R = 4;
-    RPD12R = 7;
-    RPF4R = 2;
+    RPD0R = 11;
 
     /* Lock back the system after PPS configuration */
     SYSKEY = 0x00000000;

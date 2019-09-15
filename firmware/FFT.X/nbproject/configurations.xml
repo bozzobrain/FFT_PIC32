@@ -8,39 +8,38 @@
         <logicalFolder name="f1" displayName="FFT" projectFiles="true">
           <logicalFolder name="f2" displayName="driver" projectFiles="true">
             <logicalFolder name="f1" displayName="usart" projectFiles="true">
-              <itemPath>../src/config/FFT/driver/usart/drv_usart.h</itemPath>
               <itemPath>../src/config/FFT/driver/usart/drv_usart_definitions.h</itemPath>
+              <itemPath>../src/config/FFT/driver/usart/drv_usart.h</itemPath>
             </logicalFolder>
             <itemPath>../src/config/FFT/driver/driver.h</itemPath>
             <itemPath>../src/config/FFT/driver/driver_common.h</itemPath>
           </logicalFolder>
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f5" displayName="adchs" projectFiles="true">
+            <logicalFolder name="f1" displayName="adchs" projectFiles="true">
               <itemPath>../src/config/FFT/peripheral/adchs/plib_adchs.h</itemPath>
               <itemPath>../src/config/FFT/peripheral/adchs/plib_adchs_common.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f1" displayName="clk" projectFiles="true">
+            <logicalFolder name="f4" displayName="clk" projectFiles="true">
               <itemPath>../src/config/FFT/peripheral/clk/plib_clk.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f3" displayName="evic" projectFiles="true">
+            <logicalFolder name="f6" displayName="evic" projectFiles="true">
               <itemPath>../src/config/FFT/peripheral/evic/plib_evic.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="gpio" projectFiles="true">
+            <logicalFolder name="f5" displayName="gpio" projectFiles="true">
               <itemPath>../src/config/FFT/peripheral/gpio/plib_gpio.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="ocmp" projectFiles="true">
+            <logicalFolder name="f7" displayName="ocmp" projectFiles="true">
               <itemPath>../src/config/FFT/peripheral/ocmp/plib_ocmp_common.h</itemPath>
               <itemPath>../src/config/FFT/peripheral/ocmp/plib_ocmp2.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f7" displayName="tmr" projectFiles="true">
+            <logicalFolder name="f3" displayName="tmr" projectFiles="true">
               <itemPath>../src/config/FFT/peripheral/tmr/plib_tmr_common.h</itemPath>
               <itemPath>../src/config/FFT/peripheral/tmr/plib_tmr2.h</itemPath>
+              <itemPath>../src/config/FFT/peripheral/tmr/plib_tmr3.h</itemPath>
             </logicalFolder>
-            <logicalFolder name="f6" displayName="uart" projectFiles="true">
+            <logicalFolder name="f2" displayName="uart" projectFiles="true">
               <itemPath>../src/config/FFT/peripheral/uart/plib_uart_common.h</itemPath>
-              <itemPath>../src/config/FFT/peripheral/uart/plib_uart4.h</itemPath>
               <itemPath>../src/config/FFT/peripheral/uart/plib_uart1.h</itemPath>
-              <itemPath>../src/config/FFT/peripheral/uart/plib_uart2.h</itemPath>
             </logicalFolder>
           </logicalFolder>
           <logicalFolder name="f3" displayName="system" projectFiles="true">
@@ -106,6 +105,7 @@
         </logicalFolder>
       </logicalFolder>
       <itemPath>../src/neopixel.h</itemPath>
+      <itemPath>../src/FFT.h</itemPath>
       <itemPath>../src/app.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
@@ -117,38 +117,37 @@
                    projectFiles="true">
       <logicalFolder name="f1" displayName="config" projectFiles="true">
         <logicalFolder name="f1" displayName="FFT" projectFiles="true">
-          <logicalFolder name="f3" displayName="driver" projectFiles="true">
+          <logicalFolder name="f2" displayName="driver" projectFiles="true">
             <logicalFolder name="f1" displayName="usart" projectFiles="true">
               <itemPath>../src/config/FFT/driver/usart/src/drv_usart.c</itemPath>
               <itemPath>../src/config/FFT/driver/usart/src/drv_usart_local.h</itemPath>
             </logicalFolder>
           </logicalFolder>
-          <logicalFolder name="f2" displayName="peripheral" projectFiles="true">
-            <logicalFolder name="f5" displayName="adchs" projectFiles="true">
+          <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
+            <logicalFolder name="f1" displayName="adchs" projectFiles="true">
               <itemPath>../src/config/FFT/peripheral/adchs/plib_adchs.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f1" displayName="clk" projectFiles="true">
+            <logicalFolder name="f4" displayName="clk" projectFiles="true">
               <itemPath>../src/config/FFT/peripheral/clk/plib_clk.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f3" displayName="evic" projectFiles="true">
+            <logicalFolder name="f6" displayName="evic" projectFiles="true">
               <itemPath>../src/config/FFT/peripheral/evic/plib_evic.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f2" displayName="gpio" projectFiles="true">
+            <logicalFolder name="f5" displayName="gpio" projectFiles="true">
               <itemPath>../src/config/FFT/peripheral/gpio/plib_gpio.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f4" displayName="ocmp" projectFiles="true">
+            <logicalFolder name="f7" displayName="ocmp" projectFiles="true">
               <itemPath>../src/config/FFT/peripheral/ocmp/plib_ocmp2.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f7" displayName="tmr" projectFiles="true">
+            <logicalFolder name="f3" displayName="tmr" projectFiles="true">
               <itemPath>../src/config/FFT/peripheral/tmr/plib_tmr2.c</itemPath>
+              <itemPath>../src/config/FFT/peripheral/tmr/plib_tmr3.c</itemPath>
             </logicalFolder>
-            <logicalFolder name="f6" displayName="uart" projectFiles="true">
-              <itemPath>../src/config/FFT/peripheral/uart/plib_uart4.c</itemPath>
+            <logicalFolder name="f2" displayName="uart" projectFiles="true">
               <itemPath>../src/config/FFT/peripheral/uart/plib_uart1.c</itemPath>
-              <itemPath>../src/config/FFT/peripheral/uart/plib_uart2.c</itemPath>
             </logicalFolder>
           </logicalFolder>
-          <logicalFolder name="f1" displayName="stdio" projectFiles="true">
+          <logicalFolder name="f3" displayName="stdio" projectFiles="true">
             <itemPath>../src/config/FFT/stdio/xc32_monitor.c</itemPath>
           </logicalFolder>
           <logicalFolder name="f4" displayName="system" projectFiles="true">
@@ -193,6 +192,7 @@
         <itemPath>../src/config/FFT/osal/osal_freertos.c</itemPath>
       </logicalFolder>
       <itemPath>../src/neopixel.c</itemPath>
+      <itemPath>../src/FFT.c</itemPath>
       <itemPath>../src/main.c</itemPath>
       <itemPath>../src/app.c</itemPath>
     </logicalFolder>
@@ -215,11 +215,11 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>pk4hybrid</platformTool>
         <languageToolchain>XC32</languageToolchain>
-        <languageToolchainVersion>2.30</languageToolchainVersion>
+        <languageToolchainVersion>2.20</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="PIC32MZ-EF_DFP" vendor="Microchip" version="1.0.17"/>
+        <pack name="PIC32MZ-EF_DFP" vendor="Microchip" version="1.0.20"/>
       </packs>
       <compileType>
         <linkerTool>
@@ -533,6 +533,7 @@
         <property key="SPI/I2S 4" value="true"/>
         <property key="SPI/I2S 5" value="true"/>
         <property key="SPI/I2S 6" value="true"/>
+        <property key="SecureSegment.SegmentProgramming" value="FullChipProgramming"/>
         <property key="TIMER1" value="true"/>
         <property key="TIMER2" value="true"/>
         <property key="TIMER3" value="true"/>
@@ -569,7 +570,7 @@
                   value="${memories.instruction.ram.ranges}"/>
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="1d000000-1d1fffff"/>
-        <property key="poweroptions.powerenable" value="true"/>
+        <property key="poweroptions.powerenable" value="false"/>
         <property key="programoptions.donoteraseauxmem" value="false"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.ledbrightness" value="5"/>

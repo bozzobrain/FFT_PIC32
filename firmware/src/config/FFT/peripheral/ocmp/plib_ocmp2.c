@@ -49,21 +49,19 @@
 // *****************************************************************************
 
 
-OCMP_OBJECT ocmp2Obj;
-
 void OCMP2_Initialize (void)
 {
     /*Setup OC2CON        */
-    /*OCM         = 1        */
+    /*OCM         = 6        */
     /*OCTSEL       = 0        */
     /*OC32         = 0        */
     /*SIDL         = false    */
 
-    OC2CON = 0x1;
+    OC2CON = 0x6;
 
     OC2R = 60;
+    OC2RS = 60;
 
-    IEC0SET = _IEC0_OC2IE_MASK;
 }
 
 void OCMP2_Enable (void)
@@ -77,31 +75,19 @@ void OCMP2_Disable (void)
 }
 
 
-void OCMP2_CompareValueSet (uint16_t value)
-{
-    OC2R = value;
-}
 
 uint16_t OCMP2_CompareValueGet (void)
 {
     return (uint16_t)OC2R;
 }
 
-
-void OCMP2_CallbackRegister(OCMP_CALLBACK callback, uintptr_t context)
+void OCMP2_CompareSecondaryValueSet (uint16_t value)
 {
-    ocmp2Obj.callback = callback;
-
-    ocmp2Obj.context = context;
+    OC2RS = value;
 }
 
-void OUTPUT_COMPARE_2_InterruptHandler (void)
+uint16_t OCMP2_CompareSecondaryValueGet (void)
 {
-    IFS0CLR = _IFS0_OC2IF_MASK;    //Clear IRQ flag
-
-    if( (ocmp2Obj.callback != NULL))
-    {
-        ocmp2Obj.callback(ocmp2Obj.context);
-    }
+    return (uint16_t)OC2RS;
 }
 

@@ -38,4 +38,9 @@ build/FFT/production/_ext/1360937237/app.o:  \
  ../src/third_party/rtos/FreeRTOS/Source/include/task.h  \
  ../src/third_party/rtos/FreeRTOS/Source/include/semphr.h  \
  ../src/third_party/rtos/FreeRTOS/Source/include/queue.h  \
- ../src/neopixel.h 
+ ../src/config/FFT/peripheral/adchs/plib_adchs.h  \
+ ../src/config/FFT/peripheral/adchs/plib_adchs_common.h  \
+ ../src/config/FFT/peripheral/tmr/plib_tmr3.h  \
+ ../src/config/FFT/peripheral/tmr/plib_tmr_common.h  \
+../src/neopixel.h  \
+ ../src/FFT.h 

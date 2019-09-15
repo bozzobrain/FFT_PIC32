@@ -2,6 +2,7 @@
 #include "neopixel.h"
 #include "config/FFT/peripheral/tmr/plib_tmr2.h"
 #include "config/FFT/peripheral/ocmp/plib_ocmp2.h"
+#include "config/FFT/peripheral/gpio/plib_gpio.h"
 /* 
  * TIMING
    * Time high 0      - 300   ns  (30)
@@ -22,22 +23,21 @@
  * 
  * 
    */
-#define NUMBER_LEDS             5
 
-#define RESET_PERIOD            67
-#define T0H                     30
-#define T0L                     90
-#define T1H                     60
-#define T1L                     60
+#define RESET_PERIOD            500
+#define T0H                     35
+#define T0L                     95
+#define T1H                     65
+#define T1L                     65
 
 #define BIT_TIME_HIGH           T1H
 #define BIT_TIME_LOW            T0H
-
-bool resetTriggered             = true;
-uint8_t periodCounter           = 0;
+bool disableNEOUpdate           = false;
+bool resetTriggered             = false;
+uint16_t periodCounter           = 0;
 uint16_t neoContext             = 1;
 uint8_t pixelCounter            = 0;
-uint32_t bitCounter             = 0x100000;
+uint32_t bitCounter             = 0x800000;
 uint32_t pixelData[NUMBER_LEDS];
 
 void neopixelReset(void);
@@ -49,7 +49,7 @@ void setupNeopixel(void)
     //For testing setup some data to transmit
     int i = 0;
     for(i = 0; i < NUMBER_LEDS; i++)
-        pixelData[i] = 0xFF11FF;
+        pixelData[i] = 0x00FF00;
     
     
     //Stop modules TMR and OC
@@ -58,7 +58,7 @@ void setupNeopixel(void)
     
     //Set interrupt callbacks
     TMR2_CallbackRegister((void *)TMR2InterruptCallback, neoContext);
-    OCMP2_CallbackRegister(OCInterruptCallback, neoContext);
+    //OCMP2_CallbackRegister(OCInterruptCallback, neoContext);
     
     //Start modules TMR and OC
     OCMP2_Enable();    
@@ -67,27 +67,34 @@ void setupNeopixel(void)
     //OCMP2_CompareValueGet();
     
     //16-bit set (0-120)
-    OCMP2_CompareValueSet(0);
+    OCMP2_CompareSecondaryValueSet(0);
     
 }
 
-void updateNeoData(uint32_t * buf)
+void setLEDColor(uint8_t n, uint8_t R, uint8_t G, uint8_t B)
 {
-    
+    pixelData[n-1] = (G<<16) | (R<<8) | (B);
+}
+
+void updateNeoData(void)
+{
+    disableNEOUpdate = false;
     //Start clocking stuff
-    OCMP2_Enable();
-    TMR2_Start();    
+//    OCMP2_Enable();
+//    TMR2_Start();    
 }
 
 void neopixelHaltUpdate(void)
 {
     //Stop clocking
-    TMR2_Stop();
-    OCMP2_Disable();
+//    TMR2_Stop();
+//    OCMP2_Disable();
+    
     
     //Reset tracking variables
     periodCounter   = 0;
     resetTriggered  = false;
+    disableNEOUpdate= true;
 }
 
 void neopixelReset(void)
@@ -96,7 +103,7 @@ void neopixelReset(void)
     periodCounter   = 0;
     resetTriggered  = true;
     //Set to be always low
-    OCMP2_CompareValueSet(0);
+    OCMP2_CompareSecondaryValueSet(0);
 }
 
 void OCInterruptCallback(uintptr_t context)
@@ -106,53 +113,60 @@ void OCInterruptCallback(uintptr_t context)
 
 void TMR2InterruptCallback(uint32_t status, uintptr_t context)
 {
-    //If clocking data as normal
-    if(!resetTriggered)
+    if(disableNEOUpdate)
     {
-        //There is a 1 in the next bit to clock
-        if(pixelData[pixelCounter] & bitCounter)
-        {            
-            OCMP2_CompareValueSet(BIT_TIME_HIGH);
-        }
-        //There is a 0 in the next bit to clock
-        else
-        {            
-            OCMP2_CompareValueSet(BIT_TIME_LOW);            
-        }
-        //Move to next bit
-        bitCounter>>=1;
-        //If the bit counter has moved through all bits
-        if(bitCounter == 0)
+        OCMP2_CompareSecondaryValueSet(0);
+    }
+    else
+        //If clocking data as normal
+        if(!resetTriggered)
         {
-            //Reset bit location
-            bitCounter = 0x100000;
-            
-            //Increment to next LED pixel
-            pixelCounter++;
-            
-            //If all pixels have been handled
-            if(pixelCounter >= NUMBER_LEDS)
+            //There is a 1 in the next bit to clock
+            if(pixelData[pixelCounter] & bitCounter)
+            {            
+                OCMP2_CompareSecondaryValueSet(BIT_TIME_HIGH);
+            }
+            //There is a 0 in the next bit to clock
+            else
+            {            
+                OCMP2_CompareSecondaryValueSet(BIT_TIME_LOW);            
+            }
+            //Move to next bit
+            bitCounter >>= 1;
+            //If the bit counter has moved through all bits
+            if(bitCounter == 0)
             {
-                //return to first pixel
-                pixelCounter = 0;
-                
-                //initiate a reset signal on bus
-                neopixelReset();
+                //LED3_Set();
+                //Reset bit location
+                bitCounter = 0x800000;
+
+                //Increment to next LED pixel
+                pixelCounter++;
+
+                //If all pixels have been handled
+                if(pixelCounter >= NUMBER_LEDS)
+                {
+                    //return to first pixel
+                    pixelCounter = 0;
+
+                    //initiate a stop condition the next time thru
+                    disableNEOUpdate = true;
+                }
+            }
+        }    
+        //if a reset has been triggered
+        else
+        {        
+            //count up if reset is in progress
+            periodCounter++;
+
+            //if period has expired for reset time
+            if(periodCounter >= RESET_PERIOD)
+            {
+                resetTriggered = false;
+                neopixelHaltUpdate();
             }
         }
-    }    
-    //if a reset has been triggered
-    else
-    {        
-        //count up if reset is in progress
-        periodCounter++;
-        
-        //if period has expired for reset time
-        if(periodCounter >= RESET_PERIOD)
-        {
-            resetTriggered = false;
-        }
-    }
 }
 
 

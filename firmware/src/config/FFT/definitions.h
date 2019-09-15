@@ -48,18 +48,18 @@
 #include <stdint.h>
 #include <stddef.h>
 #include <stdbool.h>
+#include <stdio.h>
+#include "peripheral/adchs/plib_adchs.h"
+#include "peripheral/uart/plib_uart1.h"
+#include "driver/usart/drv_usart.h"
+#include "peripheral/tmr/plib_tmr2.h"
+#include "peripheral/tmr/plib_tmr3.h"
 #include "peripheral/clk/plib_clk.h"
 #include "peripheral/gpio/plib_gpio.h"
 #include "peripheral/evic/plib_evic.h"
-#include "peripheral/ocmp/plib_ocmp2.h"
-#include "peripheral/adchs/plib_adchs.h"
-#include "peripheral/uart/plib_uart4.h"
-#include "peripheral/uart/plib_uart1.h"
-#include "peripheral/uart/plib_uart2.h"
-#include "driver/usart/drv_usart.h"
-#include "peripheral/tmr/plib_tmr2.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "peripheral/ocmp/plib_ocmp2.h"
 #include "system/int/sys_int.h"
 #include "system/dma/sys_dma.h"
 #include "osal/osal.h"
@@ -185,8 +185,6 @@ void SYS_Tasks ( void );
 
 typedef struct
 {
-    SYS_MODULE_OBJ  drvUsart2;
-    SYS_MODULE_OBJ  drvUsart1;
     SYS_MODULE_OBJ  drvUsart0;
 
 } SYSTEM_OBJECTS;
