@@ -72,7 +72,7 @@ void TMR3_Initialize(void)
     TMR3 = 0x0;
 
     /*Set period */
-    PR3 = 49999U;
+    PR3 = 65535U;
 
     /* Enable TMR Interrupt */
     IEC0SET = _IEC0_T3IE_MASK;

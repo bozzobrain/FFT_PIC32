@@ -60,6 +60,7 @@
 
 
 void TIMER_2_InterruptHandler( void );
+void OUTPUT_COMPARE_2_InterruptHandler( void );
 void TIMER_3_InterruptHandler( void );
 void UART1_FAULT_InterruptHandler( void );
 void UART1_RX_InterruptHandler( void );
@@ -73,6 +74,11 @@ void UART1_TX_InterruptHandler( void );
 void TIMER_2_Handler (void)
 {
     TIMER_2_InterruptHandler();
+}
+
+void OUTPUT_COMPARE_2_Handler (void)
+{
+    OUTPUT_COMPARE_2_InterruptHandler();
 }
 
 void TIMER_3_Handler (void)

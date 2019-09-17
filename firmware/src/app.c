@@ -77,7 +77,7 @@ void APP_Initialize ( void )
 
     //setupUART();
     setupNeopixel();
-    setupFFT();
+//    setupFFT();
 }
 
 
@@ -109,21 +109,21 @@ void APP_Tasks ( void )
 
         case APP_STATE_SERVICE_TASKS:
         {
-            if(doFFT)
-            {
-                vTaskResume(FFT_Task_Handle);
-            }
-            vTaskDelay(75/portTICK_PERIOD_MS);
-//            static uint8_t red = 0;
-//            red++;
-//            if(red>255)
-//                red = 0;
-//            int i=0;
-//            for (i=0;i<NUMBER_LEDS;i++)
+//            if(doFFT)
 //            {
-//                setLEDColor(i+1,red,0,0);
+//                vTaskResume(FFT_Task_Handle);
 //            }
-//            updateNeoData();
+            vTaskDelay(50/portTICK_PERIOD_MS);
+            static uint8_t red = 0;
+            red++;
+            if(red>255)
+                red = 0;
+            int i=0;
+            for (i=0;i<NUMBER_LEDS;i++)
+            {
+                setLEDColor(i+1,red,0,0);
+            }
+            updateNeoData();
             LED1_Toggle();
             //U1TX_GPIO_Toggle();
             break;
@@ -143,10 +143,10 @@ void APP_Tasks ( void )
 
 void TMR3_Interrupt_Callback(void)
 {   
-    if(ADCHS_ChannelResultIsReady(CHANNEL_2))
+    if(ADCHS_ChannelResultIsReady(MICROPHONE_CHANNEL))
     {
         LED2_Toggle();
-        vReal[sampleCounter]=(double)ADCHS_ChannelResultGet(CHANNEL_2);
+        vReal[sampleCounter]=(double)ADCHS_ChannelResultGet(MICROPHONE_CHANNEL);
         vImag[sampleCounter]=0;
         sampleCounter++;
         if(sampleCounter > SAMPLES)
@@ -160,7 +160,7 @@ void TMR3_Interrupt_Callback(void)
             
         }
     }
-    ADCHS_ChannelConversionStart(CHANNEL_2);
+    ADCHS_ChannelConversionStart(MICROPHONE_CHANNEL);
     //ADCHS_GlobalLevelConversionStart();
     LED4_Toggle();
 }
@@ -186,10 +186,8 @@ void setupFFT(void)
 {
     TMR3_CallbackRegister((TMR_CALLBACK)TMR3_Interrupt_Callback,1);
     TMR3_Start();
-    //ADCHS_CallbackRegister(CHANNEL_2, (ADCHS_CALLBACK) AN2_Interrupt_Callback, 1);
-    //ADCHS_ModulesEnable(ADCHS_MODULE2_MASK);
-    //ADCHS_ChannelResultInterruptEnable(CHANNEL_2);
-    //ADCHS_ChannelConversionStart(CHANNEL_2);
+    
+    
      xTaskCreate((TaskFunction_t) FFT_Task,
                 "FFT_Task",
                 2048,
@@ -210,6 +208,7 @@ void FFT_Task(void)
 //        }
         //TMR3_Stop();
         //ADCHS_ChannelResultInterruptDisable(CHANNEL_2);
+//        printFFT(vReal);
         Compute(vReal, vImag, SAMPLES, FFT_FORWARD); /* Compute FFT */
         ComplexToMagnitude(vReal, vImag, SAMPLES); /* Compute magnitudes */        
         DisplayFFT(vReal);        
@@ -312,98 +311,6 @@ void APP_USARTBufferEventHandler(
     }
 }
 
-
-
-/*      METHOD 1
-void Interrupthandler()
-{
-char cC;
-    cC = LLUSART_ReceiveData(Instance);
-    xQueueSendFromISR(xQueueUartRx, &cC, NULL);
-    vTaskNotifyGiveFromISR(uartExtTaskHandle, NULL);
-}
-
-void uartExttask(void const* argument)
-{
-char cChar;
-    while(true)
-    {
-        if (xQueueReceive(xQueueUartRx, &cChar, 0))
-        {
-            // do somethings
-        }
-        ulTaskNotifyTake(pdTRUE, portMAXDELAY);
-    }
-}
- * */
-
-
-/*          METHOD 2
-void Interrupthandler()
-{
-portCHAR cC;
-    cC = LLUSART_ReceiveData8(USART6);
-    xQueueSendFromISR(xQueueUartRx,&cC, NULL);
-}
-
-void Taskforreceiving()
-{
-char Ccar;
-    for (;;)
-    {
-        if (xQueueReceive( xQueueUartRx,&Ccar, portMAX_DELAY ) == pdTRUE)
-        {
-            // do somethings
-        }
-    }
-}
-*/
-
-
-
-
-
-
-
-
-/*
-//FROM: https://www.freertos.org/FreeRTOS_Support_Forum_Archive/January_2018/freertos_Best_efficient_way_to_handle_Interrupt_09f74fcej.html
-void Interrupthandler()
-{
-    char cC;
-    BaseTypet xSwitchRequired = pdFALSE;
-
-    cC = LL_USART_ReceiveData( Instance );
-    addByte (&xCircularBuffer, cC);
-    vTaskNotifyGiveFromISR( uartExtTaskHandle, &( xSwitchRequired ) );
-    // Switch context if needed:
-    portYIELD_FROM_ISR( xSwitchRequired );
-
-
-}
-
-void Taskforreceiving(void const* argument)
-{
-    char pcBuffer[ 128 ];
-    int iCount;
-
-    while(true)
-    {
-        ulTaskNotifyTake(pdTRUE, portMAX_DELAY);
-        // When waking up, 1 or more bytes have been placed in the
-        //circular buffer.  Read them in blocks: 
-        for( ;; )
-        {
-            iCount = readBytes ( &xCircularBuffer, pcBuffer, sizeof pcBuffer );
-            if( iCount <= 0 )
-            {
-                break;
-            }
-            // do somethings
-        }
-    }
-}
-*/
 
 /*******************************************************************************
  End of File

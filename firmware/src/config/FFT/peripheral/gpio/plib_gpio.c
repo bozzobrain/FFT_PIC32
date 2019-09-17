@@ -61,8 +61,7 @@ void GPIO_Initialize ( void )
 
     /* PORTB Initialization */
     ANSELBCLR = 0x28; /* Digital Mode Enable */
-    ANSELBbits.ANSB2=1;
-    TRISBbits.TRISB2=1;
+
     /* PORTC Initialization */
     ANSELCCLR = 0x4; /* Digital Mode Enable */
 
@@ -91,7 +90,7 @@ void GPIO_Initialize ( void )
 
     /* PPS Output Remapping */
     RPB3R = 1;
-    RPD0R = 11;
+    RPE8R = 11;
 
     /* Lock back the system after PPS configuration */
     SYSKEY = 0x00000000;

@@ -49,6 +49,8 @@
 // *****************************************************************************
 
 
+OCMP_OBJECT ocmp2Obj;
+
 void OCMP2_Initialize (void)
 {
     /*Setup OC2CON        */
@@ -62,6 +64,7 @@ void OCMP2_Initialize (void)
     OC2R = 60;
     OC2RS = 60;
 
+    IEC0SET = _IEC0_OC2IE_MASK;
 }
 
 void OCMP2_Enable (void)
@@ -89,5 +92,22 @@ void OCMP2_CompareSecondaryValueSet (uint16_t value)
 uint16_t OCMP2_CompareSecondaryValueGet (void)
 {
     return (uint16_t)OC2RS;
+}
+
+void OCMP2_CallbackRegister(OCMP_CALLBACK callback, uintptr_t context)
+{
+    ocmp2Obj.callback = callback;
+
+    ocmp2Obj.context = context;
+}
+
+void OUTPUT_COMPARE_2_InterruptHandler (void)
+{
+    IFS0CLR = _IFS0_OC2IF_MASK;    //Clear IRQ flag
+
+    if( (ocmp2Obj.callback != NULL))
+    {
+        ocmp2Obj.callback(ocmp2Obj.context);
+    }
 }
 

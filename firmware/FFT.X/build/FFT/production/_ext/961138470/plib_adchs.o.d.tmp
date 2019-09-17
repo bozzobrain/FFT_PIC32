@@ -1,6 +1,0 @@
-build/FFT/production/_ext/961138470/plib_adchs.o:  \
- ../src/config/FFT/peripheral/adchs/plib_adchs.c  \
- ../src/packs/PIC32MZ2048EFG100_DFP/device.h  \
- ../src/config/FFT/toolchain_specifics.h  \
- ../src/config/FFT/peripheral/adchs/plib_adchs.h  \
- ../src/config/FFT/peripheral/adchs/plib_adchs_common.h 

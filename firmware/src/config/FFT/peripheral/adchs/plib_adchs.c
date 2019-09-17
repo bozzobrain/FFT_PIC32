@@ -56,8 +56,8 @@ void ADCHS_Initialize()
 {
     ADCCON1bits.ON = 0;
 
-    ADC2CFG = DEVADC2;
-    ADC2TIME = 0x3000001;
+    ADC4CFG = DEVADC4;
+    ADC4TIME = 0x3000001;
 
 
 
@@ -91,10 +91,10 @@ void ADCHS_Initialize()
     while(!ADCCON2bits.BGVRRDY); // Wait until the reference voltage is ready
     while(ADCCON2bits.REFFLT); // Wait if there is a fault with the reference voltage
 
-    /* ADC 2 */
-    ADCANCONbits.ANEN2 = 1;      // Enable the clock to analog bias
-    while(!ADCANCONbits.WKRDY2); // Wait until ADC is ready
-    ADCCON3bits.DIGEN2 = 1;      // Enable ADC
+    /* ADC 4 */
+    ADCANCONbits.ANEN4 = 1;      // Enable the clock to analog bias
+    while(!ADCANCONbits.WKRDY4); // Wait until ADC is ready
+    ADCCON3bits.DIGEN4 = 1;      // Enable ADC
 
 }
 

@@ -25,14 +25,14 @@
    */
 
 #define RESET_PERIOD            500
-#define T0H                     35
-#define T0L                     95
-#define T1H                     65
-#define T1L                     65
-
+#define T0H                     30
+#define T0L                     90
+#define T1H                     60
+#define T1L                     60
 #define BIT_TIME_HIGH           T1H
 #define BIT_TIME_LOW            T0H
 bool disableNEOUpdate           = false;
+bool neopixelDisabled           = false;
 bool resetTriggered             = false;
 uint16_t periodCounter           = 0;
 uint16_t neoContext             = 1;
@@ -49,7 +49,7 @@ void setupNeopixel(void)
     //For testing setup some data to transmit
     int i = 0;
     for(i = 0; i < NUMBER_LEDS; i++)
-        pixelData[i] = 0x00FF00;
+        pixelData[i] = 0x000000;
     
     
     //Stop modules TMR and OC
@@ -64,10 +64,8 @@ void setupNeopixel(void)
     OCMP2_Enable();    
     TMR2_Start();    
     
-    //OCMP2_CompareValueGet();
-    
     //16-bit set (0-120)
-    OCMP2_CompareSecondaryValueSet(0);
+    OCMP2_CompareSecondaryValueSet(60);
     
 }
 
@@ -79,8 +77,9 @@ void setLEDColor(uint8_t n, uint8_t R, uint8_t G, uint8_t B)
 void updateNeoData(void)
 {
     disableNEOUpdate = false;
+    neopixelDisabled = false;
     //Start clocking stuff
-//    OCMP2_Enable();
+    //OCMP2_Enable();
 //    TMR2_Start();    
 }
 
@@ -108,16 +107,26 @@ void neopixelReset(void)
 
 void OCInterruptCallback(uintptr_t context)
 {
-    
+
 }
 
 void TMR2InterruptCallback(uint32_t status, uintptr_t context)
 {
+    //LED4_Set();
     if(disableNEOUpdate)
     {
-        OCMP2_CompareSecondaryValueSet(0);
+//        if(neopixelDisabled)
+            OCMP2_CompareSecondaryValueSet(0); 
+//        else
+//        {
+//            OCMP2_CompareSecondaryValueSet(1); 
+//            neopixelDisabled = true;
+//            
+//        }
+        //OCMP2_Disable();
     }
     else
+    {
         //If clocking data as normal
         if(!resetTriggered)
         {
@@ -129,7 +138,7 @@ void TMR2InterruptCallback(uint32_t status, uintptr_t context)
             //There is a 0 in the next bit to clock
             else
             {            
-                OCMP2_CompareSecondaryValueSet(BIT_TIME_LOW);            
+                OCMP2_CompareSecondaryValueSet(BIT_TIME_LOW); 
             }
             //Move to next bit
             bitCounter >>= 1;
@@ -167,6 +176,8 @@ void TMR2InterruptCallback(uint32_t status, uintptr_t context)
                 neopixelHaltUpdate();
             }
         }
+    }
+    //LED4_Clear();
 }
 
 

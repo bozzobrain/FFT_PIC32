@@ -21,7 +21,7 @@
 #include "app.h"
 #include <math.h>
 
-#define SAMPLING_FREQUENCY_BASE               20000
+#define SAMPLING_FREQUENCY_BASE               10000
 #define LIMIT_SCALER_BASE                     1
 #define SAMPLES                               128
 #define WEIGHT_PREVIOUS                       0.5
@@ -36,9 +36,9 @@
 #define CUTOFF_LIMIT_MID_BASE                 0.506     
 #define CUTOFF_LIMIT_HIGH_BASE                0.506      
 
-#define FFT_MAG_LIMIT_LOWS_BASE               20000       //7500        //5000
-#define FFT_MAG_LIMIT_MIDS_BASE               20000                      //20000 (PIANO) (256 samples)
-#define FFT_MAG_LIMIT_HIGHS_BASE              20000                      //22000 (PIANO)
+#define FFT_MAG_LIMIT_LOWS_BASE               7000       //7500        //5000
+#define FFT_MAG_LIMIT_MIDS_BASE               7000                      //20000 (PIANO) (256 samples)
+#define FFT_MAG_LIMIT_HIGHS_BASE              7000                      //22000 (PIANO)
 #define FFT_MAG_LIMIT_MIN                     350
 
 #define BRIGHTNESS_LOW_BASE                   1
