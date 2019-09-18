@@ -77,7 +77,7 @@ void APP_Initialize ( void )
 
     //setupUART();
     setupNeopixel();
-//    setupFFT();
+    setupFFT();
 }
 
 
@@ -109,23 +109,24 @@ void APP_Tasks ( void )
 
         case APP_STATE_SERVICE_TASKS:
         {
-//            if(doFFT)
-//            {
-//                vTaskResume(FFT_Task_Handle);
-//            }
-            vTaskDelay(50/portTICK_PERIOD_MS);
-            static uint8_t red = 0;
-            red++;
-            if(red>255)
-                red = 0;
-            int i=0;
-            for (i=0;i<NUMBER_LEDS;i++)
+            if(doFFT)
             {
-                setLEDColor(i+1,red,0,0);
+                vTaskResume(FFT_Task_Handle);
+                doFFT=false;
             }
-            updateNeoData();
+            vTaskDelay(40/portTICK_PERIOD_MS);
+//            static uint8_t red = 255;
+//            red++;
+//            if(red>255)
+//                red = 0;
+//            
+//            int i=0;
+//            for (i=1;i<=NUMBER_LEDS;i++)
+//            {
+//                setLEDColor(i,red,0,0);
+//            }
+//            updateNeoData();
             LED1_Toggle();
-            //U1TX_GPIO_Toggle();
             break;
         }
 
@@ -145,42 +146,27 @@ void TMR3_Interrupt_Callback(void)
 {   
     if(ADCHS_ChannelResultIsReady(MICROPHONE_CHANNEL))
     {
-        LED2_Toggle();
+        //LED2_Toggle();
         vReal[sampleCounter]=(double)ADCHS_ChannelResultGet(MICROPHONE_CHANNEL);
         vImag[sampleCounter]=0;
         sampleCounter++;
         if(sampleCounter > SAMPLES)
         {
-            LED3_Toggle();
+            //LED3_Toggle();
             sampleCounter = 0;
             //ADCHS_ChannelResultInterruptDisable(CHANNEL_2);
             doFFT = true;
             //vTaskResume(FFT_Task_Handle);
             TMR3_Stop();
+            //TMR3_InterruptDisable();
             
         }
     }
     ADCHS_ChannelConversionStart(MICROPHONE_CHANNEL);
     //ADCHS_GlobalLevelConversionStart();
-    LED4_Toggle();
+    //LED4_Toggle();
 }
-//void AN2_Interrupt_Callback(void)
-//{
-//    //if(ADCDSTAT1bits.ARDY2)
-//    vReal[sampleCounter++]=ADCHS_ChannelResultGet(CHANNEL_2);
-//    vImag[sampleCounter]=0;
-//    if(sampleCounter > SAMPLES)
-//    {
-//        LED3_Set();
-//        sampleCounter = 0;
-//        //ADCHS_ChannelResultInterruptDisable(CHANNEL_2);
-//        vTaskResume(FFT_Task_Handle);
-//    }
-//    else
-//    {        
-//        //ADCHS_ChannelConversionStart(CHANNEL_2);
-//    }
-//}
+
 
 void setupFFT(void)
 {
@@ -200,21 +186,22 @@ void FFT_Task(void)
 {
     vTaskSuspend(NULL);
     while(1)
-    {
+    {       
+        //TMR3_Stop();
+        //printFFT(vReal);
+        Compute(vReal, vImag, SAMPLES, FFT_FORWARD); /* Compute FFT */
+        ComplexToMagnitude(vReal, vImag, SAMPLES); /* Compute magnitudes */        
+        
 //        int i=0;
 //        for(i=0;i<SAMPLES;i++)
 //        {
-//             vRealSmoother[i]=(vRealSmoother[i]*WEIGHT_PREVIOUS + vReal[i]*(1.0-WEIGHT_PREVIOUS));
+//             vRealSmoother[i]=((vRealSmoother[i]*WEIGHT_PREVIOUS) + (vReal[i]*(1.0-WEIGHT_PREVIOUS)));
 //        }
-        //TMR3_Stop();
-        //ADCHS_ChannelResultInterruptDisable(CHANNEL_2);
-//        printFFT(vReal);
-        Compute(vReal, vImag, SAMPLES, FFT_FORWARD); /* Compute FFT */
-        ComplexToMagnitude(vReal, vImag, SAMPLES); /* Compute magnitudes */        
         DisplayFFT(vReal);        
         updateNeoData();
-//        printFFT(vReal);
+        //printFFT(vReal);
         TMR3_Start();
+        
         //ADCHS_ChannelConversionStart(CHANNEL_2);
         vTaskSuspend(NULL);
     }

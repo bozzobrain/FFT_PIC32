@@ -36,8 +36,8 @@ float brightnessLow = BRIGHTNESS_LOW_BASE;
 float brightnessMid = BRIGHTNESS_MID_BASE;
 float brightnessHigh = BRIGHTNESS_HIGH_BASE;
 
-float lowGroup = LOW_GROUP_BASE;
-float midGroup = MID_GROUP_BASE;
+uint8_t lowGroup = LOW_GROUP_BASE;
+uint8_t midGroup = MID_GROUP_BASE;
 
 float limitScaler = LIMIT_SCALER_BASE;
 
@@ -173,14 +173,14 @@ void Swap(volatile double *x, volatile double *y)
 void DisplayFFT(volatile double * values)
 {
   float brightnessScaling = 0;
-  int j=2, subSamples=0;
-  uint8_t red,green,blue;
+  unsigned char j=2, subSamples=0;
+  unsigned char red, green, blue;
   int i;
   for(i = 0; i < NUMBER_LEDS; i++)
   {
 
     //Select color per subset of frequencies
-    if(i<(int)(NUMBER_LEDS* lowGroup))
+    if(i<(lowGroup))
     {      
 
         brightnessScaling = ((values[j])/(lowLimit));
@@ -194,19 +194,19 @@ void DisplayFFT(volatile double * values)
         if(brightnessScaling < cutoffLimitLow)
           brightnessScaling = 0;
        
-        int brightness = 255*brightnessLow*brightnessScaling;
-        if (brightness > 255)
+        unsigned char brightness = (unsigned char)(255.0*brightnessLow*brightnessScaling);
+        if (brightness > BRIGHTNESS_LIMIT)
         {
-          brightness = 255;
+          brightness = BRIGHTNESS_LIMIT;
         }
         else if (brightness < 0)
           brightness = 0;
         
         red=brightness;
-        green=brightness;
-        blue=brightness;
+        green=0;
+        blue=0;
     }
-    else if (i<(int)(NUMBER_LEDS * midGroup))
+    else if (i<(midGroup))
     {
         brightnessScaling = ((values[j])/(midLimit));
         
@@ -218,14 +218,14 @@ void DisplayFFT(volatile double * values)
         if(brightnessScaling < cutoffLimitMid)
           brightnessScaling = 0;  
           
-        int brightness = 255*brightnessMid*brightnessScaling;
-        if(brightness > 255)
-          brightness = 255;     
+        unsigned char brightness = (unsigned char)(255.0*brightnessMid*brightnessScaling);
+        if(brightness > BRIGHTNESS_LIMIT)
+          brightness = BRIGHTNESS_LIMIT;     
         else if (brightness < 0)
           brightness = 0;
         red=brightness;
         green=brightness;
-        blue=brightness;
+        blue=0;
     }
     else 
     {
@@ -239,14 +239,14 @@ void DisplayFFT(volatile double * values)
           brightnessScaling = 0;
         
 
-        int brightness = 255*brightnessHigh*brightnessScaling;
-        if(brightness > 255)
-          brightness = 255;
-          else if (brightness < 0)
+        unsigned char brightness = (unsigned char)(255.0*brightnessHigh*brightnessScaling);
+        if(brightness > BRIGHTNESS_LIMIT)
+          brightness = BRIGHTNESS_LIMIT;
+        else if (brightness < 0)
           brightness = 0;
-        red=brightness;
+        red=0;
         green=brightness;
-        blue=brightness;
+        blue=0;
     }
     
     setLEDColor(i,red,green,blue);

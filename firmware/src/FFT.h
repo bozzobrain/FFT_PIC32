@@ -21,29 +21,31 @@
 #include "app.h"
 #include <math.h>
 
-#define SAMPLING_FREQUENCY_BASE               10000
+#define BRIGHTNESS_LIMIT                        255U
+
+#define SAMPLING_FREQUENCY_BASE               20000U
 #define LIMIT_SCALER_BASE                     1
-#define SAMPLES                               128
+#define SAMPLES                               512
 #define WEIGHT_PREVIOUS                       0.5
 //Adjust the number of LEDs per bin (higher equals less representation and a lower frequency represented
-#define NUMBER_SAMPLES_PER_GROUP              (int)((NUMBER_LEDS/ (SAMPLES/2)))
+#define NUMBER_SAMPLES_PER_GROUP              ceil(((NUMBER_LEDS/ (SAMPLES))))
 
-#define LOW_GROUP_BASE                        (13.0/NUMBER_LEDS)
-#define MID_GROUP_BASE                        (39.0/NUMBER_LEDS)
+#define LOW_GROUP_BASE                        (20)
+#define MID_GROUP_BASE                        (39)
 
-#define BRIGHTNESS_SCALER                     1
+#define BRIGHTNESS_SCALER                     0.5
 #define CUTOFF_LIMIT_LOW_BASE                 0.506      
 #define CUTOFF_LIMIT_MID_BASE                 0.506     
 #define CUTOFF_LIMIT_HIGH_BASE                0.506      
 
-#define FFT_MAG_LIMIT_LOWS_BASE               7000       //7500        //5000
-#define FFT_MAG_LIMIT_MIDS_BASE               7000                      //20000 (PIANO) (256 samples)
-#define FFT_MAG_LIMIT_HIGHS_BASE              7000                      //22000 (PIANO)
+#define FFT_MAG_LIMIT_LOWS_BASE               300000       //7500        //5000
+#define FFT_MAG_LIMIT_MIDS_BASE               150000                      //20000 (PIANO) (256 samples)
+#define FFT_MAG_LIMIT_HIGHS_BASE              200000                      //22000 (PIANO)
 #define FFT_MAG_LIMIT_MIN                     350
 
-#define BRIGHTNESS_LOW_BASE                   1
-#define BRIGHTNESS_MID_BASE                   1
-#define BRIGHTNESS_HIGH_BASE                  1
+#define BRIGHTNESS_LOW_BASE                   0.99
+#define BRIGHTNESS_MID_BASE                   0.99
+#define BRIGHTNESS_HIGH_BASE                  0.99
 
 #define FFT_MAG_LIMIT_VOLUME_BASE             1000
 

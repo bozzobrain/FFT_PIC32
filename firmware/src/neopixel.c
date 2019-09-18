@@ -1,6 +1,7 @@
 
 #include "neopixel.h"
 #include "config/FFT/peripheral/tmr/plib_tmr2.h"
+#include "config/FFT/peripheral/tmr/plib_tmr3.h"
 #include "config/FFT/peripheral/ocmp/plib_ocmp2.h"
 #include "config/FFT/peripheral/gpio/plib_gpio.h"
 /* 
@@ -38,7 +39,7 @@ uint16_t periodCounter           = 0;
 uint16_t neoContext             = 1;
 uint8_t pixelCounter            = 0;
 uint32_t bitCounter             = 0x800000;
-uint32_t pixelData[NUMBER_LEDS];
+volatile uint32_t pixelData[NUMBER_LEDS];
 
 void neopixelReset(void);
 void OCInterruptCallback(uintptr_t context);
@@ -71,13 +72,14 @@ void setupNeopixel(void)
 
 void setLEDColor(uint8_t n, uint8_t R, uint8_t G, uint8_t B)
 {
-    pixelData[n-1] = (G<<16) | (R<<8) | (B);
+    pixelData[n-1] = 0x00000000 | ((uint32_t)(G&0xFF)<<16) | ((uint32_t)(R&0xFF)<<8) | ((B&0xFF));
 }
 
 void updateNeoData(void)
 {
     disableNEOUpdate = false;
     neopixelDisabled = false;
+    TMR2_InterruptEnable();
     //Start clocking stuff
     //OCMP2_Enable();
 //    TMR2_Start();    
@@ -112,72 +114,52 @@ void OCInterruptCallback(uintptr_t context)
 
 void TMR2InterruptCallback(uint32_t status, uintptr_t context)
 {
+    //__builtin_disable_interrupts();
     //LED4_Set();
     if(disableNEOUpdate)
     {
-//        if(neopixelDisabled)
-            OCMP2_CompareSecondaryValueSet(0); 
-//        else
-//        {
-//            OCMP2_CompareSecondaryValueSet(1); 
-//            neopixelDisabled = true;
-//            
-//        }
-        //OCMP2_Disable();
+            OC2RS = 0;
+            TMR2_InterruptDisable();
+            //TMR3_Start();
     }
     else
-    {
-        //If clocking data as normal
-        if(!resetTriggered)
-        {
-            //There is a 1 in the next bit to clock
-            if(pixelData[pixelCounter] & bitCounter)
-            {            
-                OCMP2_CompareSecondaryValueSet(BIT_TIME_HIGH);
-            }
-            //There is a 0 in the next bit to clock
-            else
-            {            
-                OCMP2_CompareSecondaryValueSet(BIT_TIME_LOW); 
-            }
-            //Move to next bit
-            bitCounter >>= 1;
-            //If the bit counter has moved through all bits
-            if(bitCounter == 0)
-            {
-                //LED3_Set();
-                //Reset bit location
-                bitCounter = 0x800000;
-
-                //Increment to next LED pixel
-                pixelCounter++;
-
-                //If all pixels have been handled
-                if(pixelCounter >= NUMBER_LEDS)
-                {
-                    //return to first pixel
-                    pixelCounter = 0;
-
-                    //initiate a stop condition the next time thru
-                    disableNEOUpdate = true;
-                }
-            }
-        }    
-        //if a reset has been triggered
+    { 
+        //There is a 1 in the next bit to clock
+        if(pixelData[pixelCounter] & bitCounter)
+        {            
+            OC2RS = BIT_TIME_HIGH;
+        }
+        //There is a 0 in the next bit to clock
         else
-        {        
-            //count up if reset is in progress
-            periodCounter++;
+        {            
+            OC2RS = BIT_TIME_LOW;
+        }
 
-            //if period has expired for reset time
-            if(periodCounter >= RESET_PERIOD)
+        //Move to next bit
+        bitCounter >>= 1;
+        //If the bit counter has moved through all bits
+        if(bitCounter == 0)
+        {
+            //Reset bit location
+            bitCounter = 0x800000;
+
+            //Increment to next LED pixel
+            //pixelCounter++;
+
+            //If all pixels have been handled
+            if(pixelCounter++ >= NUMBER_LEDS)
             {
-                resetTriggered = false;
-                neopixelHaltUpdate();
+                //return to first pixel
+                pixelCounter = 0;
+
+                //initiate a stop condition the next time thru
+                disableNEOUpdate = true;
             }
         }
+
     }
     //LED4_Clear();
+    //__builtin_enable_interrupts();
 }
 
 
