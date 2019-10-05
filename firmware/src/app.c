@@ -111,13 +111,43 @@ void APP_Tasks ( void )
         {
             if(doFFT)
             {
-                vTaskResume(FFT_Task_Handle);
+                //vTaskResume(FFT_Task_Handle);
+                
+                    //Print ADC values
+                    //printFFT(vReal);
+
+                    //Compute the FFT
+                    Compute(vReal, vImag, SAMPLES, FFT_FORWARD); /* Compute FFT */
+                    ComplexToMagnitude(vReal, vImag, SAMPLES); /* Compute magnitudes */        
+
+            //        int i=0;
+            //        for(i=0;i<SAMPLES;i++)
+            //        {
+            //             vRealSmoother[i]=((vRealSmoother[i]*WEIGHT_PREVIOUS) + (vReal[i]*(1.0-WEIGHT_PREVIOUS)));
+            //        }
+
+                    //Update the LEDs with newest FFT data
+                    DisplayFFT(vReal);          
+                    updateNeoData();
+
+                    //Print FFT values
+                    //printFFT(vReal);
+
+                    //Start the ADC acquistion when completed updating
+                    //TMR3_Start();
+
+                    //Suspend this task when finished updating
+                    //unsigned long n;
+                    //for(n=0xFFFF; n>0; n--);
+                
+                
                 doFFT=false;
             }
-            vTaskDelay(40/portTICK_PERIOD_MS);
+            vTaskDelay(20/portTICK_PERIOD_MS);
+//            
 //            static uint8_t red = 255;
 //            red++;
-//            if(red>255)
+//            if(red > 255)
 //                red = 0;
 //            
 //            int i=0;
@@ -125,7 +155,9 @@ void APP_Tasks ( void )
 //            {
 //                setLEDColor(i,red,0,0);
 //            }
+//            
 //            updateNeoData();
+            
             LED1_Toggle();
             break;
         }
@@ -146,25 +178,32 @@ void TMR3_Interrupt_Callback(void)
 {   
     if(ADCHS_ChannelResultIsReady(MICROPHONE_CHANNEL))
     {
-        //LED2_Toggle();
+        //Sample the ADC and store
         vReal[sampleCounter]=(double)ADCHS_ChannelResultGet(MICROPHONE_CHANNEL);
+        
+        //Clear corresponding Imaginary value
         vImag[sampleCounter]=0;
+        
+        //Move onto the next sample index
         sampleCounter++;
+        
+        
         if(sampleCounter > SAMPLES)
         {
-            //LED3_Toggle();
             sampleCounter = 0;
-            //ADCHS_ChannelResultInterruptDisable(CHANNEL_2);
+            
+            //Resume the FFT task to do calculations
             doFFT = true;
             //vTaskResume(FFT_Task_Handle);
+            
             TMR3_Stop();
             //TMR3_InterruptDisable();
             
         }
     }
+    
+    //Start the next ADC channel gather
     ADCHS_ChannelConversionStart(MICROPHONE_CHANNEL);
-    //ADCHS_GlobalLevelConversionStart();
-    //LED4_Toggle();
 }
 
 
@@ -174,12 +213,12 @@ void setupFFT(void)
     TMR3_Start();
     
     
-     xTaskCreate((TaskFunction_t) FFT_Task,
-                "FFT_Task",
-                2048,
-                NULL,
-                1,
-                &FFT_Task_Handle);
+//     xTaskCreate((TaskFunction_t) FFT_Task,
+//                "FFT_Task",
+//                2048,
+//                NULL,
+//                1,
+//                &FFT_Task_Handle);
 }
 
 void FFT_Task(void)
@@ -187,8 +226,10 @@ void FFT_Task(void)
     vTaskSuspend(NULL);
     while(1)
     {       
-        //TMR3_Stop();
+        //Print ADC values
         //printFFT(vReal);
+        
+        //Compute the FFT
         Compute(vReal, vImag, SAMPLES, FFT_FORWARD); /* Compute FFT */
         ComplexToMagnitude(vReal, vImag, SAMPLES); /* Compute magnitudes */        
         
@@ -197,34 +238,24 @@ void FFT_Task(void)
 //        {
 //             vRealSmoother[i]=((vRealSmoother[i]*WEIGHT_PREVIOUS) + (vReal[i]*(1.0-WEIGHT_PREVIOUS)));
 //        }
-        DisplayFFT(vReal);        
-        updateNeoData();
-        //printFFT(vReal);
-        TMR3_Start();
         
-        //ADCHS_ChannelConversionStart(CHANNEL_2);
+        //Update the LEDs with newest FFT data
+        DisplayFFT(vReal);          
+        updateNeoData();
+        
+        //Print FFT values
+        //printFFT(vReal);
+        
+        //Start the ADC acquistion when completed updating
+        //TMR3_Start();
+        
+        //Suspend this task when finished updating
+        unsigned long n;
+        for(n=0xFFFF; n>0; n--);
         vTaskSuspend(NULL);
     }
 }
 
-//void Interrupthandler()
-//{
-//    portCHAR cC;
-//    cC = LLUSART_ReceiveData8(USART6);
-//    xQueueSendFromISR(xQueueUartRx,&cC, NULL);
-//}
-//
-//void RX_Task()
-//{
-//    char Ccar;
-//    for (;;)
-//    {
-//        if (xQueueReceive( xQueueUartRx,&Ccar, portMAX_DELAY ) == pdTRUE)
-//        {
-//            // do somethings
-//        }
-//    }
-//}
 
 
 void setupUART(void)

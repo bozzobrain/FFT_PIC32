@@ -28,7 +28,7 @@
 #define SAMPLES                               512
 #define WEIGHT_PREVIOUS                       0.5
 //Adjust the number of LEDs per bin (higher equals less representation and a lower frequency represented
-#define NUMBER_SAMPLES_PER_GROUP              ceil(((NUMBER_LEDS/ (SAMPLES))))
+#define NUMBER_SAMPLES_PER_GROUP              1//(((NUMBER_LEDS/ (SAMPLES))))
 
 #define LOW_GROUP_BASE                        (20)
 #define MID_GROUP_BASE                        (39)
@@ -38,9 +38,9 @@
 #define CUTOFF_LIMIT_MID_BASE                 0.506     
 #define CUTOFF_LIMIT_HIGH_BASE                0.506      
 
-#define FFT_MAG_LIMIT_LOWS_BASE               300000       //7500        //5000
-#define FFT_MAG_LIMIT_MIDS_BASE               150000                      //20000 (PIANO) (256 samples)
-#define FFT_MAG_LIMIT_HIGHS_BASE              200000                      //22000 (PIANO)
+#define FFT_MAG_LIMIT_LOWS_BASE               30000       //7500        //5000
+#define FFT_MAG_LIMIT_MIDS_BASE               15000                      //20000 (PIANO) (256 samples)
+#define FFT_MAG_LIMIT_HIGHS_BASE              20000                      //22000 (PIANO)
 #define FFT_MAG_LIMIT_MIN                     350
 
 #define BRIGHTNESS_LOW_BASE                   0.99

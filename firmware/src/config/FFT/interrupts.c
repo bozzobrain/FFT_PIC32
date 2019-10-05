@@ -68,7 +68,6 @@ void UART1_TX_InterruptHandler( void );
 
 
 /* All the handlers are defined here.  Each will call its PLIB-specific function. */
-
 void TIMER_2_Handler (void)
 {
     TIMER_2_InterruptHandler();

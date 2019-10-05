@@ -38,7 +38,7 @@ bool resetTriggered             = false;
 uint16_t periodCounter           = 0;
 uint16_t neoContext             = 1;
 uint8_t pixelCounter            = 0;
-uint32_t bitCounter             = 0x800000;
+uint32_t bitMask             = 0x800000;
 volatile uint32_t pixelData[NUMBER_LEDS];
 
 void neopixelReset(void);
@@ -82,7 +82,7 @@ void updateNeoData(void)
     TMR2_InterruptEnable();
     //Start clocking stuff
     //OCMP2_Enable();
-//    TMR2_Start();    
+    TMR2_Start();    
 }
 
 void neopixelHaltUpdate(void)
@@ -114,18 +114,23 @@ void OCInterruptCallback(uintptr_t context)
 
 void TMR2InterruptCallback(uint32_t status, uintptr_t context)
 {
+    //UBaseType_t uxSavedInterruptStatus=taskENTER_CRITICAL_FROM_ISR();
     //__builtin_disable_interrupts();
-    //LED4_Set();
-    if(disableNEOUpdate)
+    
+    //taskDISABLE_INTERRUPTS();
+    LED3_Toggle();
+    if(disableNEOUpdate && OC2RS != 0)
     {
             OC2RS = 0;
             TMR2_InterruptDisable();
-            //TMR3_Start();
+            TMR2_Stop();
+            //TMR3_InterruptEnable();
+            TMR3_Start();
     }
-    else
+    else if(!disableNEOUpdate)
     { 
         //There is a 1 in the next bit to clock
-        if(pixelData[pixelCounter] & bitCounter)
+        if(pixelData[pixelCounter] & bitMask)
         {            
             OC2RS = BIT_TIME_HIGH;
         }
@@ -136,12 +141,12 @@ void TMR2InterruptCallback(uint32_t status, uintptr_t context)
         }
 
         //Move to next bit
-        bitCounter >>= 1;
+        bitMask >>= 1;
         //If the bit counter has moved through all bits
-        if(bitCounter == 0)
+        if(bitMask == 0)
         {
             //Reset bit location
-            bitCounter = 0x800000;
+            bitMask = 0x800000;
 
             //Increment to next LED pixel
             //pixelCounter++;
@@ -158,8 +163,10 @@ void TMR2InterruptCallback(uint32_t status, uintptr_t context)
         }
 
     }
-    //LED4_Clear();
     //__builtin_enable_interrupts();
+    
+    //taskENABLE_INTERRUPTS();
+    //taskEXIT_CRITICAL_FROM_ISR(uxSavedInterruptStatus);
 }
 
 
