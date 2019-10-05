@@ -237,6 +237,14 @@ void SYS_Initialize ( void* data )
     CFGCONbits.ECCCON = 3;
 
 
+    OCMP6_Initialize();
+
+    OCMP4_Initialize();
+
+    OCMP2_Initialize();
+
+    OCMP3_Initialize();
+
     ADCHS_Initialize();
 
 	UART1_Initialize();
@@ -244,8 +252,6 @@ void SYS_Initialize ( void* data )
     TMR2_Initialize();
 
     TMR3_Initialize();
-
-    OCMP2_Initialize();
 
 
     sysObj.drvUsart0 = DRV_USART_Initialize(DRV_USART_INDEX_0, (SYS_MODULE_INIT *)&drvUsart0InitData);

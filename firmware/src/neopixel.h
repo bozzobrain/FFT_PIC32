@@ -15,11 +15,12 @@ extern "C" {
 
 #include "app.h"
     
-#define NUMBER_LEDS             122
+#define NUMBER_LEDS             250
     
 void setupNeopixel(void);
 void updateNeoData(void);
 void neopixelHaltUpdate(void);
+bool getUpdateStatus(void);
 void setLEDColor(uint8_t n, uint8_t R, uint8_t G, uint8_t B);
 
 

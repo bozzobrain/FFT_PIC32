@@ -17,6 +17,7 @@
 
 #include "FFT.h"
 #include "neopixel.h"
+#include "ADCGather.h"
 #include <stdio.h>
 
 uint16_t _samples;
@@ -41,7 +42,11 @@ uint8_t midGroup = MID_GROUP_BASE;
 
 float limitScaler = LIMIT_SCALER_BASE;
 
+uint16_t filterCounter = 0;
 
+bool doFFT = false;
+volatile double vRealFilt[FILTER_DEPTH+1][SAMPLES];
+volatile double vRealSmoother[SAMPLES];
 
 uint8_t Exponent(uint16_t value);
 void Swap(volatile double *x, volatile double *y);
@@ -170,10 +175,73 @@ void Swap(volatile double *x, volatile double *y)
 	*y = temp;
 }
 
+void setFFTUpdate(void)
+{
+    doFFT=true;
+}
+
+void updateFFTDisplay(void)
+{
+    if(doFFT)
+    {
+        //vTaskResume(FFT_Task_Handle);
+
+        //Print ADC values
+        //printFFT(vReal);
+
+        //Compute the FFT
+        Compute(getvReal(), getvImag(), SAMPLES, FFT_FORWARD); /* Compute FFT */
+        ComplexToMagnitude(getvReal(), getvImag(), SAMPLES); /* Compute magnitudes */   
+        
+#ifdef USE_FILTER
+        int i=0;
+        for(i=0;i<SAMPLES;i++)
+        {
+        #ifdef USE_BETTER_FILTER
+            vRealFilt[filterCounter][i] = getvRealElem(i);
+            double total=0;
+            int j=0;
+            for(j=0; j<FILTER_DEPTH-1;j++)
+            {
+              total += vRealFilt[j][i];
+            }
+
+            vRealFilt[FILTER_DEPTH][i] = total/FILTER_DEPTH;
+
+            //vRealSmoother[i] = vRealFilt[FILTER_DEPTH][i];                    
+            vRealSmoother[i] = (vRealSmoother[i] + (double)vRealFilt[FILTER_DEPTH][i]) / 2.0; //vRealFilt[FILTER_DEPTH][i];//
+        #else                       
+            vRealSmoother[i]=((vRealSmoother[i]*0.4) + (vReal[i]*(0.6)));
+
+        #endif
+        }
+        #ifdef USE_BETTER_FILTER
+        filterCounter++;
+        if(filterCounter>=FILTER_DEPTH)
+        {
+          filterCounter=0;
+        }
+        #endif
+        //Update the LEDs with newest FFT data
+        DisplayFFT(vRealSmoother);  
+#else
+        DisplayFFT(getvReal());
+#endif
+        updateNeoData();
+
+        //Print FFT values
+        //printFFT(vReal);
+
+        //Wait while pixels get updated
+        while(!getUpdateStatus());
+
+        doFFT=false;
+    }
+}
 void DisplayFFT(volatile double * values)
 {
   float brightnessScaling = 0;
-  unsigned char j=2, subSamples=0;
+  unsigned char j=1, subSamples=0;
   unsigned char red, green, blue;
   int i;
   for(i = 0; i < NUMBER_LEDS; i++)
@@ -184,17 +252,22 @@ void DisplayFFT(volatile double * values)
     {      
 
         brightnessScaling = ((values[j])/(lowLimit));
-        
+//        
         if(values[j] > lowLimit/2)
         {
           float overLimitValue = (values[j]-lowLimit/2);
           brightnessScaling += (overLimitValue/lowLimit) *2;
         }
         
+//        brightnessScaling = (pow(values[j],2)/(lowLimit))/200.0;
+
+        
         if(brightnessScaling < cutoffLimitLow)
           brightnessScaling = 0;
        
         unsigned char brightness = (unsigned char)(255.0*brightnessLow*brightnessScaling);
+        
+        
         if (brightness > BRIGHTNESS_LIMIT)
         {
           brightness = BRIGHTNESS_LIMIT;
@@ -205,16 +278,20 @@ void DisplayFFT(volatile double * values)
         red=brightness;
         green=0;
         blue=0;
+        //j++;
     }
     else if (i<(midGroup))
     {
         brightnessScaling = ((values[j])/(midLimit));
+//        
+//        if(values[j] > midLimit/2)
+//        {
+//          float overLimitValue = (values[j]-midLimit/2);
+//          brightnessScaling += (overLimitValue/midLimit) *2;
+//        }
         
-        if(values[j] > midLimit/2)
-        {
-          float overLimitValue = (values[j]-midLimit/2);
-          brightnessScaling += (overLimitValue/midLimit) *2;
-        }
+//        brightnessScaling = (pow(values[j],2)/(midLimit))/200.0;
+        
         if(brightnessScaling < cutoffLimitMid)
           brightnessScaling = 0;  
           
@@ -230,11 +307,15 @@ void DisplayFFT(volatile double * values)
     else 
     {
         brightnessScaling = ((values[j])/(highLimit));
-        if(values[j] > highLimit/2)
-        {
-          float overLimitValue = (values[j]-highLimit/2);
-          brightnessScaling += (overLimitValue/highLimit) *2;
-        }
+//        if(values[j] > highLimit/2)
+//        {
+//          float overLimitValue = (values[j]-highLimit/2);
+//          brightnessScaling += (overLimitValue/highLimit) *2;
+//        }
+//        
+        
+//        brightnessScaling = (pow(values[j],2)/(highLimit))/200.0;
+        
         if(brightnessScaling < cutoffLimitHigh)
           brightnessScaling = 0;
         
@@ -249,11 +330,11 @@ void DisplayFFT(volatile double * values)
         blue=0;
     }
     
-    setLEDColor(i,red,green,blue);
+    setLEDColor(i+1,red,green,blue);
 
     
     subSamples++;
-    if(subSamples>NUMBER_SAMPLES_PER_GROUP)
+    if(subSamples>=NUMBER_LEDS_PER_SAMPLE)
     {
       j++;
       if(j>SAMPLES/2)
@@ -268,7 +349,7 @@ void printFFT(volatile double * values)
     int i=0;
     for(i=0;i<SAMPLES/2;i++)
     {
-        printf("%f ",values[i]);
+        printf("%d ",(int)values[i]);
     }
     printf("\r\n");
 }

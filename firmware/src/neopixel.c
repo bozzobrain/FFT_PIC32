@@ -3,6 +3,9 @@
 #include "config/FFT/peripheral/tmr/plib_tmr2.h"
 #include "config/FFT/peripheral/tmr/plib_tmr3.h"
 #include "config/FFT/peripheral/ocmp/plib_ocmp2.h"
+#include "config/FFT/peripheral/ocmp/plib_ocmp3.h"
+#include "config/FFT/peripheral/ocmp/plib_ocmp4.h"
+#include "config/FFT/peripheral/ocmp/plib_ocmp6.h"
 #include "config/FFT/peripheral/gpio/plib_gpio.h"
 /* 
  * TIMING
@@ -32,6 +35,12 @@
 #define T1L                     60
 #define BIT_TIME_HIGH           T1H
 #define BIT_TIME_LOW            T0H
+
+#define LEDSTRIP1               OC2RS
+#define LEDSTRIP2               OC3RS
+#define LEDSTRIP3               OC4RS
+#define LEDSTRIP4               OC6RS
+
 bool disableNEOUpdate           = false;
 bool neopixelDisabled           = false;
 bool resetTriggered             = false;
@@ -62,11 +71,19 @@ void setupNeopixel(void)
     //OCMP2_CallbackRegister(OCInterruptCallback, neoContext);
     
     //Start modules TMR and OC
-    OCMP2_Enable();    
+    OCMP2_Enable();  
+    OCMP3_Enable();
+    OCMP4_Enable();
+    OCMP6_Enable();
     TMR2_Start();    
     
     //16-bit set (0-120)
-    OCMP2_CompareSecondaryValueSet(60);
+    //OCMP2_CompareSecondaryValueSet(60);
+    
+    LEDSTRIP1 = 60;
+    LEDSTRIP2 = 60;
+    LEDSTRIP3 = 60;
+    LEDSTRIP4 = 60;
     
 }
 
@@ -104,40 +121,74 @@ void neopixelReset(void)
     periodCounter   = 0;
     resetTriggered  = true;
     //Set to be always low
-    OCMP2_CompareSecondaryValueSet(0);
+    //OCMP2_CompareSecondaryValueSet(0);
+    LEDSTRIP1 = 0;
+    LEDSTRIP2 = 0;
+    LEDSTRIP3 = 0;
+    LEDSTRIP4 = 0;
 }
 
 void OCInterruptCallback(uintptr_t context)
 {
 
 }
-
+bool getUpdateStatus(void)
+{
+    return disableNEOUpdate;
+}
+void testNEO(void)
+{
+    //            static uint8_t red = 255;
+//            red++;
+//            if(red > 255)
+//                red = 0;
+//            
+//            int i=0;
+//            for (i=1;i<=NUMBER_LEDS;i++)
+//            {
+//                setLEDColor(i,red,0,0);
+//            }
+//            
+//            updateNeoData();
+}
 void TMR2InterruptCallback(uint32_t status, uintptr_t context)
 {
     //UBaseType_t uxSavedInterruptStatus=taskENTER_CRITICAL_FROM_ISR();
     //__builtin_disable_interrupts();
     
     //taskDISABLE_INTERRUPTS();
-    LED3_Toggle();
-    if(disableNEOUpdate && OC2RS != 0)
+    //LED3_Toggle();
+    if(disableNEOUpdate && LEDSTRIP1 != 0)
     {
-            OC2RS = 0;
-            TMR2_InterruptDisable();
-            TMR2_Stop();
-            //TMR3_InterruptEnable();
-            TMR3_Start();
+        LEDSTRIP1 = 0;
+        LEDSTRIP2 = 0;
+        LEDSTRIP3 = 0;
+        LEDSTRIP4 = 0;
+        //OC2RS = 0;
+        TMR2_InterruptDisable();
+        TMR2_Stop();
+        //TMR3_InterruptEnable();
+        TMR3_Start();
     }
     else if(!disableNEOUpdate)
     { 
         //There is a 1 in the next bit to clock
         if(pixelData[pixelCounter] & bitMask)
         {            
-            OC2RS = BIT_TIME_HIGH;
+            LEDSTRIP1 = BIT_TIME_HIGH;
+            LEDSTRIP2 = BIT_TIME_HIGH;
+            LEDSTRIP3 = BIT_TIME_HIGH;
+            LEDSTRIP4 = BIT_TIME_HIGH;
+            //OC2RS = BIT_TIME_HIGH;
         }
         //There is a 0 in the next bit to clock
         else
-        {            
-            OC2RS = BIT_TIME_LOW;
+        {     
+            LEDSTRIP1 = BIT_TIME_LOW;
+            LEDSTRIP2 = BIT_TIME_LOW;
+            LEDSTRIP3 = BIT_TIME_LOW;
+            LEDSTRIP4 = BIT_TIME_LOW;
+            //OC2RS = BIT_TIME_LOW;
         }
 
         //Move to next bit

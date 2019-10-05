@@ -66,6 +66,7 @@ void GPIO_Initialize ( void )
     ANSELCCLR = 0x4; /* Digital Mode Enable */
 
     /* PORTD Initialization */
+    ANSELDCLR = 0xc000; /* Digital Mode Enable */
 
     /* PORTE Initialization */
     LATE = 0x0; /* Initial Latch Value */
@@ -90,7 +91,10 @@ void GPIO_Initialize ( void )
 
     /* PPS Output Remapping */
     RPB3R = 1;
-    RPE8R = 11;
+    RPF2R = 11;
+    RPD14R = 11;
+    RPD15R = 11;
+    RPF4R = 12;
 
     /* Lock back the system after PPS configuration */
     SYSKEY = 0x00000000;

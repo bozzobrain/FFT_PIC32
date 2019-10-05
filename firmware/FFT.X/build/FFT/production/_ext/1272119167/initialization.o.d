@@ -4,11 +4,19 @@ build/FFT/production/_ext/1272119167/initialization.o:  \
  ../src/config/FFT/user.h  \
 ../src/config/FFT/toolchain_specifics.h  \
  ../src/config/FFT/definitions.h  \
+ ../src/config/FFT/peripheral/ocmp/plib_ocmp6.h  \
+ ../src/packs/PIC32MZ2048EFG100_DFP/device.h  \
+ ../src/config/FFT/toolchain_specifics.h  \
+ ../src/config/FFT/peripheral/ocmp/plib_ocmp_common.h  \
+ ../src/config/FFT/peripheral/clk/plib_clk.h  \
+ ../src/config/FFT/peripheral/gpio/plib_gpio.h  \
+ ../src/config/FFT/peripheral/evic/plib_evic.h  \
+ ../src/config/FFT/peripheral/ocmp/plib_ocmp4.h  \
+ ../src/config/FFT/peripheral/ocmp/plib_ocmp2.h  \
+ ../src/config/FFT/peripheral/ocmp/plib_ocmp3.h  \
  ../src/config/FFT/peripheral/adchs/plib_adchs.h  \
  ../src/config/FFT/peripheral/adchs/plib_adchs_common.h  \
  ../src/config/FFT/peripheral/uart/plib_uart1.h  \
- ../src/packs/PIC32MZ2048EFG100_DFP/device.h  \
- ../src/config/FFT/toolchain_specifics.h  \
  ../src/config/FFT/peripheral/uart/plib_uart_common.h  \
  ../src/config/FFT/driver/usart/drv_usart.h  \
  ../src/config/FFT/system/system.h  \
@@ -45,11 +53,6 @@ build/FFT/production/_ext/1272119167/initialization.o:  \
  ../src/config/FFT/peripheral/tmr/plib_tmr2.h  \
  ../src/config/FFT/peripheral/tmr/plib_tmr_common.h  \
  ../src/config/FFT/peripheral/tmr/plib_tmr3.h  \
- ../src/config/FFT/peripheral/clk/plib_clk.h  \
- ../src/config/FFT/peripheral/gpio/plib_gpio.h  \
- ../src/config/FFT/peripheral/evic/plib_evic.h  \
- ../src/config/FFT/peripheral/ocmp/plib_ocmp2.h  \
- ../src/config/FFT/peripheral/ocmp/plib_ocmp_common.h  \
  ../src/config/FFT/system/int/sys_int.h  \
  ../src/config/FFT/system/dma/sys_dma.h  \
 ../src/config/FFT/osal/osal.h  \

@@ -21,4 +21,7 @@ build/FFT/production/_ext/1360937237/neopixel.o:  \
  ../src/config/FFT/peripheral/tmr/plib_tmr3.h  \
  ../src/config/FFT/peripheral/ocmp/plib_ocmp2.h  \
  ../src/config/FFT/peripheral/ocmp/plib_ocmp_common.h  \
+ ../src/config/FFT/peripheral/ocmp/plib_ocmp3.h  \
+ ../src/config/FFT/peripheral/ocmp/plib_ocmp4.h  \
+ ../src/config/FFT/peripheral/ocmp/plib_ocmp6.h  \
  ../src/config/FFT/peripheral/gpio/plib_gpio.h 
