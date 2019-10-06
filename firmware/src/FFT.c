@@ -14,7 +14,7 @@
     Describe the purpose of this file.
  */
 /* ************************************************************************** */
-
+#include "config/FFT/peripheral/tmr/plib_tmr3.h"
 #include "FFT.h"
 #include "neopixel.h"
 #include "ADCGather.h"
@@ -175,9 +175,14 @@ void Swap(volatile double *x, volatile double *y)
 	*y = temp;
 }
 
-void setFFTUpdate(void)
+void setFFTUpdate(bool state)
 {
-    doFFT=true;
+    doFFT=state;
+}
+
+bool getDoFFT(void)
+{
+    return doFFT;
 }
 
 void updateFFTDisplay(void)
@@ -233,9 +238,8 @@ void updateFFTDisplay(void)
         //printFFT(vReal);
 
         //Wait while pixels get updated
-        while(!getUpdateStatus());
-
-        doFFT=false;
+        while(doFFT);        
+        TMR3_Start();
     }
 }
 void DisplayFFT(volatile double * values)

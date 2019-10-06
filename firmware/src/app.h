@@ -32,8 +32,6 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include "configuration.h"
-#include "FreeRTOS.h"
-#include "task.h"
 
 // DOM-IGNORE-BEGIN
 #ifdef __cplusplus  // Provide C++ Compatibility

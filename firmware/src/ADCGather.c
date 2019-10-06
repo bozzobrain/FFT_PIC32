@@ -41,7 +41,7 @@ void TMR3_Interrupt_Callback(void)
             sampleCounter = 0;
             
             //Resume the FFT task to do calculations
-            setFFTUpdate();
+            setFFTUpdate(true);
             //vTaskResume(FFT_Task_Handle);
             
             TMR3_Stop();

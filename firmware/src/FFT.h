@@ -22,19 +22,19 @@
 #include <math.h>
 
 
-#define USE_FILTER
-#define USE_BETTER_FILTER
+//#define USE_FILTER
+//#define USE_BETTER_FILTER
 
 #define BRIGHTNESS_LIMIT                        255U
 
-#define SAMPLING_FREQUENCY_BASE               20000U
+#define SAMPLING_FREQUENCY_BASE               10000U
 #define LIMIT_SCALER_BASE                     1
 #define SAMPLES                               1024
 
 #define FILTER_DEPTH                          2
 #define WEIGHT_PREVIOUS                       0.75
 //Adjust the number of LEDs per bin (higher equals less representation and a lower frequency represented
-#define NUMBER_LEDS_PER_SAMPLE                5//(((NUMBER_LEDS/ (SAMPLES))))
+#define NUMBER_LEDS_PER_SAMPLE                20//(((NUMBER_LEDS/ (SAMPLES))))
 
 #define LOW_GROUP_BASE                        (25)
 #define MID_GROUP_BASE                        (80)
@@ -86,7 +86,8 @@ double MajorPeak(double *vD, uint16_t samples, double samplingFrequency);
 void updateFFTDisplay(void);
 void DisplayFFT(volatile double * values);
 void printFFT(volatile double * values);
-void setFFTUpdate(void);
+void setFFTUpdate(bool state);
+bool getDoFFT(void);
 
     /* Provide C++ Compatibility */
 #ifdef __cplusplus

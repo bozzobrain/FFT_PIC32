@@ -21,18 +21,5 @@ build/FFT/production/_ext/1891070335/drv_usart.o:  \
  ../src/config/FFT/driver/usart/src/drv_usart_local.h  \
  ../src/config/FFT/osal/osal.h  \
 ../src/config/FFT/osal/osal_definitions.h  \
- ../src/config/FFT/osal/osal_freertos.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/FreeRTOS.h  \
- ../src/config/FFT/FreeRTOSConfig.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/projdefs.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/portable.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/deprecated_definitions.h  \
- ../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ/portmacro.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/mpu_wrappers.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/queue.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/task.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/list.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/semphr.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/queue.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/task.h  \
+ ../src/config/FFT/osal/osal_impl_basic.h  \
  ../src/config/FFT/driver/usart/src/drv_usart_local.h 

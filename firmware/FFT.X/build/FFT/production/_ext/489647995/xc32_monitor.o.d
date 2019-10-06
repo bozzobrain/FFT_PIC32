@@ -35,20 +35,7 @@ build/FFT/production/_ext/489647995/xc32_monitor.o:  \
 ../src/config/FFT/user.h  \
  ../src/config/FFT/toolchain_specifics.h  \
  ../src/config/FFT/osal/osal_definitions.h  \
- ../src/config/FFT/osal/osal_freertos.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/FreeRTOS.h  \
- ../src/config/FFT/FreeRTOSConfig.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/projdefs.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/portable.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/deprecated_definitions.h  \
- ../src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ/portmacro.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/mpu_wrappers.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/queue.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/task.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/list.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/semphr.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/queue.h  \
- ../src/third_party/rtos/FreeRTOS/Source/include/task.h  \
+ ../src/config/FFT/osal/osal_impl_basic.h  \
  ../src/config/FFT/peripheral/tmr/plib_tmr2.h  \
  ../src/config/FFT/peripheral/tmr/plib_tmr_common.h  \
  ../src/config/FFT/peripheral/tmr/plib_tmr3.h  \

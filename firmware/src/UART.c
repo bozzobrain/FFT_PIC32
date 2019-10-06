@@ -17,7 +17,7 @@ void APP_USARTBufferEventHandler(
     DRV_USART_BUFFER_HANDLE handle,
     uintptr_t context
 );
-TaskHandle_t TX_Task_Handle;
+//TaskHandle_t TX_Task_Handle;
 void TX_Task();
 
 
@@ -39,12 +39,12 @@ void setupUART(void)
         APP_USARTBufferEventHandler,
         (uintptr_t)&myAppObj
     );
-     xTaskCreate((TaskFunction_t) TX_Task,
-                "TX_Task",
-                1024,
-                NULL,
-                1,
-                &TX_Task_Handle);
+//     xTaskCreate((TaskFunction_t) TX_Task,
+//                "TX_Task",
+//                1024,
+//                NULL,
+//                1,
+//                &TX_Task_Handle);
 }
 
 void TX_Task()
@@ -62,7 +62,7 @@ void TX_Task()
             
         }
         //LED3_Toggle();
-        vTaskDelay(1000/portTICK_PERIOD_MS);
+//        vTaskDelay(1000/portTICK_PERIOD_MS);
     }
 }
 

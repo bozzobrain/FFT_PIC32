@@ -4,10 +4,13 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/config/FFT/peripheral/tmr/plib_tmr2.c</file>
+            <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/ADCGather.h</file>
             <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/neopixel.c</file>
             <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/neopixel.h</file>
             <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/config/FFT/peripheral/ocmp/plib_ocmp2.c</file>
             <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/FFT.h</file>
+            <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/ADCGather.c</file>
+            <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/config/FFT/peripheral/adchs/plib_adchs.h</file>
             <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/app.c</file>
             <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/FFT.c</file>
         </group>

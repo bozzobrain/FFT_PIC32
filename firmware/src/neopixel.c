@@ -1,5 +1,6 @@
 
 #include "neopixel.h"
+#include "FFT.h"
 #include "config/FFT/peripheral/tmr/plib_tmr2.h"
 #include "config/FFT/peripheral/tmr/plib_tmr3.h"
 #include "config/FFT/peripheral/ocmp/plib_ocmp2.h"
@@ -42,12 +43,13 @@
 #define LEDSTRIP4               OC6RS
 
 bool disableNEOUpdate           = false;
-bool neopixelDisabled           = false;
+volatile bool neopixelDisabled  = true;
 bool resetTriggered             = false;
-uint16_t periodCounter           = 0;
+uint16_t periodCounter          = 0;
 uint16_t neoContext             = 1;
 uint8_t pixelCounter            = 0;
-uint32_t bitMask             = 0x800000;
+uint32_t bitMask                = 0x800000;
+
 volatile uint32_t pixelData[NUMBER_LEDS];
 
 void neopixelReset(void);
@@ -75,21 +77,20 @@ void setupNeopixel(void)
     OCMP3_Enable();
     OCMP4_Enable();
     OCMP6_Enable();
-    TMR2_Start();    
-    
-    //16-bit set (0-120)
-    //OCMP2_CompareSecondaryValueSet(60);
-    
+    //TMR2_Start();    
+    //16-bit set (0-120)    
     LEDSTRIP1 = 60;
     LEDSTRIP2 = 60;
     LEDSTRIP3 = 60;
     LEDSTRIP4 = 60;
     
+    neopixelDisabled = true;
+    disableNEOUpdate = true;
 }
 
 void setLEDColor(uint8_t n, uint8_t R, uint8_t G, uint8_t B)
 {
-    pixelData[n-1] = 0x00000000 | ((uint32_t)(G&0xFF)<<16) | ((uint32_t)(R&0xFF)<<8) | ((B&0xFF));
+    pixelData[n-1] = 0x00000000 | ((uint32_t)(G)<<16) | ((uint32_t)(R)<<8) | ((B));
 }
 
 void updateNeoData(void)
@@ -97,60 +98,31 @@ void updateNeoData(void)
     disableNEOUpdate = false;
     neopixelDisabled = false;
     TMR2_InterruptEnable();
-    //Start clocking stuff
-    //OCMP2_Enable();
     TMR2_Start();    
 }
 
-void neopixelHaltUpdate(void)
-{
-    //Stop clocking
-//    TMR2_Stop();
-//    OCMP2_Disable();
-    
-    
-    //Reset tracking variables
-    periodCounter   = 0;
-    resetTriggered  = false;
-    disableNEOUpdate= true;
-}
-
-void neopixelReset(void)
-{
-    //Start the counter to count up to reset time value (67)
-    periodCounter   = 0;
-    resetTriggered  = true;
-    //Set to be always low
-    //OCMP2_CompareSecondaryValueSet(0);
-    LEDSTRIP1 = 0;
-    LEDSTRIP2 = 0;
-    LEDSTRIP3 = 0;
-    LEDSTRIP4 = 0;
-}
-
-void OCInterruptCallback(uintptr_t context)
-{
-
-}
 bool getUpdateStatus(void)
 {
     return disableNEOUpdate;
 }
+
 void testNEO(void)
 {
-    //            static uint8_t red = 255;
-//            red++;
-//            if(red > 255)
-//                red = 0;
-//            
-//            int i=0;
-//            for (i=1;i<=NUMBER_LEDS;i++)
-//            {
-//                setLEDColor(i,red,0,0);
-//            }
-//            
-//            updateNeoData();
+    static uint8_t red = 255;
+    red++;
+    if(red > 255)
+        red = 0;
+
+    int i=0;
+    for (i=1;i<=NUMBER_LEDS;i++)
+    {
+        setLEDColor(i,red,0,0);
+    }
+
+    updateNeoData();
+    while(!neopixelDisabled);
 }
+
 void TMR2InterruptCallback(uint32_t status, uintptr_t context)
 {
     //UBaseType_t uxSavedInterruptStatus=taskENTER_CRITICAL_FROM_ISR();
@@ -158,19 +130,17 @@ void TMR2InterruptCallback(uint32_t status, uintptr_t context)
     
     //taskDISABLE_INTERRUPTS();
     //LED3_Toggle();
-    if(disableNEOUpdate && LEDSTRIP1 != 0)
+    if(disableNEOUpdate )//&& (LEDSTRIP1 != 0))
     {
         LEDSTRIP1 = 0;
         LEDSTRIP2 = 0;
         LEDSTRIP3 = 0;
         LEDSTRIP4 = 0;
-        //OC2RS = 0;
-        TMR2_InterruptDisable();
-        TMR2_Stop();
-        //TMR3_InterruptEnable();
-        TMR3_Start();
+        TMR2_Stop(); 
+        setFFTUpdate(false);
+        neopixelDisabled=true;
     }
-    else if(!disableNEOUpdate)
+    else
     { 
         //There is a 1 in the next bit to clock
         if(pixelData[pixelCounter] & bitMask)
@@ -179,7 +149,6 @@ void TMR2InterruptCallback(uint32_t status, uintptr_t context)
             LEDSTRIP2 = BIT_TIME_HIGH;
             LEDSTRIP3 = BIT_TIME_HIGH;
             LEDSTRIP4 = BIT_TIME_HIGH;
-            //OC2RS = BIT_TIME_HIGH;
         }
         //There is a 0 in the next bit to clock
         else
@@ -188,7 +157,6 @@ void TMR2InterruptCallback(uint32_t status, uintptr_t context)
             LEDSTRIP2 = BIT_TIME_LOW;
             LEDSTRIP3 = BIT_TIME_LOW;
             LEDSTRIP4 = BIT_TIME_LOW;
-            //OC2RS = BIT_TIME_LOW;
         }
 
         //Move to next bit
@@ -212,7 +180,6 @@ void TMR2InterruptCallback(uint32_t status, uintptr_t context)
                 disableNEOUpdate = true;
             }
         }
-
     }
     //__builtin_enable_interrupts();
     

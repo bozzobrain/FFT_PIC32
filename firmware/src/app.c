@@ -42,7 +42,7 @@ void setupUART(void);
 
 
 
-TaskHandle_t FFT_Task_Handle;
+//TaskHandle_t FFT_Task_Handle;
 void FFT_Task(void);
 
 void APP_Initialize ( void )
@@ -51,7 +51,7 @@ void APP_Initialize ( void )
     appData.state = APP_STATE_INIT;
 
     setupNeopixel();
-    setupMicrophoneGather();
+    //setupMicrophoneGather();
 }
 
 
@@ -83,11 +83,14 @@ void APP_Tasks ( void )
 
         case APP_STATE_SERVICE_TASKS:
         {
-            updateFFTDisplay();
-            vTaskDelay(20/portTICK_PERIOD_MS);
-
+//            updateFFTDisplay();
+           //vTaskDelay(20/portTICK_PERIOD_MS);
+            
+            int i=0;
+            for (i=0xFFFFFF;i>0;i--);
 
             
+            testNEO();
             LED1_Toggle();
             break;
         }
