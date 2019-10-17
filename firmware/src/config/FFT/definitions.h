@@ -61,7 +61,6 @@
 #include "driver/usart/drv_usart.h"
 #include "peripheral/tmr/plib_tmr2.h"
 #include "peripheral/tmr/plib_tmr3.h"
-#include "system/int/sys_int.h"
 #include "system/dma/sys_dma.h"
 #include "osal/osal.h"
 #include "app.h"

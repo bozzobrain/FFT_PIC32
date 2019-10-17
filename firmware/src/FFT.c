@@ -15,6 +15,7 @@
  */
 /* ************************************************************************** */
 #include "config/FFT/peripheral/tmr/plib_tmr3.h"
+#include "config/FFT/peripheral/gpio/plib_gpio.h"
 #include "FFT.h"
 #include "neopixel.h"
 #include "ADCGather.h"
@@ -44,13 +45,14 @@ float limitScaler = LIMIT_SCALER_BASE;
 
 uint16_t filterCounter = 0;
 
-bool doFFT = false;
+volatile bool doFFT = false;
 volatile double vRealFilt[FILTER_DEPTH+1][SAMPLES];
 volatile double vRealSmoother[SAMPLES];
 
 uint8_t Exponent(uint16_t value);
 void Swap(volatile double *x, volatile double *y);
 void _Compute(volatile double *_vReal, volatile double *_vImag, uint16_t samples, uint8_t power, uint8_t dir);
+int checkForIdle(uint16_t activeLEDs, int timesIdle);
 
 void initFFT(uint16_t samples)
 {
@@ -184,9 +186,11 @@ bool getDoFFT(void)
 {
     return doFFT;
 }
-
-void updateFFTDisplay(void)
+int timesIdle = 0;
+uint16_t activeLEDs=0;
+int updateFFTDisplay(void)
 {
+    //static int timesIdle = 0;
     if(doFFT)
     {
         //vTaskResume(FFT_Task_Handle);
@@ -197,6 +201,8 @@ void updateFFTDisplay(void)
         //Compute the FFT
         Compute(getvReal(), getvImag(), SAMPLES, FFT_FORWARD); /* Compute FFT */
         ComplexToMagnitude(getvReal(), getvImag(), SAMPLES); /* Compute magnitudes */   
+        
+        
         
 #ifdef USE_FILTER
         int i=0;
@@ -216,7 +222,7 @@ void updateFFTDisplay(void)
             //vRealSmoother[i] = vRealFilt[FILTER_DEPTH][i];                    
             vRealSmoother[i] = (vRealSmoother[i] + (double)vRealFilt[FILTER_DEPTH][i]) / 2.0; //vRealFilt[FILTER_DEPTH][i];//
         #else                       
-            vRealSmoother[i]=((vRealSmoother[i]*0.4) + (vReal[i]*(0.6)));
+            vRealSmoother[i]=((vRealSmoother[i]*PREV_WEIGHT) + (getvRealElem(i)*(1.0-PREV_WEIGHT)));
 
         #endif
         }
@@ -228,26 +234,48 @@ void updateFFTDisplay(void)
         }
         #endif
         //Update the LEDs with newest FFT data
-        DisplayFFT(vRealSmoother);  
+        activeLEDs = DisplayFFT(vRealSmoother);  
 #else
-        DisplayFFT(getvReal());
+        activeLEDs = DisplayFFT(getvReal());
 #endif
-        updateNeoData();
-
+//        if(activeLEDs > 50)
+//        {
+            updateNeoData();
+               //Wait while pixels get updated
+            while(!getNeopixelDisabled());  
+//        }
         //Print FFT values
         //printFFT(vReal);
 
-        //Wait while pixels get updated
-        while(doFFT);        
+        doFFT=false;
         TMR3_Start();
-    }
+        LED2_Toggle();
+        timesIdle=checkForIdle(activeLEDs, timesIdle);
+       
+    }   
+    return timesIdle;
 }
-void DisplayFFT(volatile double * values)
+
+int checkForIdle(uint16_t activeLEDs, int  timesIdle)
+{
+    
+    if(activeLEDs > 1)
+    {
+        timesIdle = 0;
+    }
+    else
+    {
+        timesIdle=timesIdle +1;
+    }
+    return timesIdle;
+}
+uint16_t DisplayFFT(volatile double * values)
 {
   float brightnessScaling = 0;
-  unsigned char j=1, subSamples=0;
+  uint16_t j=1, subSamples=0;
   unsigned char red, green, blue;
-  int i;
+  uint16_t i;
+  uint16_t activeLEDs = 0;
   for(i = 0; i < NUMBER_LEDS; i++)
   {
 
@@ -267,7 +295,13 @@ void DisplayFFT(volatile double * values)
 
         
         if(brightnessScaling < cutoffLimitLow)
+        {
           brightnessScaling = 0;
+        }
+        else
+        {            
+            activeLEDs++;
+        }
        
         unsigned char brightness = (unsigned char)(255.0*brightnessLow*brightnessScaling);
         
@@ -297,9 +331,17 @@ void DisplayFFT(volatile double * values)
 //        brightnessScaling = (pow(values[j],2)/(midLimit))/200.0;
         
         if(brightnessScaling < cutoffLimitMid)
+        {
           brightnessScaling = 0;  
+        }
+        else
+        {
+            activeLEDs++;
+            
+        }
           
         unsigned char brightness = (unsigned char)(255.0*brightnessMid*brightnessScaling);
+        
         if(brightness > BRIGHTNESS_LIMIT)
           brightness = BRIGHTNESS_LIMIT;     
         else if (brightness < 0)
@@ -321,7 +363,13 @@ void DisplayFFT(volatile double * values)
 //        brightnessScaling = (pow(values[j],2)/(highLimit))/200.0;
         
         if(brightnessScaling < cutoffLimitHigh)
+        {
           brightnessScaling = 0;
+        }
+        else
+        {            
+            activeLEDs++;
+        }
         
 
         unsigned char brightness = (unsigned char)(255.0*brightnessHigh*brightnessScaling);
@@ -346,6 +394,7 @@ void DisplayFFT(volatile double * values)
       subSamples=0;
     }
   }
+  return activeLEDs;
 }
 
 void printFFT(volatile double * values)

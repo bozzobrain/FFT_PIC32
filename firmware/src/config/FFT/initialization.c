@@ -59,7 +59,7 @@
 #pragma config DEBUG =      OFF
 #pragma config JTAGEN =     OFF
 #pragma config ICESEL =     ICS_PGx1
-#pragma config TRCEN =      OFF
+#pragma config TRCEN =      ON
 #pragma config BOOTISA =    MIPS32
 #pragma config FECCCON =    OFF_UNLOCKED
 #pragma config FSLEEP =     OFF

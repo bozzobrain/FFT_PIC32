@@ -3,16 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/config/FFT/peripheral/tmr/plib_tmr2.c</file>
-            <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/ADCGather.h</file>
-            <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/neopixel.c</file>
-            <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/neopixel.h</file>
-            <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/config/FFT/peripheral/ocmp/plib_ocmp2.c</file>
-            <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/FFT.h</file>
-            <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/ADCGather.c</file>
-            <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/config/FFT/peripheral/adchs/plib_adchs.h</file>
-            <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/app.c</file>
-            <file>file:/C:/Users/Madison/Dropbox/HarmonyProjects/FFT/firmware/src/FFT.c</file>
+            <file>file:/C:/Users/zkilburn/Dropbox/HarmonyProjects/FFT/firmware/src/FFT.c</file>
+            <file>file:/C:/Users/zkilburn/Dropbox/HarmonyProjects/FFT/firmware/src/neopixel.c</file>
+            <file>file:/C:/Users/zkilburn/Dropbox/HarmonyProjects/FFT/firmware/src/third_party/rtos/FreeRTOS/Source/FreeRTOS_tasks.c</file>
+            <file>file:/C:/Users/zkilburn/Dropbox/HarmonyProjects/FFT/firmware/src/app.c</file>
+            <file>file:/C:/Users/zkilburn/Dropbox/HarmonyProjects/FFT/firmware/src/third_party/rtos/FreeRTOS/Source/include/task.h</file>
+            <file>file:/C:/Users/zkilburn/Dropbox/HarmonyProjects/FFT/firmware/src/third_party/rtos/FreeRTOS/Source/portable/MPLAB/PIC32MZ/portmacro.h</file>
+            <file>file:/C:/Users/zkilburn/Dropbox/HarmonyProjects/FFT/firmware/src/config/FFT/peripheral/tmr/plib_tmr2.c</file>
+            <file>file:/C:/Users/zkilburn/Dropbox/HarmonyProjects/FFT/firmware/src/config/FFT/interrupts.c</file>
+            <file>file:/C:/Users/zkilburn/Dropbox/HarmonyProjects/FFT/firmware/src/config/FFT/peripheral/tmr/plib_tmr3.c</file>
         </group>
     </open-files>
 </project-private>

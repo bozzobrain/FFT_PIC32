@@ -39,7 +39,6 @@ build/FFT/production/_ext/489647995/xc32_monitor.o:  \
  ../src/config/FFT/peripheral/tmr/plib_tmr2.h  \
  ../src/config/FFT/peripheral/tmr/plib_tmr_common.h  \
  ../src/config/FFT/peripheral/tmr/plib_tmr3.h  \
- ../src/config/FFT/system/int/sys_int.h  \
  ../src/config/FFT/system/dma/sys_dma.h  \
 ../src/config/FFT/osal/osal.h  \
  ../src/app.h 

@@ -1,6 +1,7 @@
 #include "ADCGather.h"
 #include "config/FFT/peripheral/adchs/plib_adchs.h"
 #include "config/FFT/peripheral/tmr/plib_tmr3.h"
+#include "config/FFT/peripheral/gpio/plib_gpio.h"
 #include "FFT.h"
 
 
@@ -48,10 +49,14 @@ void TMR3_Interrupt_Callback(void)
             //TMR3_InterruptDisable();
             
         }
+        else
+        {            
+        }
     }
     
     //Start the next ADC channel gather
     ADCHS_ChannelConversionStart(MICROPHONE_CHANNEL);
+    LED4_Toggle();
 }
 
 

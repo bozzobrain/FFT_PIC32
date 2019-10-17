@@ -1,27 +1,27 @@
 Archive member included because of file (symbol)
 
 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
-                              C:\Users\Madison\AppData\Local\Temp\ccasagLp.o (_bootstrap_exception_handler)
+                              C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o (_bootstrap_exception_handler)
 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
-                              C:\Users\Madison\AppData\Local\Temp\ccasagLp.o (_on_reset)
+                              C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o (_on_reset)
 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
-                              C:\Users\Madison\AppData\Local\Temp\ccasagLp.o (_on_bootstrap)
+                              C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o (_on_bootstrap)
 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-nmi-handler.o)
-                              C:\Users\Madison\AppData\Local\Temp\ccasagLp.o (_nmi_handler)
+                              C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o (_nmi_handler)
 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(pic32_data_init.o)
-                              C:\Users\Madison\AppData\Local\Temp\ccasagLp.o (__pic32_data_init)
+                              C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o (__pic32_data_init)
 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(pic32_init_cache.o)
-                              C:\Users\Madison\AppData\Local\Temp\ccasagLp.o (__pic32_init_cache)
+                              C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o (__pic32_init_cache)
 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(pic32_init_tlb_ebi_sqi.o)
-                              C:\Users\Madison\AppData\Local\Temp\ccasagLp.o (__pic32_tlb_init_ebi_sqi)
+                              C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o (__pic32_tlb_init_ebi_sqi)
 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(general-exception.o)
-                              C:\Users\Madison\AppData\Local\Temp\ccasagLp.o (_general_exception_context)
+                              C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o (_general_exception_context)
 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(cache-err-exception.o)
-                              C:\Users\Madison\AppData\Local\Temp\ccasagLp.o (_cache_err_exception_context)
+                              C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o (_cache_err_exception_context)
 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(simple-tlb-refill-exception.o)
-                              C:\Users\Madison\AppData\Local\Temp\ccasagLp.o (_simple_tlb_refill_exception_context)
+                              C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o (_simple_tlb_refill_exception_context)
 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
-                              C:\Users\Madison\AppData\Local\Temp\ccOKe3k9.o (_DefaultInterrupt)
+                              C:\Users\Madison\AppData\Local\Temp\cceSb4ek.o (_DefaultInterrupt)
 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
                               c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(cache-err-exception.o) (_cache_err_exception_handler)
 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
@@ -81,7 +81,7 @@ vRealSmoother       0x1000            build/FFT/production/_ext/1360937237/FFT.o
 myAppObj            0x1               build/FFT/production/_ext/1360937237/UART.o
 vImag               0x1000            build/FFT/production/_ext/1360937237/ADCGather.o
 uart1Obj            0x30              build/FFT/production/_ext/2109807859/plib_uart1.o
-pixelData           0x3e8             build/FFT/production/_ext/1360937237/neopixel.o
+pixelData           0x4b0             build/FFT/production/_ext/1360937237/neopixel.o
 
 Microchip PIC32 Memory-Usage Report
 
@@ -91,94 +91,125 @@ section                    address  length [bytes]      (dec)  Description
 .simple_tlb_refill_excp 0x9d000000           0x10          16   
 .text.UART1_RX_Interrup 0x9d000010           0xec         236   
 .cache_err_excpt        0x9d000100           0x10          16   
-.text.testNEO           0x9d000110           0x6c         108   
+.text.Compute           0x9d000110           0x64         100   
+.text.getNeopixelDisabl 0x9d000174            0xc          12   
 .app_excpt              0x9d000180           0x10          16  General-Exception 
-.text.APP_Tasks         0x9d000190           0x60          96   
-.text.UART1_ReadIsBusy  0x9d0001f0            0xc          12   
+.text._DRV_USART_RX_PLI 0x9d000190           0x54          84   
+.text.SYS_Tasks         0x9d0001e4           0x1c          28   
 .vectors                0x9d000200           0x70         112   
 .text._vfprintf_cdnopsu 0x9d000270          0xc8c        3212   
-.dinit                  0x9d000efc          0x540        1344   
-.text                   0x9d00143c          0x8bc        2236  App's exec code 
-.text.TIMER_2_Handler   0x9d001cf8          0x250         592   
-.text.TIMER_3_Handler   0x9d001f48          0x250         592   
-.text.UART1_FAULT_Handl 0x9d002198          0x250         592   
-.text.UART1_RX_Handler  0x9d0023e8          0x250         592   
-.text.UART1_TX_Handler  0x9d002638          0x250         592   
-.text._DRV_USART_Buffer 0x9d002888          0x1c8         456   
-.text.DRV_USART_Initial 0x9d002a50          0x194         404   
-.rodata                 0x9d002be4          0x158         344  Read-only const 
-.text.UART1_SerialSetup 0x9d002d3c          0x144         324   
-.text.fputc             0x9d002e80          0x144         324   
-.text._flsbuf           0x9d002fc4          0x12c         300   
-.text.ADCHS_Initialize  0x9d0030f0          0x114         276   
-.text.TMR2InterruptCall 0x9d003204          0x10c         268   
-.rodata                 0x9d003310          0x104         260  Read-only const 
-.text.GPIO_Initialize   0x9d003414           0xe8         232   
-.text.CLK_Initialize    0x9d0034fc           0xe0         224   
-.text.general_exception 0x9d0035dc           0xdc         220   
-.text.UART1_TX_Interrup 0x9d0036b8           0xd8         216   
-.text._cache_err_except 0x9d003790           0xd8         216   
-.text.simple_tlb_refill 0x9d003868           0xd8         216   
-.rodata                 0x9d003940           0xd0         208  Read-only const 
-.text.SYS_Initialize    0x9d003a10           0xc4         196   
-.rodata                 0x9d003ad4           0xc0         192  Read-only const 
-.tlb.__pic32_tlb_init_e 0x9d003b94           0xbc         188   
-.text.setupNeopixel     0x9d003c50           0xac         172   
-.text.write             0x9d003cfc           0x9c         156   
-.text.UART1_ErrorGet    0x9d003d98           0x88         136   
-.text.UART1_Initialize  0x9d003e20           0x84         132   
-.text                   0x9d003ea4           0x84         132  App's exec code 
-.text.UART1_Read        0x9d003f28           0x80         128   
-.text.UART1_Write       0x9d003fa8           0x7c         124   
-.text._DRV_USART_ReadSu 0x9d004024           0x74         116   
-.text._DRV_USART_WriteS 0x9d004098           0x74         116   
-.text._DRV_USART_RX_PLI 0x9d00410c           0x54          84   
-.text.main_entry        0x9d004160           0x54          84   
-.text.UART1_FAULT_Inter 0x9d0041b4           0x4c          76   
-.text._general_exceptio 0x9d004200           0x48          72   
-.text._bootstrap_except 0x9d004248           0x48          72   
-.text._cache_err_except 0x9d004290           0x48          72   
-.text._simple_tlb_refil 0x9d0042d8           0x48          72   
-.text.EVIC_Initialize   0x9d004320           0x44          68   
-.text                   0x9d004364           0x44          68  App's exec code 
-.text.TIMER_2_Interrupt 0x9d0043a8           0x40          64   
-.text.TIMER_3_Interrupt 0x9d0043e8           0x40          64   
-.text._printf_cdnopsuxX 0x9d004428           0x40          64   
-.text.TMR2_Initialize   0x9d004468           0x3c          60   
-.text.TMR3_Initialize   0x9d0044a4           0x3c          60   
-.text._DRV_USART_Remove 0x9d0044e0           0x38          56   
-.text.updateNeoData     0x9d004518           0x2c          44   
-.text._mon_putc         0x9d004544           0x2c          44   
-.text.OCMP6_Initialize  0x9d004570           0x28          40   
-.text.OCMP4_Initialize  0x9d004598           0x28          40   
-.text.OCMP2_Initialize  0x9d0045c0           0x28          40   
-.text.OCMP3_Initialize  0x9d0045e8           0x28          40   
-.text.main              0x9d004610           0x20          32   
-.text._DRV_USART_TX_PLI 0x9d004630           0x20          32   
-.text.APP_Initialize    0x9d004650           0x1c          28   
-.text.SYS_Tasks         0x9d00466c           0x1c          28   
-.text                   0x9d004688           0x18          24  App's exec code 
-.text.OCMP6_Enable      0x9d0046a0           0x14          20   
-.text.OCMP4_Enable      0x9d0046b4           0x14          20   
-.text.OCMP2_Enable      0x9d0046c8           0x14          20   
-.text.OCMP2_Disable     0x9d0046dc           0x14          20   
-.text.OCMP3_Enable      0x9d0046f0           0x14          20   
-.text.UART1_ReadCallbac 0x9d004704           0x14          20   
-.text.UART1_WriteCallba 0x9d004718           0x14          20   
-.text.TMR2_Start        0x9d00472c           0x14          20   
-.text.TMR2_Stop         0x9d004740           0x14          20   
-.text.TMR2_InterruptEna 0x9d004754           0x14          20   
-.text.UART1_ReadCountGe 0x9d004768            0xc          12   
-.text.UART1_WriteIsBusy 0x9d004774            0xc          12   
-.text.UART1_WriteCountG 0x9d004780            0xc          12   
-.text.TMR2_CallbackRegi 0x9d00478c            0xc          12   
-.text.setFFTUpdate      0x9d004798            0x8           8   
-.text.SYS_DMA_Addressin 0x9d0047a0            0x8           8   
-.text.SYS_DMA_DataWidth 0x9d0047a8            0x8           8   
-.text.SYS_DMA_ChannelTr 0x9d0047b0            0x8           8   
-.text._on_reset         0x9d0047b8            0x8           8   
-.text._on_bootstrap     0x9d0047c0            0x8           8   
-      Total kseg0_program_mem used  :      0x47bc       18364  0.9% of 0x200000
+.text.__ieee754_pow     0x9d000efc          0x8d4        2260   
+.text.__kernel_standard 0x9d0017d0          0x77c        1916   
+.dinit                  0x9d001f4c          0x560        1376   
+.text                   0x9d0024ac          0x8bc        2236  App's exec code 
+.text._Compute          0x9d002d68          0x2f4         756   
+.text._powx             0x9d00305c          0x284         644   
+.text.TIMER_3_Handler   0x9d0032e0          0x250         592   
+.text.UART1_FAULT_Handl 0x9d003530          0x250         592   
+.text.UART1_RX_Handler  0x9d003780          0x250         592   
+.text.UART1_TX_Handler  0x9d0039d0          0x250         592   
+.text.DisplayFFT        0x9d003c20          0x24c         588   
+.text.TIMER_2_Handler   0x9d003e6c          0x23c         572   
+.text._DRV_USART_Buffer 0x9d0040a8          0x1c8         456   
+.text.DRV_USART_Initial 0x9d004270          0x194         404   
+.text.rint              0x9d004404          0x180         384   
+.text.our_scalbn        0x9d004584          0x16c         364   
+.rodata                 0x9d0046f0          0x158         344  Read-only const 
+.text.UART1_SerialSetup 0x9d004848          0x144         324   
+.text.fputc             0x9d00498c          0x144         324   
+.text.updateFFTDisplay  0x9d004ad0          0x13c         316   
+.text._flsbuf           0x9d004c0c          0x12c         300   
+.rodata                 0x9d004d38          0x128         296  Read-only const 
+.text.ADCHS_Initialize  0x9d004e60          0x114         276   
+.text.TMR2InterruptCall 0x9d004f74          0x110         272   
+.rodata                 0x9d005084          0x104         260  Read-only const 
+.text.GPIO_Initialize   0x9d005188           0xe8         232   
+.text.CLK_Initialize    0x9d005270           0xe0         224   
+.text.general_exception 0x9d005350           0xdc         220   
+.text.UART1_TX_Interrup 0x9d00542c           0xd8         216   
+.text._cache_err_except 0x9d005504           0xd8         216   
+.text.simple_tlb_refill 0x9d0055dc           0xd8         216   
+.rodata                 0x9d0056b8           0xd0         208  Read-only const 
+.text.ComplexToMagnitud 0x9d005788           0xc8         200   
+.text.SYS_Initialize    0x9d005850           0xc4         196   
+.rodata                 0x9d005914           0xc0         192  Read-only const 
+.tlb.__pic32_tlb_init_e 0x9d0059d4           0xbc         188   
+.text.setupNeopixel     0x9d005a90           0xac         172   
+.text.TMR3_Interrupt_Ca 0x9d005b3c           0xa4         164   
+.text.write             0x9d005be0           0x9c         156   
+.text.UART1_ErrorGet    0x9d005c7c           0x88         136   
+.text.UART1_Initialize  0x9d005d04           0x84         132   
+.text                   0x9d005d88           0x84         132  App's exec code 
+.text.UART1_Read        0x9d005e0c           0x80         128   
+.text.UART1_Write       0x9d005e8c           0x7c         124   
+.text._DRV_USART_ReadSu 0x9d005f08           0x74         116   
+.text._DRV_USART_WriteS 0x9d005f7c           0x74         116   
+.text.main_entry        0x9d005ff0           0x54          84   
+.text.APP_Tasks         0x9d006044           0x50          80   
+.text.UART1_FAULT_Inter 0x9d006094           0x4c          76   
+.text._general_exceptio 0x9d0060e0           0x48          72   
+.text._bootstrap_except 0x9d006128           0x48          72   
+.text._cache_err_except 0x9d006170           0x48          72   
+.text._simple_tlb_refil 0x9d0061b8           0x48          72   
+.text.EVIC_Initialize   0x9d006200           0x44          68   
+.text                   0x9d006244           0x44          68  App's exec code 
+.text.TIMER_2_Interrupt 0x9d006288           0x40          64   
+.text.TIMER_3_Interrupt 0x9d0062c8           0x40          64   
+.text._printf_cdnopsuxX 0x9d006308           0x40          64   
+.text.Exponent          0x9d006348           0x3c          60   
+.text.TMR2_Initialize   0x9d006384           0x3c          60   
+.text.TMR3_Initialize   0x9d0063c0           0x3c          60   
+.text._DRV_USART_Remove 0x9d0063fc           0x38          56   
+.text                   0x9d006434           0x34          52  App's exec code 
+.text.setLEDColor       0x9d006468           0x30          48   
+.rodata                 0x9d006498           0x30          48  Read-only const 
+.text.ADCHS_ChannelResu 0x9d0064c8           0x30          48   
+.rodata                 0x9d0064f8           0x30          48  Read-only const 
+.text.setupMicrophoneGa 0x9d006528           0x2c          44   
+.text._mon_putc         0x9d006554           0x2c          44   
+.text.OCMP6_Initialize  0x9d006580           0x28          40   
+.text.OCMP4_Initialize  0x9d0065a8           0x28          40   
+.text.OCMP2_Initialize  0x9d0065d0           0x28          40   
+.text.OCMP3_Initialize  0x9d0065f8           0x28          40   
+.text.ADCHS_ChannelConv 0x9d006620           0x28          40   
+.text.updateNeoData     0x9d006648           0x24          36   
+.text.Swap              0x9d00666c           0x24          36   
+.text.APP_Initialize    0x9d006690           0x24          36   
+.text.main              0x9d0066b4           0x20          32   
+.text._DRV_USART_TX_PLI 0x9d0066d4           0x20          32   
+.text._sqrtx            0x9d0066f4           0x1c          28   
+.text.getvRealElem      0x9d006710           0x18          24   
+.text.ADCHS_ChannelResu 0x9d006728           0x18          24   
+.text                   0x9d006740           0x18          24  App's exec code 
+.rodata                 0x9d006758           0x18          24  Read-only const 
+.text.OCMP6_Enable      0x9d006770           0x14          20   
+.text.OCMP4_Enable      0x9d006784           0x14          20   
+.text.OCMP2_Enable      0x9d006798           0x14          20   
+.text.OCMP3_Enable      0x9d0067ac           0x14          20   
+.text.UART1_ReadCallbac 0x9d0067c0           0x14          20   
+.text.UART1_WriteCallba 0x9d0067d4           0x14          20   
+.text.TMR2_Start        0x9d0067e8           0x14          20   
+.text.TMR2_Stop         0x9d0067fc           0x14          20   
+.text.TMR3_Start        0x9d006810           0x14          20   
+.text.TMR3_Stop         0x9d006824           0x14          20   
+.rodata                 0x9d006838           0x10          16  Read-only const 
+.text.setFFTUpdate      0x9d006848            0xc          12   
+.text.getvReal          0x9d006854            0xc          12   
+.text.getvImag          0x9d006860            0xc          12   
+.text.UART1_ReadIsBusy  0x9d00686c            0xc          12   
+.text.UART1_ReadCountGe 0x9d006878            0xc          12   
+.text.UART1_WriteIsBusy 0x9d006884            0xc          12   
+.text.UART1_WriteCountG 0x9d006890            0xc          12   
+.text.TMR2_CallbackRegi 0x9d00689c            0xc          12   
+.text.TMR3_CallbackRegi 0x9d0068a8            0xc          12   
+.text.SYS_DMA_Addressin 0x9d0068b4            0x8           8   
+.text.SYS_DMA_DataWidth 0x9d0068bc            0x8           8   
+.text.SYS_DMA_ChannelTr 0x9d0068c4            0x8           8   
+.text._on_reset         0x9d0068cc            0x8           8   
+.text._on_bootstrap     0x9d0068d4            0x8           8   
+.rodata                 0x9d0068e0            0x8           8  Read-only const 
+.text.scalbn            0x9d0068e8            0x8           8   
+      Total kseg0_program_mem used  :      0x68e4       26852  1.3% of 0x200000
 
 kseg0 Boot-Memory Usage
 section                    address  length [bytes]      (dec)  Description
@@ -192,7 +223,7 @@ section                    address  length [bytes]      (dec)  Description
 .bev_excpt              0xbfc00380           0x10          16  BEV-Exception 
          Total kseg1_boot_mem used  :       0x1c4         452  39.2% of 0x480
         --------------------------------------------------------------------------
-         Total Program Memory used  :      0x4980       18816  0.9% of 0x200480
+         Total Program Memory used  :      0x6aa8       27304  1.3% of 0x200480
         --------------------------------------------------------------------------
 
 
@@ -200,22 +231,23 @@ kseg0 Data-Memory Usage
 section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
 .sdata                  0x80000000           0x60          96  Small init data 
-.sbss                   0x80000060           0x40          64  Small uninit data 
-.bss                    0x800000a0          0x418        1048  Uninitialized data 
-.bss                    0x800004b8           0xd0         208  Uninitialized data 
-.data                   0x80000588           0xa4         164  Initialized data 
-.bss                    0x8000062c           0xa4         164  Uninitialized data 
-         Total kseg0_data_mem used  :       0x6d0        1744  0.3% of 0x80000
+.sbss                   0x80000060           0x4c          76  Small uninit data 
+.bss                    0x800000ac         0x64e0       25824  Uninitialized data 
+.bss                    0x8000658c           0xd0         208  Uninitialized data 
+.data                   0x8000665c           0xa4         164  Initialized data 
+.bss                    0x80006700           0xa4         164  Uninitialized data 
+.bss.errno              0x800067a4            0x4           4   
+         Total kseg0_data_mem used  :      0x67a8       26536  5.1% of 0x80000
         --------------------------------------------------------------------------
-            Total Data Memory used  :       0x6d0        1744  0.3% of 0x80000
+            Total Data Memory used  :      0x67a8       26536  5.1% of 0x80000
         --------------------------------------------------------------------------
 
 
 Dynamic Data-Memory Reservation
 section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
-heap                    0x800006d8          0x200         512  Reserved for heap 
-stack                   0x800008f0        0x7f708      521992  Reserved for stack 
+heap                    0x800067b0          0x200         512  Reserved for heap 
+stack                   0x800069c8        0x79630      497200  Reserved for stack 
 
         --------------------------------------------------------------------------
 
@@ -228,50 +260,26 @@ Discarded input sections
  .data          0x00000000        0x0 build/FFT/production/_ext/1360937237/neopixel.o
  .bss           0x00000000        0x0 build/FFT/production/_ext/1360937237/neopixel.o
  .reginfo       0x00000000       0x18 build/FFT/production/_ext/1360937237/neopixel.o
- .text.setLEDColor
-                0x00000000       0x30 build/FFT/production/_ext/1360937237/neopixel.o
  .text.getUpdateStatus
                 0x00000000        0x8 build/FFT/production/_ext/1360937237/neopixel.o
+ .text.testNEO  0x00000000       0x78 build/FFT/production/_ext/1360937237/neopixel.o
  .text          0x00000000        0x0 build/FFT/production/_ext/1360937237/FFT.o
  .data          0x00000000        0x0 build/FFT/production/_ext/1360937237/FFT.o
  .bss           0x00000000        0x0 build/FFT/production/_ext/1360937237/FFT.o
  .reginfo       0x00000000       0x18 build/FFT/production/_ext/1360937237/FFT.o
  .text.initFFT  0x00000000        0x8 build/FFT/production/_ext/1360937237/FFT.o
- .text.ComplexToMagnitude
-                0x00000000       0xc8 build/FFT/production/_ext/1360937237/FFT.o
  .text.MajorPeak
                 0x00000000      0x108 build/FFT/production/_ext/1360937237/FFT.o
- .text.Exponent
-                0x00000000       0x3c build/FFT/production/_ext/1360937237/FFT.o
- .text.Swap     0x00000000       0x24 build/FFT/production/_ext/1360937237/FFT.o
- .text._Compute
-                0x00000000      0x2f4 build/FFT/production/_ext/1360937237/FFT.o
- .text.Compute  0x00000000       0x64 build/FFT/production/_ext/1360937237/FFT.o
  .text.getDoFFT
-                0x00000000        0x8 build/FFT/production/_ext/1360937237/FFT.o
- .text.DisplayFFT
-                0x00000000      0x230 build/FFT/production/_ext/1360937237/FFT.o
- .text.updateFFTDisplay
-                0x00000000       0xa0 build/FFT/production/_ext/1360937237/FFT.o
- .rodata        0x00000000       0x28 build/FFT/production/_ext/1360937237/FFT.o
+                0x00000000        0xc build/FFT/production/_ext/1360937237/FFT.o
+ .text.checkForIdle
+                0x00000000       0x10 build/FFT/production/_ext/1360937237/FFT.o
  .text.printFFT
                 0x00000000       0x70 build/FFT/production/_ext/1360937237/FFT.o
- COMMON         0x00000000     0x4000 build/FFT/production/_ext/1360937237/FFT.o
  .text          0x00000000        0x0 build/FFT/production/_ext/1360937237/ADCGather.o
  .data          0x00000000        0x0 build/FFT/production/_ext/1360937237/ADCGather.o
  .bss           0x00000000        0x0 build/FFT/production/_ext/1360937237/ADCGather.o
  .reginfo       0x00000000       0x18 build/FFT/production/_ext/1360937237/ADCGather.o
- .text.TMR3_Interrupt_Callback
-                0x00000000       0x98 build/FFT/production/_ext/1360937237/ADCGather.o
- .text.getvReal
-                0x00000000        0xc build/FFT/production/_ext/1360937237/ADCGather.o
- .text.getvImag
-                0x00000000        0xc build/FFT/production/_ext/1360937237/ADCGather.o
- .text.getvRealElem
-                0x00000000       0x18 build/FFT/production/_ext/1360937237/ADCGather.o
- .text.setupMicrophoneGather
-                0x00000000       0x2c build/FFT/production/_ext/1360937237/ADCGather.o
- COMMON         0x00000000     0x2000 build/FFT/production/_ext/1360937237/ADCGather.o
  .text          0x00000000        0x0 build/FFT/production/_ext/1360937237/UART.o
  .data          0x00000000       0x10 build/FFT/production/_ext/1360937237/UART.o
  .bss           0x00000000        0x0 build/FFT/production/_ext/1360937237/UART.o
@@ -371,6 +379,8 @@ Discarded input sections
  .data          0x00000000        0x0 build/FFT/production/_ext/2109630876/plib_ocmp2.o
  .bss           0x00000000        0x0 build/FFT/production/_ext/2109630876/plib_ocmp2.o
  .reginfo       0x00000000       0x18 build/FFT/production/_ext/2109630876/plib_ocmp2.o
+ .text.OCMP2_Disable
+                0x00000000       0x14 build/FFT/production/_ext/2109630876/plib_ocmp2.o
  .text.OCMP2_CompareValueGet
                 0x00000000       0x10 build/FFT/production/_ext/2109630876/plib_ocmp2.o
  .text.OCMP2_CompareSecondaryValueSet
@@ -409,12 +419,6 @@ Discarded input sections
                 0x00000000       0x1c build/FFT/production/_ext/961138470/plib_adchs.o
  .text.ADCHS_GlobalLevelConversionStart
                 0x00000000       0x1c build/FFT/production/_ext/961138470/plib_adchs.o
- .text.ADCHS_ChannelConversionStart
-                0x00000000       0x28 build/FFT/production/_ext/961138470/plib_adchs.o
- .text.ADCHS_ChannelResultIsReady
-                0x00000000       0x30 build/FFT/production/_ext/961138470/plib_adchs.o
- .text.ADCHS_ChannelResultGet
-                0x00000000       0x18 build/FFT/production/_ext/961138470/plib_adchs.o
  .text          0x00000000        0x0 build/FFT/production/_ext/2109807859/plib_uart1.o
  .data          0x00000000        0x0 build/FFT/production/_ext/2109807859/plib_uart1.o
  .bss           0x00000000        0x0 build/FFT/production/_ext/2109807859/plib_uart1.o
@@ -470,16 +474,14 @@ Discarded input sections
                 0x00000000       0x10 build/FFT/production/_ext/1317415596/plib_tmr2.o
  .text.TMR2_FrequencyGet
                 0x00000000        0xc build/FFT/production/_ext/1317415596/plib_tmr2.o
+ .text.TMR2_InterruptEnable
+                0x00000000       0x14 build/FFT/production/_ext/1317415596/plib_tmr2.o
  .text.TMR2_InterruptDisable
                 0x00000000       0x14 build/FFT/production/_ext/1317415596/plib_tmr2.o
  .text          0x00000000        0x0 build/FFT/production/_ext/1317415596/plib_tmr3.o
  .data          0x00000000        0x0 build/FFT/production/_ext/1317415596/plib_tmr3.o
  .bss           0x00000000        0x0 build/FFT/production/_ext/1317415596/plib_tmr3.o
  .reginfo       0x00000000       0x18 build/FFT/production/_ext/1317415596/plib_tmr3.o
- .text.TMR3_Start
-                0x00000000       0x14 build/FFT/production/_ext/1317415596/plib_tmr3.o
- .text.TMR3_Stop
-                0x00000000       0x14 build/FFT/production/_ext/1317415596/plib_tmr3.o
  .text.TMR3_PeriodSet
                 0x00000000       0x10 build/FFT/production/_ext/1317415596/plib_tmr3.o
  .text.TMR3_PeriodGet
@@ -492,22 +494,6 @@ Discarded input sections
                 0x00000000       0x14 build/FFT/production/_ext/1317415596/plib_tmr3.o
  .text.TMR3_InterruptDisable
                 0x00000000       0x14 build/FFT/production/_ext/1317415596/plib_tmr3.o
- .text.TMR3_CallbackRegister
-                0x00000000        0xc build/FFT/production/_ext/1317415596/plib_tmr3.o
- .text          0x00000000        0x0 build/FFT/production/_ext/504070962/sys_int.o
- .data          0x00000000        0x0 build/FFT/production/_ext/504070962/sys_int.o
- .bss           0x00000000        0x0 build/FFT/production/_ext/504070962/sys_int.o
- .reginfo       0x00000000       0x18 build/FFT/production/_ext/504070962/sys_int.o
- .text.SYS_INT_Enable
-                0x00000000       0x18 build/FFT/production/_ext/504070962/sys_int.o
- .text.SYS_INT_Disable
-                0x00000000       0x20 build/FFT/production/_ext/504070962/sys_int.o
- .text.SYS_INT_Restore
-                0x00000000       0x24 build/FFT/production/_ext/504070962/sys_int.o
- .text.SYS_INT_SourceDisable
-                0x00000000       0x58 build/FFT/production/_ext/504070962/sys_int.o
- .text.SYS_INT_SourceRestore
-                0x00000000       0x28 build/FFT/production/_ext/504070962/sys_int.o
  .text          0x00000000        0x0 build/FFT/production/_ext/980732774/sys_dma.o
  .data          0x00000000        0x0 build/FFT/production/_ext/980732774/sys_dma.o
  .bss           0x00000000        0x0 build/FFT/production/_ext/980732774/sys_dma.o
@@ -520,19 +506,19 @@ Discarded input sections
  .data          0x00000000        0x0 build/FFT/production/_ext/1272119167/tasks.o
  .bss           0x00000000        0x0 build/FFT/production/_ext/1272119167/tasks.o
  .reginfo       0x00000000       0x18 build/FFT/production/_ext/1272119167/tasks.o
- .text          0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\ccasagLp.o
- .data          0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\ccasagLp.o
- .bss           0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\ccasagLp.o
- .reginfo       0x00000000       0x18 C:\Users\Madison\AppData\Local\Temp\ccasagLp.o
- .text          0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\ccIOsSxI.o
- .data          0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\ccIOsSxI.o
- .bss           0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\ccIOsSxI.o
- .reginfo       0x00000000       0x18 C:\Users\Madison\AppData\Local\Temp\ccIOsSxI.o
- .text          0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\ccOKe3k9.o
- .data          0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\ccOKe3k9.o
- .bss           0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\ccOKe3k9.o
- .reginfo       0x00000000       0x18 C:\Users\Madison\AppData\Local\Temp\ccOKe3k9.o
- .discard       0x00000000        0x4 C:\Users\Madison\AppData\Local\Temp\ccOKe3k9.o
+ .text          0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o
+ .data          0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o
+ .bss           0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o
+ .reginfo       0x00000000       0x18 C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o
+ .text          0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\ccsJq5Jx.o
+ .data          0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\ccsJq5Jx.o
+ .bss           0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\ccsJq5Jx.o
+ .reginfo       0x00000000       0x18 C:\Users\Madison\AppData\Local\Temp\ccsJq5Jx.o
+ .text          0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\cceSb4ek.o
+ .data          0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\cceSb4ek.o
+ .bss           0x00000000        0x0 C:\Users\Madison\AppData\Local\Temp\cceSb4ek.o
+ .reginfo       0x00000000       0x18 C:\Users\Madison\AppData\Local\Temp\cceSb4ek.o
+ .discard       0x00000000        0x4 C:\Users\Madison\AppData\Local\Temp\cceSb4ek.o
  .text          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFG100\default_isr_vectors.o
  .data          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFG100\default_isr_vectors.o
  .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFG100\default_isr_vectors.o
@@ -633,14 +619,10 @@ Discarded input sections
  .data          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
  .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
  .reginfo       0x00000000       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
- .text._powx    0x00000000      0x284 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
- .rodata        0x00000000        0x8 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
  .text          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
  .data          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
  .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
  .reginfo       0x00000000       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
- .text._sqrtx   0x00000000       0x1c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
- .text          0x00000000       0x34 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(sqrtfd.o)
  .data          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(sqrtfd.o)
  .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(sqrtfd.o)
  .reginfo       0x00000000       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(sqrtfd.o)
@@ -648,30 +630,18 @@ Discarded input sections
  .data          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
  .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
  .reginfo       0x00000000       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
- .text.__ieee754_pow
-                0x00000000      0x8d4 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
- .rodata        0x00000000      0x128 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
  .text          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
  .data          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
  .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
  .reginfo       0x00000000       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
- .text.__kernel_standard
-                0x00000000      0x77c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
- .rodata        0x00000000       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
  .text          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
  .data          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
  .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
  .reginfo       0x00000000       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
- .text.rint     0x00000000      0x180 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
- .rodata        0x00000000       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
  .text          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
  .data          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
  .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
  .reginfo       0x00000000       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
- .text.our_scalbn
-                0x00000000      0x16c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
- .text.scalbn   0x00000000        0x8 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
- .rodata        0x00000000       0x30 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
  .data          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
  .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
  .reginfo       0x00000000       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
@@ -686,7 +656,6 @@ Discarded input sections
  .data          0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(errno.o)
  .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(errno.o)
  .reginfo       0x00000000       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(errno.o)
- .bss.errno     0x00000000        0x4 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(errno.o)
 
 Memory Configuration
 
@@ -879,15 +848,14 @@ LOAD build/FFT/production/_ext/2109807859/plib_uart1.o
 LOAD build/FFT/production/_ext/1891070335/drv_usart.o
 LOAD build/FFT/production/_ext/1317415596/plib_tmr2.o
 LOAD build/FFT/production/_ext/1317415596/plib_tmr3.o
-LOAD build/FFT/production/_ext/504070962/sys_int.o
 LOAD build/FFT/production/_ext/980732774/sys_dma.o
 LOAD build/FFT/production/_ext/1360937237/app.o
 LOAD build/FFT/production/_ext/1272119167/tasks.o
                 0x00000001                __MPLAB_BUILD = 0x1
                 0x00000200                _min_heap_size = 0x200
-LOAD C:\Users\Madison\AppData\Local\Temp\ccasagLp.o
-LOAD C:\Users\Madison\AppData\Local\Temp\ccIOsSxI.o
-LOAD C:\Users\Madison\AppData\Local\Temp\ccOKe3k9.o
+LOAD C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o
+LOAD C:\Users\Madison\AppData\Local\Temp\ccsJq5Jx.o
+LOAD C:\Users\Madison\AppData\Local\Temp\cceSb4ek.o
 LOAD c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFG100\default_isr_vectors.o
 LOAD c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\pic32_software_reset.o
                 0x00000400                PROVIDE (_min_stack_size, 0x400)
@@ -1334,16 +1302,16 @@ END GROUP
 
 .reset          0xbfc00000      0x1b4
  *(.reset)
- .reset         0xbfc00000       0x18 C:\Users\Madison\AppData\Local\Temp\ccasagLp.o
+ .reset         0xbfc00000       0x18 C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o
                 0xbfc00000                _reset
  *(.reset.startup)
  .reset.startup
-                0xbfc00018      0x19c C:\Users\Madison\AppData\Local\Temp\ccasagLp.o
+                0xbfc00018      0x19c C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o
                 0xbfc00018                _startup
 
 .bev_excpt      0xbfc00380       0x10
  *(.bev_handler)
- .bev_handler   0xbfc00380       0x10 C:\Users\Madison\AppData\Local\Temp\ccasagLp.o
+ .bev_handler   0xbfc00380       0x10 C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o
 
 .cache_init     0xbfc004b0      0x1c0
  *(.cache_init)
@@ -1358,17 +1326,17 @@ END GROUP
                 0x9d000000       0x10
  *(.simple_tlb_refill_vector)
  .simple_tlb_refill_vector
-                0x9d000000       0x10 C:\Users\Madison\AppData\Local\Temp\ccasagLp.o
+                0x9d000000       0x10 C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o
 
 .cache_err_excpt
                 0x9d000100       0x10
  *(.cache_err_vector)
  .cache_err_vector
-                0x9d000100       0x10 C:\Users\Madison\AppData\Local\Temp\ccasagLp.o
+                0x9d000100       0x10 C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o
 
 .app_excpt      0x9d000180       0x10
  *(.gen_handler)
- .gen_handler   0x9d000180       0x10 C:\Users\Madison\AppData\Local\Temp\ccasagLp.o
+ .gen_handler   0x9d000180       0x10 C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o
 
 .vectors        0x9d000200       0x70
                 0x9d000200                . = ALIGN (0x4)
@@ -2318,7 +2286,7 @@ END GROUP
                 0x80000060                _data_end = .
                 0x80000060                _bss_begin = .
 
-.sbss           0x80000060       0x40
+.sbss           0x80000060       0x4c
                 0x80000060                _sbss_begin = .
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
@@ -2327,40 +2295,50 @@ END GROUP
                 0x80000062                periodCounter
                 0x80000064                resetTriggered
                 0x80000065                disableNEOUpdate
- .sbss          0x80000066        0x4 build/FFT/production/_ext/1360937237/FFT.o
-                0x80000066                doFFT
-                0x80000068                filterCounter
- .sbss          0x8000006a        0x2 build/FFT/production/_ext/1360937237/ADCGather.o
-                0x8000006a                sampleCounter
- .sbss          0x8000006c        0xc build/FFT/production/_ext/1272119167/exceptions.o
- .sbss          0x80000078        0x8 build/FFT/production/_ext/1317415596/plib_tmr2.o
- .sbss          0x80000080        0x8 build/FFT/production/_ext/1317415596/plib_tmr3.o
+ *fill*         0x80000066        0x2 
+ .sbss          0x80000068        0xc build/FFT/production/_ext/1360937237/FFT.o
+                0x80000068                activeLEDs
+                0x8000006c                timesIdle
+                0x80000070                doFFT
+                0x80000072                filterCounter
+ .sbss          0x80000074        0x2 build/FFT/production/_ext/1360937237/ADCGather.o
+                0x80000074                sampleCounter
+ *fill*         0x80000076        0x2 
+ .sbss          0x80000078        0xc build/FFT/production/_ext/1272119167/exceptions.o
+ .sbss          0x80000084        0x8 build/FFT/production/_ext/1317415596/plib_tmr2.o
+ .sbss          0x8000008c        0x8 build/FFT/production/_ext/1317415596/plib_tmr3.o
  *(.scommon)
- .scommon       0x80000088        0x8 build/FFT/production/_ext/1360937237/FFT.o
-                0x80000088                _samples
-                0x8000008c                microseconds
- .scommon       0x80000090        0x5 build/FFT/production/_ext/1360937237/UART.o
-                0x80000090                USART_0_Handle
-                0x80000094                myAppObj
- *fill*         0x80000095        0x3 
- .scommon       0x80000098        0x4 build/FFT/production/_ext/1272119167/initialization.o
-                0x80000098                sysObj
- .scommon       0x8000009c        0x4 build/FFT/production/_ext/1360937237/app.o
-                0x8000009c                appData
-                0x800000a0                _sbss_end = .
-                0x800000a0                . = ALIGN (0x4)
+ .scommon       0x80000094        0x8 build/FFT/production/_ext/1360937237/FFT.o
+                0x80000094                _samples
+                0x80000098                microseconds
+ .scommon       0x8000009c        0x5 build/FFT/production/_ext/1360937237/UART.o
+                0x8000009c                USART_0_Handle
+                0x800000a0                myAppObj
+ *fill*         0x800000a1        0x3 
+ .scommon       0x800000a4        0x4 build/FFT/production/_ext/1272119167/initialization.o
+                0x800000a4                sysObj
+ .scommon       0x800000a8        0x4 build/FFT/production/_ext/1360937237/app.o
+                0x800000a8                appData
+                0x800000ac                _sbss_end = .
+                0x800000ac                . = ALIGN (0x4)
 
-.bss            0x800000a0      0x418
+.bss            0x800000ac     0x64e0
  *(.dynbss)
  *(COMMON)
- COMMON         0x800000a0      0x3e8 build/FFT/production/_ext/1360937237/neopixel.o
-                0x800000a0                pixelData
- COMMON         0x80000488       0x30 build/FFT/production/_ext/2109807859/plib_uart1.o
-                0x80000488                uart1Obj
-                0x800004b8                . = ALIGN ((. != 0x0)?0x4:0x1)
-                0x800004b8                . = ALIGN (0x4)
-                0x800004b8                _end = .
-                0x800004b8                _bss_end = .
+ COMMON         0x800000ac      0x4b0 build/FFT/production/_ext/1360937237/neopixel.o
+                0x800000ac                pixelData
+ COMMON         0x8000055c     0x4000 build/FFT/production/_ext/1360937237/FFT.o
+                0x8000055c                vRealFilt
+                0x8000355c                vRealSmoother
+ COMMON         0x8000455c     0x2000 build/FFT/production/_ext/1360937237/ADCGather.o
+                0x8000455c                vReal
+                0x8000555c                vImag
+ COMMON         0x8000655c       0x30 build/FFT/production/_ext/2109807859/plib_uart1.o
+                0x8000655c                uart1Obj
+                0x8000658c                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x8000658c                . = ALIGN (0x4)
+                0x8000658c                _end = .
+                0x8000658c                _bss_end = .
                 0x00080000                _bmxdudba_address = 0x80000
                 0x00080000                _bmxdupba_address = 0x80000
 
@@ -2404,7 +2382,6 @@ END GROUP
  .mdebug.abi32  0x00000000        0x0 build/FFT/production/_ext/1891070335/drv_usart.o
  .mdebug.abi32  0x00000000        0x0 build/FFT/production/_ext/1317415596/plib_tmr2.o
  .mdebug.abi32  0x00000000        0x0 build/FFT/production/_ext/1317415596/plib_tmr3.o
- .mdebug.abi32  0x00000000        0x0 build/FFT/production/_ext/504070962/sys_int.o
  .mdebug.abi32  0x00000000        0x0 build/FFT/production/_ext/980732774/sys_dma.o
  .mdebug.abi32  0x00000000        0x0 build/FFT/production/_ext/1360937237/app.o
  .mdebug.abi32  0x00000000        0x0 build/FFT/production/_ext/1272119167/tasks.o
@@ -2495,7 +2472,6 @@ END GROUP
  .comment       0x00000000       0x3d build/FFT/production/_ext/1891070335/drv_usart.o
  .comment       0x00000000       0x3d build/FFT/production/_ext/1317415596/plib_tmr2.o
  .comment       0x00000000       0x3d build/FFT/production/_ext/1317415596/plib_tmr3.o
- .comment       0x00000000       0x3d build/FFT/production/_ext/504070962/sys_int.o
  .comment       0x00000000       0x3d build/FFT/production/_ext/980732774/sys_dma.o
  .comment       0x00000000       0x3d build/FFT/production/_ext/1360937237/app.o
  .comment       0x00000000       0x3d build/FFT/production/_ext/1272119167/tasks.o
@@ -2540,379 +2516,371 @@ END GROUP
  *.elf(.debug_sfnames)
  *(.debug_sfnames)
 
-.debug_aranges  0x00000000      0x9f0
+.debug_aranges  0x00000000      0x9c0
  *.elf(.debug_aranges)
  *(.debug_aranges)
  .debug_aranges
-                0x00000000       0x48 build/FFT/production/_ext/1360937237/neopixel.o
+                0x00000000       0x50 build/FFT/production/_ext/1360937237/neopixel.o
  .debug_aranges
-                0x00000048       0x78 build/FFT/production/_ext/1360937237/FFT.o
+                0x00000050       0x80 build/FFT/production/_ext/1360937237/FFT.o
  .debug_aranges
-                0x000000c0       0x40 build/FFT/production/_ext/1360937237/ADCGather.o
+                0x000000d0       0x40 build/FFT/production/_ext/1360937237/ADCGather.o
  .debug_aranges
-                0x00000100       0x30 build/FFT/production/_ext/1360937237/UART.o
+                0x00000110       0x30 build/FFT/production/_ext/1360937237/UART.o
  .debug_aranges
-                0x00000130       0x48 build/FFT/production/_ext/2109630876/plib_ocmp6.o
+                0x00000140       0x48 build/FFT/production/_ext/2109630876/plib_ocmp6.o
  .debug_aranges
-                0x00000178       0x20 build/FFT/production/_ext/1360937237/main.o
+                0x00000188       0x20 build/FFT/production/_ext/1360937237/main.o
  .debug_aranges
-                0x00000198       0x20 build/FFT/production/_ext/1272119167/initialization.o
+                0x000001a8       0x20 build/FFT/production/_ext/1272119167/initialization.o
  .debug_aranges
-                0x000001b8       0x40 build/FFT/production/_ext/1272119167/interrupts.o
+                0x000001c8       0x40 build/FFT/production/_ext/1272119167/interrupts.o
  .debug_aranges
-                0x000001f8       0x20 build/FFT/production/_ext/1272119167/exceptions.o
+                0x00000208       0x20 build/FFT/production/_ext/1272119167/exceptions.o
  .debug_aranges
-                0x00000218       0x28 build/FFT/production/_ext/489647995/xc32_monitor.o
+                0x00000228       0x28 build/FFT/production/_ext/489647995/xc32_monitor.o
  .debug_aranges
-                0x00000240       0x20 build/FFT/production/_ext/1317431971/plib_clk.o
+                0x00000250       0x20 build/FFT/production/_ext/1317431971/plib_clk.o
  .debug_aranges
-                0x00000260       0x60 build/FFT/production/_ext/2109404916/plib_gpio.o
+                0x00000270       0x60 build/FFT/production/_ext/2109404916/plib_gpio.o
  .debug_aranges
-                0x000002c0       0x50 build/FFT/production/_ext/2109351088/plib_evic.o
+                0x000002d0       0x50 build/FFT/production/_ext/2109351088/plib_evic.o
  .debug_aranges
-                0x00000310       0x48 build/FFT/production/_ext/2109630876/plib_ocmp4.o
+                0x00000320       0x48 build/FFT/production/_ext/2109630876/plib_ocmp4.o
  .debug_aranges
-                0x00000358       0x48 build/FFT/production/_ext/2109630876/plib_ocmp2.o
+                0x00000368       0x48 build/FFT/production/_ext/2109630876/plib_ocmp2.o
  .debug_aranges
-                0x000003a0       0x48 build/FFT/production/_ext/2109630876/plib_ocmp3.o
+                0x000003b0       0x48 build/FFT/production/_ext/2109630876/plib_ocmp3.o
  .debug_aranges
-                0x000003e8       0x78 build/FFT/production/_ext/961138470/plib_adchs.o
+                0x000003f8       0x78 build/FFT/production/_ext/961138470/plib_adchs.o
  .debug_aranges
-                0x00000460       0x88 build/FFT/production/_ext/2109807859/plib_uart1.o
+                0x00000470       0x88 build/FFT/production/_ext/2109807859/plib_uart1.o
  .debug_aranges
-                0x000004e8       0xe0 build/FFT/production/_ext/1891070335/drv_usart.o
+                0x000004f8       0xe0 build/FFT/production/_ext/1891070335/drv_usart.o
  .debug_aranges
-                0x000005c8       0x70 build/FFT/production/_ext/1317415596/plib_tmr2.o
+                0x000005d8       0x70 build/FFT/production/_ext/1317415596/plib_tmr2.o
  .debug_aranges
-                0x00000638       0x70 build/FFT/production/_ext/1317415596/plib_tmr3.o
+                0x00000648       0x70 build/FFT/production/_ext/1317415596/plib_tmr3.o
  .debug_aranges
-                0x000006a8       0x40 build/FFT/production/_ext/504070962/sys_int.o
+                0x000006b8       0x30 build/FFT/production/_ext/980732774/sys_dma.o
  .debug_aranges
-                0x000006e8       0x30 build/FFT/production/_ext/980732774/sys_dma.o
+                0x000006e8       0x28 build/FFT/production/_ext/1360937237/app.o
  .debug_aranges
-                0x00000718       0x28 build/FFT/production/_ext/1360937237/app.o
+                0x00000710       0x20 build/FFT/production/_ext/1272119167/tasks.o
  .debug_aranges
-                0x00000740       0x20 build/FFT/production/_ext/1272119167/tasks.o
+                0x00000730       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
  .debug_aranges
-                0x00000760       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
+                0x00000750       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
  .debug_aranges
-                0x00000780       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
+                0x00000770       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
  .debug_aranges
-                0x000007a0       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+                0x00000790       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
  .debug_aranges
-                0x000007c0       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
+                0x000007b0       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
  .debug_aranges
-                0x000007e0       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
+                0x000007d0       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
  .debug_aranges
-                0x00000800       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
+                0x000007f0       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(puts.o)
  .debug_aranges
-                0x00000820       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(puts.o)
+                0x00000818       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
  .debug_aranges
-                0x00000848       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
+                0x00000838       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
  .debug_aranges
-                0x00000868       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
+                0x00000858       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
  .debug_aranges
-                0x00000888       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
+                0x00000878       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
  .debug_aranges
-                0x000008a8       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
+                0x00000898       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
  .debug_aranges
-                0x000008c8       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
+                0x000008b8       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
  .debug_aranges
-                0x000008e8       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
+                0x000008d8       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
  .debug_aranges
-                0x00000908       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
+                0x000008f8       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
  .debug_aranges
-                0x00000928       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
+                0x00000918       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
  .debug_aranges
-                0x00000948       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
+                0x00000938       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
  .debug_aranges
-                0x00000968       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
+                0x00000960       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
  .debug_aranges
-                0x00000990       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
+                0x00000980       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
  .debug_aranges
-                0x000009b0       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
- .debug_aranges
-                0x000009d0       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
+                0x000009a0       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
 
 .debug_pubnames
  *.elf(.debug_pubnames)
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x11678
+.debug_info     0x00000000    0x101b3
  *.elf(.debug_info .gnu.linkonce.wi.*)
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000      0x608 build/FFT/production/_ext/1360937237/neopixel.o
- .debug_info    0x00000608      0xca2 build/FFT/production/_ext/1360937237/FFT.o
- .debug_info    0x000012aa      0x653 build/FFT/production/_ext/1360937237/ADCGather.o
- .debug_info    0x000018fd      0x8f1 build/FFT/production/_ext/1360937237/UART.o
- .debug_info    0x000021ee      0x2e6 build/FFT/production/_ext/2109630876/plib_ocmp6.o
- .debug_info    0x000024d4      0x1bc build/FFT/production/_ext/1360937237/main.o
- .debug_info    0x00002690     0x16a6 build/FFT/production/_ext/1272119167/initialization.o
- .debug_info    0x00003d36      0x2ef build/FFT/production/_ext/1272119167/interrupts.o
- .debug_info    0x00004025      0x245 build/FFT/production/_ext/1272119167/exceptions.o
- .debug_info    0x0000426a      0x283 build/FFT/production/_ext/489647995/xc32_monitor.o
- .debug_info    0x000044ed      0x230 build/FFT/production/_ext/1317431971/plib_clk.o
- .debug_info    0x0000471d      0x720 build/FFT/production/_ext/2109404916/plib_gpio.o
- .debug_info    0x00004e3d     0x16fa build/FFT/production/_ext/2109351088/plib_evic.o
- .debug_info    0x00006537      0x2e6 build/FFT/production/_ext/2109630876/plib_ocmp4.o
- .debug_info    0x0000681d      0x2e6 build/FFT/production/_ext/2109630876/plib_ocmp2.o
- .debug_info    0x00006b03      0x2e6 build/FFT/production/_ext/2109630876/plib_ocmp3.o
- .debug_info    0x00006de9      0xf06 build/FFT/production/_ext/961138470/plib_adchs.o
- .debug_info    0x00007cef      0xa1f build/FFT/production/_ext/2109807859/plib_uart1.o
- .debug_info    0x0000870e     0x42f6 build/FFT/production/_ext/1891070335/drv_usart.o
- .debug_info    0x0000ca04      0x755 build/FFT/production/_ext/1317415596/plib_tmr2.o
- .debug_info    0x0000d159      0x755 build/FFT/production/_ext/1317415596/plib_tmr3.o
- .debug_info    0x0000d8ae     0x167a build/FFT/production/_ext/504070962/sys_int.o
- .debug_info    0x0000ef28      0x54b build/FFT/production/_ext/980732774/sys_dma.o
- .debug_info    0x0000f473      0x2b4 build/FFT/production/_ext/1360937237/app.o
- .debug_info    0x0000f727      0x195 build/FFT/production/_ext/1272119167/tasks.o
- .debug_info    0x0000f8bc       0xf4 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_info    0x0000f9b0       0xcd c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
- .debug_info    0x0000fa7d       0xd5 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
- .debug_info    0x0000fb52       0xe7 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
- .debug_info    0x0000fc39       0xf4 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
- .debug_info    0x0000fd2d      0x104 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
- .debug_info    0x0000fe31       0xd5 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(puts.o)
- .debug_info    0x0000ff06       0xcf c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
- .debug_info    0x0000ffd5       0xc2 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
- .debug_info    0x00010097       0xd2 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
- .debug_info    0x00010169       0xc5 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
- .debug_info    0x0001022e       0xbc c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
- .debug_info    0x000102ea       0xca c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
- .debug_info    0x000103b4       0xc4 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
- .debug_info    0x00010478       0xcd c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
- .debug_info    0x00010545       0xbc c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
- .debug_info    0x00010601       0xd9 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
- .debug_info    0x000106da      0x751 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
- .debug_info    0x00010e2b      0x78e c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
- .debug_info    0x000115b9       0xbf c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
+ .debug_info    0x00000000      0x609 build/FFT/production/_ext/1360937237/neopixel.o
+ .debug_info    0x00000609      0xe09 build/FFT/production/_ext/1360937237/FFT.o
+ .debug_info    0x00001412      0x66a build/FFT/production/_ext/1360937237/ADCGather.o
+ .debug_info    0x00001a7c      0x8f1 build/FFT/production/_ext/1360937237/UART.o
+ .debug_info    0x0000236d      0x2e6 build/FFT/production/_ext/2109630876/plib_ocmp6.o
+ .debug_info    0x00002653      0x1bc build/FFT/production/_ext/1360937237/main.o
+ .debug_info    0x0000280f     0x16a6 build/FFT/production/_ext/1272119167/initialization.o
+ .debug_info    0x00003eb5      0x2ef build/FFT/production/_ext/1272119167/interrupts.o
+ .debug_info    0x000041a4      0x245 build/FFT/production/_ext/1272119167/exceptions.o
+ .debug_info    0x000043e9      0x283 build/FFT/production/_ext/489647995/xc32_monitor.o
+ .debug_info    0x0000466c      0x230 build/FFT/production/_ext/1317431971/plib_clk.o
+ .debug_info    0x0000489c      0x720 build/FFT/production/_ext/2109404916/plib_gpio.o
+ .debug_info    0x00004fbc     0x16fa build/FFT/production/_ext/2109351088/plib_evic.o
+ .debug_info    0x000066b6      0x2e6 build/FFT/production/_ext/2109630876/plib_ocmp4.o
+ .debug_info    0x0000699c      0x2e6 build/FFT/production/_ext/2109630876/plib_ocmp2.o
+ .debug_info    0x00006c82      0x2e6 build/FFT/production/_ext/2109630876/plib_ocmp3.o
+ .debug_info    0x00006f68      0xf06 build/FFT/production/_ext/961138470/plib_adchs.o
+ .debug_info    0x00007e6e      0xa1f build/FFT/production/_ext/2109807859/plib_uart1.o
+ .debug_info    0x0000888d     0x42f6 build/FFT/production/_ext/1891070335/drv_usart.o
+ .debug_info    0x0000cb83      0x755 build/FFT/production/_ext/1317415596/plib_tmr2.o
+ .debug_info    0x0000d2d8      0x755 build/FFT/production/_ext/1317415596/plib_tmr3.o
+ .debug_info    0x0000da2d      0x54b build/FFT/production/_ext/980732774/sys_dma.o
+ .debug_info    0x0000df78      0x2ea build/FFT/production/_ext/1360937237/app.o
+ .debug_info    0x0000e262      0x195 build/FFT/production/_ext/1272119167/tasks.o
+ .debug_info    0x0000e3f7       0xf4 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_info    0x0000e4eb       0xcd c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
+ .debug_info    0x0000e5b8       0xd5 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+ .debug_info    0x0000e68d       0xe7 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
+ .debug_info    0x0000e774       0xf4 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
+ .debug_info    0x0000e868      0x104 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
+ .debug_info    0x0000e96c       0xd5 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(puts.o)
+ .debug_info    0x0000ea41       0xcf c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
+ .debug_info    0x0000eb10       0xc2 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
+ .debug_info    0x0000ebd2       0xd2 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
+ .debug_info    0x0000eca4       0xc5 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
+ .debug_info    0x0000ed69       0xbc c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
+ .debug_info    0x0000ee25       0xca c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
+ .debug_info    0x0000eeef       0xc4 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
+ .debug_info    0x0000efb3       0xcd c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
+ .debug_info    0x0000f080       0xbc c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
+ .debug_info    0x0000f13c       0xd9 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
+ .debug_info    0x0000f215      0x751 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
+ .debug_info    0x0000f966      0x78e c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
+ .debug_info    0x000100f4       0xbf c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
 
-.debug_abbrev   0x00000000     0x23f9
+.debug_abbrev   0x00000000     0x2370
  *.elf(.debug_abbrev)
  *(.debug_abbrev)
- .debug_abbrev  0x00000000      0x192 build/FFT/production/_ext/1360937237/neopixel.o
- .debug_abbrev  0x00000192      0x280 build/FFT/production/_ext/1360937237/FFT.o
- .debug_abbrev  0x00000412      0x14e build/FFT/production/_ext/1360937237/ADCGather.o
- .debug_abbrev  0x00000560      0x155 build/FFT/production/_ext/1360937237/UART.o
- .debug_abbrev  0x000006b5       0xa1 build/FFT/production/_ext/2109630876/plib_ocmp6.o
- .debug_abbrev  0x00000756       0x93 build/FFT/production/_ext/1360937237/main.o
- .debug_abbrev  0x000007e9      0x25b build/FFT/production/_ext/1272119167/initialization.o
- .debug_abbrev  0x00000a44       0x57 build/FFT/production/_ext/1272119167/interrupts.o
- .debug_abbrev  0x00000a9b       0xa4 build/FFT/production/_ext/1272119167/exceptions.o
- .debug_abbrev  0x00000b3f       0xec build/FFT/production/_ext/489647995/xc32_monitor.o
- .debug_abbrev  0x00000c2b       0x6f build/FFT/production/_ext/1317431971/plib_clk.o
- .debug_abbrev  0x00000c9a      0x132 build/FFT/production/_ext/2109404916/plib_gpio.o
- .debug_abbrev  0x00000dcc       0xed build/FFT/production/_ext/2109351088/plib_evic.o
- .debug_abbrev  0x00000eb9       0xa1 build/FFT/production/_ext/2109630876/plib_ocmp4.o
- .debug_abbrev  0x00000f5a       0xa1 build/FFT/production/_ext/2109630876/plib_ocmp2.o
- .debug_abbrev  0x00000ffb       0xa1 build/FFT/production/_ext/2109630876/plib_ocmp3.o
- .debug_abbrev  0x0000109c      0x10b build/FFT/production/_ext/961138470/plib_adchs.o
- .debug_abbrev  0x000011a7      0x21b build/FFT/production/_ext/2109807859/plib_uart1.o
- .debug_abbrev  0x000013c2      0x4c0 build/FFT/production/_ext/1891070335/drv_usart.o
- .debug_abbrev  0x00001882      0x183 build/FFT/production/_ext/1317415596/plib_tmr2.o
- .debug_abbrev  0x00001a05      0x183 build/FFT/production/_ext/1317415596/plib_tmr3.o
- .debug_abbrev  0x00001b88      0x130 build/FFT/production/_ext/504070962/sys_int.o
- .debug_abbrev  0x00001cb8       0xa6 build/FFT/production/_ext/980732774/sys_dma.o
- .debug_abbrev  0x00001d5e       0xe2 build/FFT/production/_ext/1360937237/app.o
- .debug_abbrev  0x00001e40       0x57 build/FFT/production/_ext/1272119167/tasks.o
- .debug_abbrev  0x00001e97       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_abbrev  0x00001ebf       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
- .debug_abbrev  0x00001ee7       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
- .debug_abbrev  0x00001f0f       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
- .debug_abbrev  0x00001f37       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
- .debug_abbrev  0x00001f5f       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
- .debug_abbrev  0x00001f87       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(puts.o)
- .debug_abbrev  0x00001faf       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
- .debug_abbrev  0x00001fd7       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
- .debug_abbrev  0x00001fff       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
- .debug_abbrev  0x00002027       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
- .debug_abbrev  0x0000204f       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
- .debug_abbrev  0x00002077       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
- .debug_abbrev  0x0000209f       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
- .debug_abbrev  0x000020c7       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
- .debug_abbrev  0x000020ef       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
- .debug_abbrev  0x00002117       0x3b c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
- .debug_abbrev  0x00002152      0x138 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
- .debug_abbrev  0x0000228a      0x147 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
- .debug_abbrev  0x000023d1       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
+ .debug_abbrev  0x00000000      0x187 build/FFT/production/_ext/1360937237/neopixel.o
+ .debug_abbrev  0x00000187      0x301 build/FFT/production/_ext/1360937237/FFT.o
+ .debug_abbrev  0x00000488      0x15f build/FFT/production/_ext/1360937237/ADCGather.o
+ .debug_abbrev  0x000005e7      0x155 build/FFT/production/_ext/1360937237/UART.o
+ .debug_abbrev  0x0000073c       0xa1 build/FFT/production/_ext/2109630876/plib_ocmp6.o
+ .debug_abbrev  0x000007dd       0x93 build/FFT/production/_ext/1360937237/main.o
+ .debug_abbrev  0x00000870      0x25b build/FFT/production/_ext/1272119167/initialization.o
+ .debug_abbrev  0x00000acb       0x57 build/FFT/production/_ext/1272119167/interrupts.o
+ .debug_abbrev  0x00000b22       0xa4 build/FFT/production/_ext/1272119167/exceptions.o
+ .debug_abbrev  0x00000bc6       0xec build/FFT/production/_ext/489647995/xc32_monitor.o
+ .debug_abbrev  0x00000cb2       0x6f build/FFT/production/_ext/1317431971/plib_clk.o
+ .debug_abbrev  0x00000d21      0x132 build/FFT/production/_ext/2109404916/plib_gpio.o
+ .debug_abbrev  0x00000e53       0xed build/FFT/production/_ext/2109351088/plib_evic.o
+ .debug_abbrev  0x00000f40       0xa1 build/FFT/production/_ext/2109630876/plib_ocmp4.o
+ .debug_abbrev  0x00000fe1       0xa1 build/FFT/production/_ext/2109630876/plib_ocmp2.o
+ .debug_abbrev  0x00001082       0xa1 build/FFT/production/_ext/2109630876/plib_ocmp3.o
+ .debug_abbrev  0x00001123      0x10b build/FFT/production/_ext/961138470/plib_adchs.o
+ .debug_abbrev  0x0000122e      0x21b build/FFT/production/_ext/2109807859/plib_uart1.o
+ .debug_abbrev  0x00001449      0x4c0 build/FFT/production/_ext/1891070335/drv_usart.o
+ .debug_abbrev  0x00001909      0x183 build/FFT/production/_ext/1317415596/plib_tmr2.o
+ .debug_abbrev  0x00001a8c      0x183 build/FFT/production/_ext/1317415596/plib_tmr3.o
+ .debug_abbrev  0x00001c0f       0xa6 build/FFT/production/_ext/980732774/sys_dma.o
+ .debug_abbrev  0x00001cb5      0x102 build/FFT/production/_ext/1360937237/app.o
+ .debug_abbrev  0x00001db7       0x57 build/FFT/production/_ext/1272119167/tasks.o
+ .debug_abbrev  0x00001e0e       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_abbrev  0x00001e36       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
+ .debug_abbrev  0x00001e5e       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+ .debug_abbrev  0x00001e86       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
+ .debug_abbrev  0x00001eae       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
+ .debug_abbrev  0x00001ed6       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
+ .debug_abbrev  0x00001efe       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(puts.o)
+ .debug_abbrev  0x00001f26       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
+ .debug_abbrev  0x00001f4e       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
+ .debug_abbrev  0x00001f76       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
+ .debug_abbrev  0x00001f9e       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
+ .debug_abbrev  0x00001fc6       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
+ .debug_abbrev  0x00001fee       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
+ .debug_abbrev  0x00002016       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
+ .debug_abbrev  0x0000203e       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
+ .debug_abbrev  0x00002066       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
+ .debug_abbrev  0x0000208e       0x3b c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
+ .debug_abbrev  0x000020c9      0x138 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x00002201      0x147 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
+ .debug_abbrev  0x00002348       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
 
-.debug_line     0x00000000     0x430e
+.debug_line     0x00000000     0x427f
  *.elf(.debug_line)
  *(.debug_line)
- .debug_line    0x00000000      0x2cf build/FFT/production/_ext/1360937237/neopixel.o
- .debug_line    0x000002cf      0x3aa build/FFT/production/_ext/1360937237/FFT.o
- .debug_line    0x00000679      0x215 build/FFT/production/_ext/1360937237/ADCGather.o
- .debug_line    0x0000088e      0x272 build/FFT/production/_ext/1360937237/UART.o
- .debug_line    0x00000b00      0x194 build/FFT/production/_ext/2109630876/plib_ocmp6.o
- .debug_line    0x00000c94       0xc8 build/FFT/production/_ext/1360937237/main.o
- .debug_line    0x00000d5c      0x6dd build/FFT/production/_ext/1272119167/initialization.o
- .debug_line    0x00001439       0xef build/FFT/production/_ext/1272119167/interrupts.o
- .debug_line    0x00001528       0xce build/FFT/production/_ext/1272119167/exceptions.o
- .debug_line    0x000015f6      0x1ab build/FFT/production/_ext/489647995/xc32_monitor.o
- .debug_line    0x000017a1      0x14a build/FFT/production/_ext/1317431971/plib_clk.o
- .debug_line    0x000018eb      0x1e8 build/FFT/production/_ext/2109404916/plib_gpio.o
- .debug_line    0x00001ad3      0x1c0 build/FFT/production/_ext/2109351088/plib_evic.o
- .debug_line    0x00001c93      0x194 build/FFT/production/_ext/2109630876/plib_ocmp4.o
- .debug_line    0x00001e27      0x194 build/FFT/production/_ext/2109630876/plib_ocmp2.o
- .debug_line    0x00001fbb      0x194 build/FFT/production/_ext/2109630876/plib_ocmp3.o
- .debug_line    0x0000214f      0x239 build/FFT/production/_ext/961138470/plib_adchs.o
- .debug_line    0x00002388      0x327 build/FFT/production/_ext/2109807859/plib_uart1.o
- .debug_line    0x000026af      0x802 build/FFT/production/_ext/1891070335/drv_usart.o
- .debug_line    0x00002eb1      0x203 build/FFT/production/_ext/1317415596/plib_tmr2.o
- .debug_line    0x000030b4      0x203 build/FFT/production/_ext/1317415596/plib_tmr3.o
- .debug_line    0x000032b7      0x195 build/FFT/production/_ext/504070962/sys_int.o
- .debug_line    0x0000344c      0x100 build/FFT/production/_ext/980732774/sys_dma.o
- .debug_line    0x0000354c      0x154 build/FFT/production/_ext/1360937237/app.o
- .debug_line    0x000036a0       0xc4 build/FFT/production/_ext/1272119167/tasks.o
- .debug_line    0x00003764       0xa6 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_line    0x0000380a       0x93 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
- .debug_line    0x0000389d       0x97 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
- .debug_line    0x00003934       0xa5 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
- .debug_line    0x000039d9       0xa6 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
- .debug_line    0x00003a7f       0xae c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
- .debug_line    0x00003b2d       0x7c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(puts.o)
- .debug_line    0x00003ba9       0x7e c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
- .debug_line    0x00003c27        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_iob.o)
- .debug_line    0x00003c27       0x7d c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
- .debug_line    0x00003ca4       0x7e c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
- .debug_line    0x00003d22       0x7e c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
- .debug_line    0x00003da0        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(ctype.o)
- .debug_line    0x00003da0       0x78 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
- .debug_line    0x00003e18       0x85 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
- .debug_line    0x00003e9d       0x78 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
- .debug_line    0x00003f15       0x7d c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
- .debug_line    0x00003f92       0x79 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
- .debug_line    0x0000400b       0x7b c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
- .debug_line    0x00004086       0xf7 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
- .debug_line    0x0000417d      0x109 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
- .debug_line    0x00004286       0x88 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
- .debug_line    0x0000430e        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(errno.o)
+ .debug_line    0x00000000      0x2e7 build/FFT/production/_ext/1360937237/neopixel.o
+ .debug_line    0x000002e7      0x42d build/FFT/production/_ext/1360937237/FFT.o
+ .debug_line    0x00000714      0x26e build/FFT/production/_ext/1360937237/ADCGather.o
+ .debug_line    0x00000982      0x272 build/FFT/production/_ext/1360937237/UART.o
+ .debug_line    0x00000bf4      0x194 build/FFT/production/_ext/2109630876/plib_ocmp6.o
+ .debug_line    0x00000d88       0xc8 build/FFT/production/_ext/1360937237/main.o
+ .debug_line    0x00000e50      0x6dd build/FFT/production/_ext/1272119167/initialization.o
+ .debug_line    0x0000152d       0xef build/FFT/production/_ext/1272119167/interrupts.o
+ .debug_line    0x0000161c       0xce build/FFT/production/_ext/1272119167/exceptions.o
+ .debug_line    0x000016ea      0x1ab build/FFT/production/_ext/489647995/xc32_monitor.o
+ .debug_line    0x00001895      0x14a build/FFT/production/_ext/1317431971/plib_clk.o
+ .debug_line    0x000019df      0x1e8 build/FFT/production/_ext/2109404916/plib_gpio.o
+ .debug_line    0x00001bc7      0x1c0 build/FFT/production/_ext/2109351088/plib_evic.o
+ .debug_line    0x00001d87      0x194 build/FFT/production/_ext/2109630876/plib_ocmp4.o
+ .debug_line    0x00001f1b      0x194 build/FFT/production/_ext/2109630876/plib_ocmp2.o
+ .debug_line    0x000020af      0x194 build/FFT/production/_ext/2109630876/plib_ocmp3.o
+ .debug_line    0x00002243      0x239 build/FFT/production/_ext/961138470/plib_adchs.o
+ .debug_line    0x0000247c      0x327 build/FFT/production/_ext/2109807859/plib_uart1.o
+ .debug_line    0x000027a3      0x802 build/FFT/production/_ext/1891070335/drv_usart.o
+ .debug_line    0x00002fa5      0x203 build/FFT/production/_ext/1317415596/plib_tmr2.o
+ .debug_line    0x000031a8      0x203 build/FFT/production/_ext/1317415596/plib_tmr3.o
+ .debug_line    0x000033ab      0x100 build/FFT/production/_ext/980732774/sys_dma.o
+ .debug_line    0x000034ab      0x166 build/FFT/production/_ext/1360937237/app.o
+ .debug_line    0x00003611       0xc4 build/FFT/production/_ext/1272119167/tasks.o
+ .debug_line    0x000036d5       0xa6 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_line    0x0000377b       0x93 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
+ .debug_line    0x0000380e       0x97 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+ .debug_line    0x000038a5       0xa5 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
+ .debug_line    0x0000394a       0xa6 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
+ .debug_line    0x000039f0       0xae c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
+ .debug_line    0x00003a9e       0x7c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(puts.o)
+ .debug_line    0x00003b1a       0x7e c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
+ .debug_line    0x00003b98        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_iob.o)
+ .debug_line    0x00003b98       0x7d c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
+ .debug_line    0x00003c15       0x7e c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
+ .debug_line    0x00003c93       0x7e c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
+ .debug_line    0x00003d11        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(ctype.o)
+ .debug_line    0x00003d11       0x78 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
+ .debug_line    0x00003d89       0x85 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
+ .debug_line    0x00003e0e       0x78 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
+ .debug_line    0x00003e86       0x7d c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
+ .debug_line    0x00003f03       0x79 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
+ .debug_line    0x00003f7c       0x7b c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
+ .debug_line    0x00003ff7       0xf7 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
+ .debug_line    0x000040ee      0x109 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
+ .debug_line    0x000041f7       0x88 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
+ .debug_line    0x0000427f        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(errno.o)
 
-.debug_frame    0x00000000     0x1424
+.debug_frame    0x00000000     0x13bc
  *.elf(.debug_frame)
  *(.debug_frame)
- .debug_frame   0x00000000       0x90 build/FFT/production/_ext/1360937237/neopixel.o
- .debug_frame   0x00000090      0x158 build/FFT/production/_ext/1360937237/FFT.o
- .debug_frame   0x000001e8       0x70 build/FFT/production/_ext/1360937237/ADCGather.o
- .debug_frame   0x00000258       0x50 build/FFT/production/_ext/1360937237/UART.o
- .debug_frame   0x000002a8       0x70 build/FFT/production/_ext/2109630876/plib_ocmp6.o
- .debug_frame   0x00000318       0x28 build/FFT/production/_ext/1360937237/main.o
- .debug_frame   0x00000340       0x28 build/FFT/production/_ext/1272119167/initialization.o
- .debug_frame   0x00000368      0x31c build/FFT/production/_ext/1272119167/interrupts.o
- .debug_frame   0x00000684       0x28 build/FFT/production/_ext/1272119167/exceptions.o
- .debug_frame   0x000006ac       0x40 build/FFT/production/_ext/489647995/xc32_monitor.o
- .debug_frame   0x000006ec       0x28 build/FFT/production/_ext/1317431971/plib_clk.o
- .debug_frame   0x00000714       0xa0 build/FFT/production/_ext/2109404916/plib_gpio.o
- .debug_frame   0x000007b4       0x80 build/FFT/production/_ext/2109351088/plib_evic.o
- .debug_frame   0x00000834       0x70 build/FFT/production/_ext/2109630876/plib_ocmp4.o
- .debug_frame   0x000008a4       0x70 build/FFT/production/_ext/2109630876/plib_ocmp2.o
- .debug_frame   0x00000914       0x70 build/FFT/production/_ext/2109630876/plib_ocmp3.o
- .debug_frame   0x00000984       0xd0 build/FFT/production/_ext/961138470/plib_adchs.o
- .debug_frame   0x00000a54      0x120 build/FFT/production/_ext/2109807859/plib_uart1.o
- .debug_frame   0x00000b74      0x288 build/FFT/production/_ext/1891070335/drv_usart.o
- .debug_frame   0x00000dfc       0xc8 build/FFT/production/_ext/1317415596/plib_tmr2.o
- .debug_frame   0x00000ec4       0xc8 build/FFT/production/_ext/1317415596/plib_tmr3.o
- .debug_frame   0x00000f8c       0x94 build/FFT/production/_ext/504070962/sys_int.o
- .debug_frame   0x00001020       0x40 build/FFT/production/_ext/980732774/sys_dma.o
- .debug_frame   0x00001060       0x40 build/FFT/production/_ext/1360937237/app.o
- .debug_frame   0x000010a0       0x28 build/FFT/production/_ext/1272119167/tasks.o
- .debug_frame   0x000010c8       0x2c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_frame   0x000010f4       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
- .debug_frame   0x00001114       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
- .debug_frame   0x00001134       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
- .debug_frame   0x00001154       0x2c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
- .debug_frame   0x00001180       0x2c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
- .debug_frame   0x000011ac       0x48 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(puts.o)
- .debug_frame   0x000011f4       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
- .debug_frame   0x0000121c       0x2c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
- .debug_frame   0x00001248       0x38 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
- .debug_frame   0x00001280       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
- .debug_frame   0x000012a8       0x30 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
- .debug_frame   0x000012d8       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
- .debug_frame   0x00001300       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
- .debug_frame   0x00001328       0x2c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
- .debug_frame   0x00001354       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
- .debug_frame   0x0000137c       0x30 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
- .debug_frame   0x000013ac       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
- .debug_frame   0x000013cc       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
- .debug_frame   0x000013ec       0x38 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
+ .debug_frame   0x00000000       0xa0 build/FFT/production/_ext/1360937237/neopixel.o
+ .debug_frame   0x000000a0      0x174 build/FFT/production/_ext/1360937237/FFT.o
+ .debug_frame   0x00000214       0x70 build/FFT/production/_ext/1360937237/ADCGather.o
+ .debug_frame   0x00000284       0x50 build/FFT/production/_ext/1360937237/UART.o
+ .debug_frame   0x000002d4       0x70 build/FFT/production/_ext/2109630876/plib_ocmp6.o
+ .debug_frame   0x00000344       0x28 build/FFT/production/_ext/1360937237/main.o
+ .debug_frame   0x0000036c       0x28 build/FFT/production/_ext/1272119167/initialization.o
+ .debug_frame   0x00000394      0x31c build/FFT/production/_ext/1272119167/interrupts.o
+ .debug_frame   0x000006b0       0x28 build/FFT/production/_ext/1272119167/exceptions.o
+ .debug_frame   0x000006d8       0x40 build/FFT/production/_ext/489647995/xc32_monitor.o
+ .debug_frame   0x00000718       0x28 build/FFT/production/_ext/1317431971/plib_clk.o
+ .debug_frame   0x00000740       0xa0 build/FFT/production/_ext/2109404916/plib_gpio.o
+ .debug_frame   0x000007e0       0x80 build/FFT/production/_ext/2109351088/plib_evic.o
+ .debug_frame   0x00000860       0x70 build/FFT/production/_ext/2109630876/plib_ocmp4.o
+ .debug_frame   0x000008d0       0x70 build/FFT/production/_ext/2109630876/plib_ocmp2.o
+ .debug_frame   0x00000940       0x70 build/FFT/production/_ext/2109630876/plib_ocmp3.o
+ .debug_frame   0x000009b0       0xd0 build/FFT/production/_ext/961138470/plib_adchs.o
+ .debug_frame   0x00000a80      0x120 build/FFT/production/_ext/2109807859/plib_uart1.o
+ .debug_frame   0x00000ba0      0x288 build/FFT/production/_ext/1891070335/drv_usart.o
+ .debug_frame   0x00000e28       0xc8 build/FFT/production/_ext/1317415596/plib_tmr2.o
+ .debug_frame   0x00000ef0       0xc8 build/FFT/production/_ext/1317415596/plib_tmr3.o
+ .debug_frame   0x00000fb8       0x40 build/FFT/production/_ext/980732774/sys_dma.o
+ .debug_frame   0x00000ff8       0x40 build/FFT/production/_ext/1360937237/app.o
+ .debug_frame   0x00001038       0x28 build/FFT/production/_ext/1272119167/tasks.o
+ .debug_frame   0x00001060       0x2c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_frame   0x0000108c       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
+ .debug_frame   0x000010ac       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+ .debug_frame   0x000010cc       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
+ .debug_frame   0x000010ec       0x2c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
+ .debug_frame   0x00001118       0x2c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
+ .debug_frame   0x00001144       0x48 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(puts.o)
+ .debug_frame   0x0000118c       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
+ .debug_frame   0x000011b4       0x2c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
+ .debug_frame   0x000011e0       0x38 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
+ .debug_frame   0x00001218       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
+ .debug_frame   0x00001240       0x30 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
+ .debug_frame   0x00001270       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
+ .debug_frame   0x00001298       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
+ .debug_frame   0x000012c0       0x2c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
+ .debug_frame   0x000012ec       0x28 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
+ .debug_frame   0x00001314       0x30 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
+ .debug_frame   0x00001344       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
+ .debug_frame   0x00001364       0x20 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
+ .debug_frame   0x00001384       0x38 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
 
-.debug_str      0x00000000      0x203
+.debug_str      0x00000000      0x218
  *.elf(.debug_str)
  *(.debug_str)
  .debug_str     0x00000000        0x0 build/FFT/production/_ext/1360937237/neopixel.o
- .debug_str     0x00000000       0x21 build/FFT/production/_ext/1360937237/FFT.o
- .debug_str     0x00000021        0x0 build/FFT/production/_ext/1360937237/ADCGather.o
- .debug_str     0x00000021        0x0 build/FFT/production/_ext/1360937237/UART.o
- .debug_str     0x00000021        0x0 build/FFT/production/_ext/2109630876/plib_ocmp6.o
- .debug_str     0x00000021        0x0 build/FFT/production/_ext/1360937237/main.o
- .debug_str     0x00000021       0x25 build/FFT/production/_ext/1272119167/initialization.o
- .debug_str     0x00000046        0x0 build/FFT/production/_ext/1272119167/interrupts.o
- .debug_str     0x00000046        0x0 build/FFT/production/_ext/1272119167/exceptions.o
- .debug_str     0x00000046        0x0 build/FFT/production/_ext/489647995/xc32_monitor.o
- .debug_str     0x00000046        0x0 build/FFT/production/_ext/1317431971/plib_clk.o
- .debug_str     0x00000046        0xa build/FFT/production/_ext/2109404916/plib_gpio.o
- .debug_str     0x00000050        0x7 build/FFT/production/_ext/2109351088/plib_evic.o
- .debug_str     0x00000057        0x0 build/FFT/production/_ext/2109630876/plib_ocmp4.o
- .debug_str     0x00000057        0x0 build/FFT/production/_ext/2109630876/plib_ocmp2.o
- .debug_str     0x00000057        0x0 build/FFT/production/_ext/2109630876/plib_ocmp3.o
- .debug_str     0x00000057       0x13 build/FFT/production/_ext/961138470/plib_adchs.o
- .debug_str     0x0000006a       0x10 build/FFT/production/_ext/2109807859/plib_uart1.o
- .debug_str     0x0000007a      0x169 build/FFT/production/_ext/1891070335/drv_usart.o
- .debug_str     0x000001e3        0xc build/FFT/production/_ext/1317415596/plib_tmr2.o
- .debug_str     0x000001ef        0xc build/FFT/production/_ext/1317415596/plib_tmr3.o
- .debug_str     0x000001fb        0x0 build/FFT/production/_ext/504070962/sys_int.o
- .debug_str     0x000001fb        0x8 build/FFT/production/_ext/980732774/sys_dma.o
- .debug_str     0x00000203        0x0 build/FFT/production/_ext/1360937237/app.o
- .debug_str     0x00000203        0x0 build/FFT/production/_ext/1272119167/tasks.o
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(puts.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_iob.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(ctype.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
- .debug_str     0x00000203        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(errno.o)
+ .debug_str     0x00000000       0x36 build/FFT/production/_ext/1360937237/FFT.o
+ .debug_str     0x00000036        0x0 build/FFT/production/_ext/1360937237/ADCGather.o
+ .debug_str     0x00000036        0x0 build/FFT/production/_ext/1360937237/UART.o
+ .debug_str     0x00000036        0x0 build/FFT/production/_ext/2109630876/plib_ocmp6.o
+ .debug_str     0x00000036        0x0 build/FFT/production/_ext/1360937237/main.o
+ .debug_str     0x00000036       0x25 build/FFT/production/_ext/1272119167/initialization.o
+ .debug_str     0x0000005b        0x0 build/FFT/production/_ext/1272119167/interrupts.o
+ .debug_str     0x0000005b        0x0 build/FFT/production/_ext/1272119167/exceptions.o
+ .debug_str     0x0000005b        0x0 build/FFT/production/_ext/489647995/xc32_monitor.o
+ .debug_str     0x0000005b        0x0 build/FFT/production/_ext/1317431971/plib_clk.o
+ .debug_str     0x0000005b        0xa build/FFT/production/_ext/2109404916/plib_gpio.o
+ .debug_str     0x00000065        0x7 build/FFT/production/_ext/2109351088/plib_evic.o
+ .debug_str     0x0000006c        0x0 build/FFT/production/_ext/2109630876/plib_ocmp4.o
+ .debug_str     0x0000006c        0x0 build/FFT/production/_ext/2109630876/plib_ocmp2.o
+ .debug_str     0x0000006c        0x0 build/FFT/production/_ext/2109630876/plib_ocmp3.o
+ .debug_str     0x0000006c       0x13 build/FFT/production/_ext/961138470/plib_adchs.o
+ .debug_str     0x0000007f       0x10 build/FFT/production/_ext/2109807859/plib_uart1.o
+ .debug_str     0x0000008f      0x169 build/FFT/production/_ext/1891070335/drv_usart.o
+ .debug_str     0x000001f8        0xc build/FFT/production/_ext/1317415596/plib_tmr2.o
+ .debug_str     0x00000204        0xc build/FFT/production/_ext/1317415596/plib_tmr3.o
+ .debug_str     0x00000210        0x8 build/FFT/production/_ext/980732774/sys_dma.o
+ .debug_str     0x00000218        0x0 build/FFT/production/_ext/1360937237/app.o
+ .debug_str     0x00000218        0x0 build/FFT/production/_ext/1272119167/tasks.o
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(puts.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_iob.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(ctype.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
+ .debug_str     0x00000218        0x0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(errno.o)
 
-.debug_loc      0x00000000     0x3d9b
+.debug_loc      0x00000000     0x3cd9
  *.elf(.debug_loc)
  *(.debug_loc)
  .debug_loc     0x00000000      0x156 build/FFT/production/_ext/1360937237/neopixel.o
- .debug_loc     0x00000156      0xa55 build/FFT/production/_ext/1360937237/FFT.o
- .debug_loc     0x00000bab       0x21 build/FFT/production/_ext/1360937237/ADCGather.o
- .debug_loc     0x00000bcc       0x21 build/FFT/production/_ext/1272119167/initialization.o
- .debug_loc     0x00000bed       0x77 build/FFT/production/_ext/489647995/xc32_monitor.o
- .debug_loc     0x00000c64       0x32 build/FFT/production/_ext/1317431971/plib_clk.o
- .debug_loc     0x00000c96      0x129 build/FFT/production/_ext/2109404916/plib_gpio.o
- .debug_loc     0x00000dbf       0x84 build/FFT/production/_ext/2109351088/plib_evic.o
- .debug_loc     0x00000e43      0x1c4 build/FFT/production/_ext/961138470/plib_adchs.o
- .debug_loc     0x00001007      0x3d8 build/FFT/production/_ext/2109807859/plib_uart1.o
- .debug_loc     0x000013df     0x133e build/FFT/production/_ext/1891070335/drv_usart.o
- .debug_loc     0x0000271d       0x13 build/FFT/production/_ext/1317415596/plib_tmr2.o
- .debug_loc     0x00002730       0x13 build/FFT/production/_ext/1317415596/plib_tmr3.o
- .debug_loc     0x00002743       0xc1 build/FFT/production/_ext/504070962/sys_int.o
- .debug_loc     0x00002804       0x34 build/FFT/production/_ext/1360937237/app.o
- .debug_loc     0x00002838       0x2c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_loc     0x00002864       0x2c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
- .debug_loc     0x00002890       0x2c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
- .debug_loc     0x000028bc      0xa6a c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
- .debug_loc     0x00003326      0xa3d c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
- .debug_loc     0x00003d63       0x38 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
+ .debug_loc     0x00000156      0xa74 build/FFT/production/_ext/1360937237/FFT.o
+ .debug_loc     0x00000bca       0x21 build/FFT/production/_ext/1360937237/ADCGather.o
+ .debug_loc     0x00000beb       0x21 build/FFT/production/_ext/1272119167/initialization.o
+ .debug_loc     0x00000c0c       0x77 build/FFT/production/_ext/489647995/xc32_monitor.o
+ .debug_loc     0x00000c83       0x32 build/FFT/production/_ext/1317431971/plib_clk.o
+ .debug_loc     0x00000cb5      0x129 build/FFT/production/_ext/2109404916/plib_gpio.o
+ .debug_loc     0x00000dde       0x84 build/FFT/production/_ext/2109351088/plib_evic.o
+ .debug_loc     0x00000e62      0x1c4 build/FFT/production/_ext/961138470/plib_adchs.o
+ .debug_loc     0x00001026      0x3d8 build/FFT/production/_ext/2109807859/plib_uart1.o
+ .debug_loc     0x000013fe     0x133e build/FFT/production/_ext/1891070335/drv_usart.o
+ .debug_loc     0x0000273c       0x13 build/FFT/production/_ext/1317415596/plib_tmr2.o
+ .debug_loc     0x0000274f       0x13 build/FFT/production/_ext/1317415596/plib_tmr3.o
+ .debug_loc     0x00002762       0x14 build/FFT/production/_ext/1360937237/app.o
+ .debug_loc     0x00002776       0x2c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_loc     0x000027a2       0x2c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
+ .debug_loc     0x000027ce       0x2c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
+ .debug_loc     0x000027fa      0xa6a c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
+ .debug_loc     0x00003264      0xa3d c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
+ .debug_loc     0x00003ca1       0x38 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
 
 .debug_macinfo
  *.elf(.debug_macinfo)
@@ -2938,54 +2906,53 @@ END GROUP
  *.elf(.debug_pubtypes)
  *(.debug_pubtypes)
 
-.debug_ranges   0x00000000      0xa08
+.debug_ranges   0x00000000      0x9e8
  *.elf(.debug_ranges)
  *(.debug_ranges)
- .debug_ranges  0x00000000       0x58 build/FFT/production/_ext/1360937237/neopixel.o
- .debug_ranges  0x00000058      0x150 build/FFT/production/_ext/1360937237/FFT.o
- .debug_ranges  0x000001a8       0x30 build/FFT/production/_ext/1360937237/ADCGather.o
- .debug_ranges  0x000001d8       0x20 build/FFT/production/_ext/1360937237/UART.o
- .debug_ranges  0x000001f8       0x38 build/FFT/production/_ext/2109630876/plib_ocmp6.o
- .debug_ranges  0x00000230       0x10 build/FFT/production/_ext/1360937237/main.o
- .debug_ranges  0x00000240       0x10 build/FFT/production/_ext/1272119167/initialization.o
- .debug_ranges  0x00000250       0x30 build/FFT/production/_ext/1272119167/interrupts.o
- .debug_ranges  0x00000280       0x10 build/FFT/production/_ext/1272119167/exceptions.o
- .debug_ranges  0x00000290       0x18 build/FFT/production/_ext/489647995/xc32_monitor.o
- .debug_ranges  0x000002a8       0x10 build/FFT/production/_ext/1317431971/plib_clk.o
- .debug_ranges  0x000002b8       0x50 build/FFT/production/_ext/2109404916/plib_gpio.o
- .debug_ranges  0x00000308       0x40 build/FFT/production/_ext/2109351088/plib_evic.o
- .debug_ranges  0x00000348       0x38 build/FFT/production/_ext/2109630876/plib_ocmp4.o
- .debug_ranges  0x00000380       0x38 build/FFT/production/_ext/2109630876/plib_ocmp2.o
- .debug_ranges  0x000003b8       0x38 build/FFT/production/_ext/2109630876/plib_ocmp3.o
- .debug_ranges  0x000003f0       0x68 build/FFT/production/_ext/961138470/plib_adchs.o
- .debug_ranges  0x00000458       0x98 build/FFT/production/_ext/2109807859/plib_uart1.o
- .debug_ranges  0x000004f0      0x140 build/FFT/production/_ext/1891070335/drv_usart.o
- .debug_ranges  0x00000630       0x60 build/FFT/production/_ext/1317415596/plib_tmr2.o
- .debug_ranges  0x00000690       0x60 build/FFT/production/_ext/1317415596/plib_tmr3.o
- .debug_ranges  0x000006f0       0x30 build/FFT/production/_ext/504070962/sys_int.o
- .debug_ranges  0x00000720       0x20 build/FFT/production/_ext/980732774/sys_dma.o
- .debug_ranges  0x00000740       0x18 build/FFT/production/_ext/1360937237/app.o
- .debug_ranges  0x00000758       0x10 build/FFT/production/_ext/1272119167/tasks.o
- .debug_ranges  0x00000768       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
- .debug_ranges  0x00000778       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
- .debug_ranges  0x00000788       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
- .debug_ranges  0x00000798       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
- .debug_ranges  0x000007a8       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
- .debug_ranges  0x000007b8       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
- .debug_ranges  0x000007c8       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(puts.o)
- .debug_ranges  0x000007e0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
- .debug_ranges  0x000007f0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
- .debug_ranges  0x00000800       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
- .debug_ranges  0x00000810       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
- .debug_ranges  0x00000820       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
- .debug_ranges  0x00000830       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
- .debug_ranges  0x00000840       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
- .debug_ranges  0x00000850       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
- .debug_ranges  0x00000860       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
- .debug_ranges  0x00000870       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
- .debug_ranges  0x00000888       0x98 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
- .debug_ranges  0x00000920       0xd8 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
- .debug_ranges  0x000009f8       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
+ .debug_ranges  0x00000000       0x60 build/FFT/production/_ext/1360937237/neopixel.o
+ .debug_ranges  0x00000060      0x158 build/FFT/production/_ext/1360937237/FFT.o
+ .debug_ranges  0x000001b8       0x30 build/FFT/production/_ext/1360937237/ADCGather.o
+ .debug_ranges  0x000001e8       0x20 build/FFT/production/_ext/1360937237/UART.o
+ .debug_ranges  0x00000208       0x38 build/FFT/production/_ext/2109630876/plib_ocmp6.o
+ .debug_ranges  0x00000240       0x10 build/FFT/production/_ext/1360937237/main.o
+ .debug_ranges  0x00000250       0x10 build/FFT/production/_ext/1272119167/initialization.o
+ .debug_ranges  0x00000260       0x30 build/FFT/production/_ext/1272119167/interrupts.o
+ .debug_ranges  0x00000290       0x10 build/FFT/production/_ext/1272119167/exceptions.o
+ .debug_ranges  0x000002a0       0x18 build/FFT/production/_ext/489647995/xc32_monitor.o
+ .debug_ranges  0x000002b8       0x10 build/FFT/production/_ext/1317431971/plib_clk.o
+ .debug_ranges  0x000002c8       0x50 build/FFT/production/_ext/2109404916/plib_gpio.o
+ .debug_ranges  0x00000318       0x40 build/FFT/production/_ext/2109351088/plib_evic.o
+ .debug_ranges  0x00000358       0x38 build/FFT/production/_ext/2109630876/plib_ocmp4.o
+ .debug_ranges  0x00000390       0x38 build/FFT/production/_ext/2109630876/plib_ocmp2.o
+ .debug_ranges  0x000003c8       0x38 build/FFT/production/_ext/2109630876/plib_ocmp3.o
+ .debug_ranges  0x00000400       0x68 build/FFT/production/_ext/961138470/plib_adchs.o
+ .debug_ranges  0x00000468       0x98 build/FFT/production/_ext/2109807859/plib_uart1.o
+ .debug_ranges  0x00000500      0x140 build/FFT/production/_ext/1891070335/drv_usart.o
+ .debug_ranges  0x00000640       0x60 build/FFT/production/_ext/1317415596/plib_tmr2.o
+ .debug_ranges  0x000006a0       0x60 build/FFT/production/_ext/1317415596/plib_tmr3.o
+ .debug_ranges  0x00000700       0x20 build/FFT/production/_ext/980732774/sys_dma.o
+ .debug_ranges  0x00000720       0x18 build/FFT/production/_ext/1360937237/app.o
+ .debug_ranges  0x00000738       0x10 build/FFT/production/_ext/1272119167/tasks.o
+ .debug_ranges  0x00000748       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
+ .debug_ranges  0x00000758       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
+ .debug_ranges  0x00000768       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+ .debug_ranges  0x00000778       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
+ .debug_ranges  0x00000788       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
+ .debug_ranges  0x00000798       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
+ .debug_ranges  0x000007a8       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(puts.o)
+ .debug_ranges  0x000007c0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
+ .debug_ranges  0x000007d0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
+ .debug_ranges  0x000007e0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
+ .debug_ranges  0x000007f0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
+ .debug_ranges  0x00000800       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
+ .debug_ranges  0x00000810       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
+ .debug_ranges  0x00000820       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
+ .debug_ranges  0x00000830       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
+ .debug_ranges  0x00000840       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
+ .debug_ranges  0x00000850       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
+ .debug_ranges  0x00000868       0x98 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
+ .debug_ranges  0x00000900       0xd8 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
+ .debug_ranges  0x000009d8       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
 
 .gnu.attributes
                 0x00000000       0x10
@@ -3033,59 +3000,57 @@ END GROUP
  .gnu.attributes
                 0x00000140       0x10 build/FFT/production/_ext/1317415596/plib_tmr3.o
  .gnu.attributes
-                0x00000150       0x10 build/FFT/production/_ext/504070962/sys_int.o
+                0x00000150       0x10 build/FFT/production/_ext/980732774/sys_dma.o
  .gnu.attributes
-                0x00000160       0x10 build/FFT/production/_ext/980732774/sys_dma.o
+                0x00000160       0x10 build/FFT/production/_ext/1360937237/app.o
  .gnu.attributes
-                0x00000170       0x10 build/FFT/production/_ext/1360937237/app.o
+                0x00000170       0x10 build/FFT/production/_ext/1272119167/tasks.o
  .gnu.attributes
-                0x00000180       0x10 build/FFT/production/_ext/1272119167/tasks.o
+                0x00000180       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
  .gnu.attributes
-                0x00000190       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
+                0x00000190       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
  .gnu.attributes
-                0x000001a0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
+                0x000001a0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
  .gnu.attributes
-                0x000001b0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+                0x000001b0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
  .gnu.attributes
-                0x000001c0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(defaultinterrupt.o)
+                0x000001c0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
  .gnu.attributes
-                0x000001d0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
+                0x000001d0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
  .gnu.attributes
-                0x000001e0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
+                0x000001e0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(puts.o)
  .gnu.attributes
-                0x000001f0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(puts.o)
+                0x000001f0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
  .gnu.attributes
-                0x00000200       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
+                0x00000200       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_iob.o)
  .gnu.attributes
-                0x00000210       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_iob.o)
+                0x00000210       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
  .gnu.attributes
-                0x00000220       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
+                0x00000220       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
  .gnu.attributes
-                0x00000230       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
+                0x00000230       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
  .gnu.attributes
-                0x00000240       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
+                0x00000240       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(ctype.o)
  .gnu.attributes
-                0x00000250       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(ctype.o)
+                0x00000250       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
  .gnu.attributes
-                0x00000260       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
+                0x00000260       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
  .gnu.attributes
-                0x00000270       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
+                0x00000270       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
  .gnu.attributes
-                0x00000280       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
+                0x00000280       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
  .gnu.attributes
-                0x00000290       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
+                0x00000290       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
  .gnu.attributes
-                0x000002a0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
+                0x000002a0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
  .gnu.attributes
-                0x000002b0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
+                0x000002b0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
  .gnu.attributes
-                0x000002c0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
+                0x000002c0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
  .gnu.attributes
-                0x000002d0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
+                0x000002d0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
  .gnu.attributes
-                0x000002e0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
- .gnu.attributes
-                0x000002f0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(errno.o)
+                0x000002e0       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(errno.o)
                 0x9d000000                PROVIDE (__pic32_init_cache_program_base_addr, 0x9d000000)
                 0x80000000                PROVIDE (__pic32_init_cache_data_base_addr, 0x80000000)
                 0xd0000000                PROVIDE (__pic32_init_sqi_kseg2_virtual_base_addr, 0xd0000000)
@@ -3178,8 +3143,8 @@ LOAD data_init
 .reginfo        0x00000000       0x18
  .reginfo       0x00000000       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\debug-exception-return.o
 
-.stack          0x800008f0      0x400
- .stack         0x800008f0      0x400 stack
+.stack          0x800069c8      0x400
+ .stack         0x800069c8      0x400 stack
 
 .__vector_offset_BF810540_data
                 0xbf810540      0x178
@@ -3231,20 +3196,24 @@ LOAD data_init
  .__vector_offset_BF810894_data
                 0xbf810894        0x4 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/./proc/32MZ2048EFG100\vector_offset_init.o
 
-.bss            0x800004b8       0xd0
- .bss           0x800004b8       0xd0 build/FFT/production/_ext/1272119167/initialization.o
+.bss            0x8000658c       0xd0
+ .bss           0x8000658c       0xd0 build/FFT/production/_ext/1272119167/initialization.o
 
-.data           0x80000588       0xa4
- .data          0x80000588       0xa4 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_iob.o)
-                0x80000588                _Files
-                0x8000058c                _iob
+.data           0x8000665c       0xa4
+ .data          0x8000665c       0xa4 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_iob.o)
+                0x8000665c                _Files
+                0x80006660                _iob
 
-.bss            0x8000062c       0xa4
- .bss           0x8000062c       0x60 build/FFT/production/_ext/1891070335/drv_usart.o
- .bss           0x8000068c       0x44 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_iob.o)
-                0x8000068c                _sobuf
-                0x800006ac                _sibuf
-                0x800006cc                _outdone
+.bss            0x80006700       0xa4
+ .bss           0x80006700       0x60 build/FFT/production/_ext/1891070335/drv_usart.o
+ .bss           0x80006760       0x44 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_iob.o)
+                0x80006760                _sobuf
+                0x80006780                _sibuf
+                0x800067a0                _outdone
+
+.bss.errno      0x800067a4        0x4
+ .bss.errno     0x800067a4        0x4 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(errno.o)
+                0x800067a4                errno
 
 ._debug_exception
                 0xbfc00480       0x2c
@@ -3259,88 +3228,134 @@ LOAD data_init
                 0x9d000270                _vfprintf_cdnopsuxX
                 0x9d000270                _vfprintf_cdnopuxX
 
-.dinit          0x9d000efc      0x540
- .dinit         0x9d000efc      0x540 data_init
+.text.__ieee754_pow
+                0x9d000efc      0x8d4
+ .text.__ieee754_pow
+                0x9d000efc      0x8d4 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
+                0x9d000efc                __ieee754_pow
 
-.text           0x9d00143c      0x8bc
- .text          0x9d00143c      0x464 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
-                0x9d00143c                __umoddi3
- .text          0x9d0018a0      0x458 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
-                0x9d0018a0                __udivdi3
+.text.__kernel_standard
+                0x9d0017d0      0x77c
+ .text.__kernel_standard
+                0x9d0017d0      0x77c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
+                0x9d0017d0                __kernel_standard
 
-.text.TIMER_2_Handler
-                0x9d001cf8      0x250
- .text.TIMER_2_Handler
-                0x9d001cf8      0x250 build/FFT/production/_ext/1272119167/interrupts.o
-                0x9d001cf8                TIMER_2_Handler
+.dinit          0x9d001f4c      0x560
+ .dinit         0x9d001f4c      0x560 data_init
+
+.text           0x9d0024ac      0x8bc
+ .text          0x9d0024ac      0x464 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_umoddi3.o)
+                0x9d0024ac                __umoddi3
+ .text          0x9d002910      0x458 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/fpu64\libgcc.a(_udivdi3.o)
+                0x9d002910                __udivdi3
+
+.text._Compute  0x9d002d68      0x2f4
+ .text._Compute
+                0x9d002d68      0x2f4 build/FFT/production/_ext/1360937237/FFT.o
+                0x9d002d68                _Compute
+
+.text._powx     0x9d00305c      0x284
+ .text._powx    0x9d00305c      0x284 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
+                0x9d00305c                _powx
 
 .text.TIMER_3_Handler
-                0x9d001f48      0x250
+                0x9d0032e0      0x250
  .text.TIMER_3_Handler
-                0x9d001f48      0x250 build/FFT/production/_ext/1272119167/interrupts.o
-                0x9d001f48                TIMER_3_Handler
+                0x9d0032e0      0x250 build/FFT/production/_ext/1272119167/interrupts.o
+                0x9d0032e0                TIMER_3_Handler
 
 .text.UART1_FAULT_Handler
-                0x9d002198      0x250
+                0x9d003530      0x250
  .text.UART1_FAULT_Handler
-                0x9d002198      0x250 build/FFT/production/_ext/1272119167/interrupts.o
-                0x9d002198                UART1_FAULT_Handler
+                0x9d003530      0x250 build/FFT/production/_ext/1272119167/interrupts.o
+                0x9d003530                UART1_FAULT_Handler
 
 .text.UART1_RX_Handler
-                0x9d0023e8      0x250
+                0x9d003780      0x250
  .text.UART1_RX_Handler
-                0x9d0023e8      0x250 build/FFT/production/_ext/1272119167/interrupts.o
-                0x9d0023e8                UART1_RX_Handler
+                0x9d003780      0x250 build/FFT/production/_ext/1272119167/interrupts.o
+                0x9d003780                UART1_RX_Handler
 
 .text.UART1_TX_Handler
-                0x9d002638      0x250
+                0x9d0039d0      0x250
  .text.UART1_TX_Handler
-                0x9d002638      0x250 build/FFT/production/_ext/1272119167/interrupts.o
-                0x9d002638                UART1_TX_Handler
+                0x9d0039d0      0x250 build/FFT/production/_ext/1272119167/interrupts.o
+                0x9d0039d0                UART1_TX_Handler
+
+.text.DisplayFFT
+                0x9d003c20      0x24c
+ .text.DisplayFFT
+                0x9d003c20      0x24c build/FFT/production/_ext/1360937237/FFT.o
+                0x9d003c20                DisplayFFT
+
+.text.TIMER_2_Handler
+                0x9d003e6c      0x23c
+ .text.TIMER_2_Handler
+                0x9d003e6c      0x23c build/FFT/production/_ext/1272119167/interrupts.o
+                0x9d003e6c                TIMER_2_Handler
 
 .text._DRV_USART_BufferQueueTask
-                0x9d002888      0x1c8
+                0x9d0040a8      0x1c8
  .text._DRV_USART_BufferQueueTask
-                0x9d002888      0x1c8 build/FFT/production/_ext/1891070335/drv_usart.o
+                0x9d0040a8      0x1c8 build/FFT/production/_ext/1891070335/drv_usart.o
 
 .text.DRV_USART_Initialize
-                0x9d002a50      0x194
+                0x9d004270      0x194
  .text.DRV_USART_Initialize
-                0x9d002a50      0x194 build/FFT/production/_ext/1891070335/drv_usart.o
-                0x9d002a50                DRV_USART_Initialize
+                0x9d004270      0x194 build/FFT/production/_ext/1891070335/drv_usart.o
+                0x9d004270                DRV_USART_Initialize
 
-.rodata         0x9d002be4      0x158
- .rodata        0x9d002be4      0x158 build/FFT/production/_ext/1272119167/exceptions.o
+.text.rint      0x9d004404      0x180
+ .text.rint     0x9d004404      0x180 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
+                0x9d004404                rint
+
+.text.our_scalbn
+                0x9d004584      0x16c
+ .text.our_scalbn
+                0x9d004584      0x16c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
+                0x9d004584                our_scalbn
+
+.rodata         0x9d0046f0      0x158
+ .rodata        0x9d0046f0      0x158 build/FFT/production/_ext/1272119167/exceptions.o
 
 .text.UART1_SerialSetup
-                0x9d002d3c      0x144
+                0x9d004848      0x144
  .text.UART1_SerialSetup
-                0x9d002d3c      0x144 build/FFT/production/_ext/2109807859/plib_uart1.o
-                0x9d002d3c                UART1_SerialSetup
+                0x9d004848      0x144 build/FFT/production/_ext/2109807859/plib_uart1.o
+                0x9d004848                UART1_SerialSetup
 
-.text.fputc     0x9d002e80      0x144
- .text.fputc    0x9d002e80      0x144 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
-                0x9d002e80                fputc
+.text.fputc     0x9d00498c      0x144
+ .text.fputc    0x9d00498c      0x144 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_fputc_simple.o)
+                0x9d00498c                fputc
 
-.text._flsbuf   0x9d002fc4      0x12c
- .text._flsbuf  0x9d002fc4      0x12c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
-                0x9d002fc4                _flsbuf
+.text.updateFFTDisplay
+                0x9d004ad0      0x13c
+ .text.updateFFTDisplay
+                0x9d004ad0      0x13c build/FFT/production/_ext/1360937237/FFT.o
+                0x9d004ad0                updateFFTDisplay
+
+.text._flsbuf   0x9d004c0c      0x12c
+ .text._flsbuf  0x9d004c0c      0x12c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(_flsbuf_simple.o)
+                0x9d004c0c                _flsbuf
+
+.rodata         0x9d004d38      0x128
+ .rodata        0x9d004d38      0x128 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(e_pow.o)
 
 .text.ADCHS_Initialize
-                0x9d0030f0      0x114
+                0x9d004e60      0x114
  .text.ADCHS_Initialize
-                0x9d0030f0      0x114 build/FFT/production/_ext/961138470/plib_adchs.o
-                0x9d0030f0                ADCHS_Initialize
+                0x9d004e60      0x114 build/FFT/production/_ext/961138470/plib_adchs.o
+                0x9d004e60                ADCHS_Initialize
 
 .text.TMR2InterruptCallback
-                0x9d003204      0x10c
+                0x9d004f74      0x110
  .text.TMR2InterruptCallback
-                0x9d003204      0x10c build/FFT/production/_ext/1360937237/neopixel.o
-                0x9d003204                TMR2InterruptCallback
+                0x9d004f74      0x110 build/FFT/production/_ext/1360937237/neopixel.o
+                0x9d004f74                TMR2InterruptCallback
 
-.rodata         0x9d003310      0x104
- .rodata        0x9d003310      0x104 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(ctype.o)
-                0x9d003310                _ctype
+.rodata         0x9d005084      0x104
+ .rodata        0x9d005084      0x104 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(ctype.o)
+                0x9d005084                _ctype
 
 .text.UART1_RX_InterruptHandler
                 0x9d000010       0xec
@@ -3349,394 +3364,500 @@ LOAD data_init
                 0x9d000010                UART1_RX_InterruptHandler
 
 .text.GPIO_Initialize
-                0x9d003414       0xe8
+                0x9d005188       0xe8
  .text.GPIO_Initialize
-                0x9d003414       0xe8 build/FFT/production/_ext/2109404916/plib_gpio.o
-                0x9d003414                GPIO_Initialize
+                0x9d005188       0xe8 build/FFT/production/_ext/2109404916/plib_gpio.o
+                0x9d005188                GPIO_Initialize
 
 .text.CLK_Initialize
-                0x9d0034fc       0xe0
+                0x9d005270       0xe0
  .text.CLK_Initialize
-                0x9d0034fc       0xe0 build/FFT/production/_ext/1317431971/plib_clk.o
-                0x9d0034fc                CLK_Initialize
+                0x9d005270       0xe0 build/FFT/production/_ext/1317431971/plib_clk.o
+                0x9d005270                CLK_Initialize
 
 .text.general_exception
-                0x9d0035dc       0xdc
+                0x9d005350       0xdc
  .text.general_exception
-                0x9d0035dc       0xdc c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(general-exception.o)
-                0x9d0035dc                _general_exception_context
+                0x9d005350       0xdc c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(general-exception.o)
+                0x9d005350                _general_exception_context
 
 .text.UART1_TX_InterruptHandler
-                0x9d0036b8       0xd8
+                0x9d00542c       0xd8
  .text.UART1_TX_InterruptHandler
-                0x9d0036b8       0xd8 build/FFT/production/_ext/2109807859/plib_uart1.o
-                0x9d0036b8                UART1_TX_InterruptHandler
+                0x9d00542c       0xd8 build/FFT/production/_ext/2109807859/plib_uart1.o
+                0x9d00542c                UART1_TX_InterruptHandler
 
 .text._cache_err_exception_context
-                0x9d003790       0xd8
+                0x9d005504       0xd8
  .text._cache_err_exception_context
-                0x9d003790       0xd8 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(cache-err-exception.o)
-                0x9d003790                _cache_err_exception_context
+                0x9d005504       0xd8 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(cache-err-exception.o)
+                0x9d005504                _cache_err_exception_context
 
 .text.simple_tlb_refill_context
-                0x9d003868       0xd8
+                0x9d0055dc       0xd8
  .text.simple_tlb_refill_context
-                0x9d003868       0xd8 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(simple-tlb-refill-exception.o)
-                0x9d003868                _simple_tlb_refill_exception_context
+                0x9d0055dc       0xd8 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(simple-tlb-refill-exception.o)
+                0x9d0055dc                _simple_tlb_refill_exception_context
 
-.rodata         0x9d003940       0xd0
- .rodata        0x9d003940       0xd0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
+.rodata         0x9d0056b8       0xd0
+ .rodata        0x9d0056b8       0xd0 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(doprnt_cdnopsuxX.eo)
+
+.text.ComplexToMagnitude
+                0x9d005788       0xc8
+ .text.ComplexToMagnitude
+                0x9d005788       0xc8 build/FFT/production/_ext/1360937237/FFT.o
+                0x9d005788                ComplexToMagnitude
 
 .text.SYS_Initialize
-                0x9d003a10       0xc4
+                0x9d005850       0xc4
  .text.SYS_Initialize
-                0x9d003a10       0xc4 build/FFT/production/_ext/1272119167/initialization.o
-                0x9d003a10                SYS_Initialize
+                0x9d005850       0xc4 build/FFT/production/_ext/1272119167/initialization.o
+                0x9d005850                SYS_Initialize
 
-.rodata         0x9d003ad4       0xc0
- .rodata        0x9d003ad4       0xc0 build/FFT/production/_ext/1272119167/initialization.o
-                0x9d003ad4                drvUsart0InitData
-                0x9d003b0c                drvUSART0InterruptSources
-                0x9d003b28                drvUsart0remapError
-                0x9d003b34                drvUsart0remapStopBits
-                0x9d003b40                drvUsart0remapParity
-                0x9d003b58                drvUsart0remapDataWidth
-                0x9d003b6c                drvUsart0PlibAPI
+.rodata         0x9d005914       0xc0
+ .rodata        0x9d005914       0xc0 build/FFT/production/_ext/1272119167/initialization.o
+                0x9d005914                drvUsart0InitData
+                0x9d00594c                drvUSART0InterruptSources
+                0x9d005968                drvUsart0remapError
+                0x9d005974                drvUsart0remapStopBits
+                0x9d005980                drvUsart0remapParity
+                0x9d005998                drvUsart0remapDataWidth
+                0x9d0059ac                drvUsart0PlibAPI
 
 .tlb.__pic32_tlb_init_ebi_sqi
-                0x9d003b94       0xbc
+                0x9d0059d4       0xbc
  .tlb.__pic32_tlb_init_ebi_sqi
-                0x9d003b94       0xbc c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(pic32_init_tlb_ebi_sqi.o)
-                0x9d003b94                __pic32_tlb_init_ebi_sqi
+                0x9d0059d4       0xbc c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(pic32_init_tlb_ebi_sqi.o)
+                0x9d0059d4                __pic32_tlb_init_ebi_sqi
 
 .text.setupNeopixel
-                0x9d003c50       0xac
+                0x9d005a90       0xac
  .text.setupNeopixel
-                0x9d003c50       0xac build/FFT/production/_ext/1360937237/neopixel.o
-                0x9d003c50                setupNeopixel
+                0x9d005a90       0xac build/FFT/production/_ext/1360937237/neopixel.o
+                0x9d005a90                setupNeopixel
 
-.text.write     0x9d003cfc       0x9c
- .text.write    0x9d003cfc       0x9c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
-                0x9d003cfc                write
+.text.TMR3_Interrupt_Callback
+                0x9d005b3c       0xa4
+ .text.TMR3_Interrupt_Callback
+                0x9d005b3c       0xa4 build/FFT/production/_ext/1360937237/ADCGather.o
+                0x9d005b3c                TMR3_Interrupt_Callback
+
+.text.write     0x9d005be0       0x9c
+ .text.write    0x9d005be0       0x9c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(write.o)
+                0x9d005be0                write
 
 .text.UART1_ErrorGet
-                0x9d003d98       0x88
+                0x9d005c7c       0x88
  .text.UART1_ErrorGet
-                0x9d003d98       0x88 build/FFT/production/_ext/2109807859/plib_uart1.o
-                0x9d003d98                UART1_ErrorGet
+                0x9d005c7c       0x88 build/FFT/production/_ext/2109807859/plib_uart1.o
+                0x9d005c7c                UART1_ErrorGet
 
 .text.UART1_Initialize
-                0x9d003e20       0x84
+                0x9d005d04       0x84
  .text.UART1_Initialize
-                0x9d003e20       0x84 build/FFT/production/_ext/2109807859/plib_uart1.o
-                0x9d003e20                UART1_Initialize
+                0x9d005d04       0x84 build/FFT/production/_ext/2109807859/plib_uart1.o
+                0x9d005d04                UART1_Initialize
 
-.text           0x9d003ea4       0x84
- .text          0x9d003ea4       0x84 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(pic32_data_init.o)
-                0x9d003ea4                __pic32_data_init
+.text           0x9d005d88       0x84
+ .text          0x9d005d88       0x84 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(pic32_data_init.o)
+                0x9d005d88                __pic32_data_init
 
 .text.UART1_Read
-                0x9d003f28       0x80
+                0x9d005e0c       0x80
  .text.UART1_Read
-                0x9d003f28       0x80 build/FFT/production/_ext/2109807859/plib_uart1.o
-                0x9d003f28                UART1_Read
+                0x9d005e0c       0x80 build/FFT/production/_ext/2109807859/plib_uart1.o
+                0x9d005e0c                UART1_Read
 
 .text.UART1_Write
-                0x9d003fa8       0x7c
+                0x9d005e8c       0x7c
  .text.UART1_Write
-                0x9d003fa8       0x7c build/FFT/production/_ext/2109807859/plib_uart1.o
-                0x9d003fa8                UART1_Write
+                0x9d005e8c       0x7c build/FFT/production/_ext/2109807859/plib_uart1.o
+                0x9d005e8c                UART1_Write
 
 .text._DRV_USART_ReadSubmit
-                0x9d004024       0x74
+                0x9d005f08       0x74
  .text._DRV_USART_ReadSubmit
-                0x9d004024       0x74 build/FFT/production/_ext/1891070335/drv_usart.o
+                0x9d005f08       0x74 build/FFT/production/_ext/1891070335/drv_usart.o
 
 .text._DRV_USART_WriteSubmit
-                0x9d004098       0x74
+                0x9d005f7c       0x74
  .text._DRV_USART_WriteSubmit
-                0x9d004098       0x74 build/FFT/production/_ext/1891070335/drv_usart.o
+                0x9d005f7c       0x74 build/FFT/production/_ext/1891070335/drv_usart.o
 
-.text.testNEO   0x9d000110       0x6c
- .text.testNEO  0x9d000110       0x6c build/FFT/production/_ext/1360937237/neopixel.o
-                0x9d000110                testNEO
-
-.text.APP_Tasks
-                0x9d000190       0x60
- .text.APP_Tasks
-                0x9d000190       0x60 build/FFT/production/_ext/1360937237/app.o
-                0x9d000190                APP_Tasks
+.text.Compute   0x9d000110       0x64
+ .text.Compute  0x9d000110       0x64 build/FFT/production/_ext/1360937237/FFT.o
+                0x9d000110                Compute
 
 .text._DRV_USART_RX_PLIB_CallbackHandler
-                0x9d00410c       0x54
+                0x9d000190       0x54
  .text._DRV_USART_RX_PLIB_CallbackHandler
-                0x9d00410c       0x54 build/FFT/production/_ext/1891070335/drv_usart.o
+                0x9d000190       0x54 build/FFT/production/_ext/1891070335/drv_usart.o
 
 .text.main_entry
-                0x9d004160       0x54
+                0x9d005ff0       0x54
  .text.main_entry
-                0x9d004160       0x54 C:\Users\Madison\AppData\Local\Temp\ccasagLp.o
-                0x9d004194                __crt0_exit
+                0x9d005ff0       0x54 C:\Users\Madison\AppData\Local\Temp\ccEV0X5T.o
+                0x9d006024                __crt0_exit
+
+.text.APP_Tasks
+                0x9d006044       0x50
+ .text.APP_Tasks
+                0x9d006044       0x50 build/FFT/production/_ext/1360937237/app.o
+                0x9d006044                APP_Tasks
 
 .text.UART1_FAULT_InterruptHandler
-                0x9d0041b4       0x4c
+                0x9d006094       0x4c
  .text.UART1_FAULT_InterruptHandler
-                0x9d0041b4       0x4c build/FFT/production/_ext/2109807859/plib_uart1.o
-                0x9d0041b4                UART1_FAULT_InterruptHandler
+                0x9d006094       0x4c build/FFT/production/_ext/2109807859/plib_uart1.o
+                0x9d006094                UART1_FAULT_InterruptHandler
 
 .text._general_exception_handler
-                0x9d004200       0x48
+                0x9d0060e0       0x48
  .text._general_exception_handler
-                0x9d004200       0x48 build/FFT/production/_ext/1272119167/exceptions.o
-                0x9d004200                _general_exception_handler
+                0x9d0060e0       0x48 build/FFT/production/_ext/1272119167/exceptions.o
+                0x9d0060e0                _general_exception_handler
 
 .text._bootstrap_exception_handler
-                0x9d004248       0x48
+                0x9d006128       0x48
  .text._bootstrap_exception_handler
-                0x9d004248       0x48 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
-                0x9d004248                _bootstrap_exception_handler
+                0x9d006128       0x48 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-bootstrap-exception-handler.o)
+                0x9d006128                _bootstrap_exception_handler
 
 .text._cache_err_exception_handler
-                0x9d004290       0x48
+                0x9d006170       0x48
  .text._cache_err_exception_handler
-                0x9d004290       0x48 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
-                0x9d004290                _cache_err_exception_handler
+                0x9d006170       0x48 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-cache-err-exception-handler.o)
+                0x9d006170                _cache_err_exception_handler
 
 .text._simple_tlb_refill_exception_handler
-                0x9d0042d8       0x48
+                0x9d0061b8       0x48
  .text._simple_tlb_refill_exception_handler
-                0x9d0042d8       0x48 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
-                0x9d0042d8                _simple_tlb_refill_exception_handler
+                0x9d0061b8       0x48 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-simple-tlb-refill-exception-handler.o)
+                0x9d0061b8                _simple_tlb_refill_exception_handler
 
 .text.EVIC_Initialize
-                0x9d004320       0x44
+                0x9d006200       0x44
  .text.EVIC_Initialize
-                0x9d004320       0x44 build/FFT/production/_ext/2109351088/plib_evic.o
-                0x9d004320                EVIC_Initialize
+                0x9d006200       0x44 build/FFT/production/_ext/2109351088/plib_evic.o
+                0x9d006200                EVIC_Initialize
 
-.text           0x9d004364       0x44
- .text          0x9d004364       0x44 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\pic32_software_reset.o
-                0x9d004364                __pic32_software_reset
+.text           0x9d006244       0x44
+ .text          0x9d006244       0x44 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\pic32_software_reset.o
+                0x9d006244                __pic32_software_reset
 
 .text.TIMER_2_InterruptHandler
-                0x9d0043a8       0x40
+                0x9d006288       0x40
  .text.TIMER_2_InterruptHandler
-                0x9d0043a8       0x40 build/FFT/production/_ext/1317415596/plib_tmr2.o
-                0x9d0043a8                TIMER_2_InterruptHandler
+                0x9d006288       0x40 build/FFT/production/_ext/1317415596/plib_tmr2.o
+                0x9d006288                TIMER_2_InterruptHandler
 
 .text.TIMER_3_InterruptHandler
-                0x9d0043e8       0x40
+                0x9d0062c8       0x40
  .text.TIMER_3_InterruptHandler
-                0x9d0043e8       0x40 build/FFT/production/_ext/1317415596/plib_tmr3.o
-                0x9d0043e8                TIMER_3_InterruptHandler
+                0x9d0062c8       0x40 build/FFT/production/_ext/1317415596/plib_tmr3.o
+                0x9d0062c8                TIMER_3_InterruptHandler
 
 .text._printf_cdnopsuxX
-                0x9d004428       0x40
+                0x9d006308       0x40
  .text._printf_cdnopsuxX
-                0x9d004428       0x40 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
-                0x9d004428                _printf_cdnopuxX
-                0x9d004428                _printf_cdnopsuxX
+                0x9d006308       0x40 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libc.a(printf_cdnopsuxX.eo)
+                0x9d006308                _printf_cdnopuxX
+                0x9d006308                _printf_cdnopsuxX
+
+.text.Exponent  0x9d006348       0x3c
+ .text.Exponent
+                0x9d006348       0x3c build/FFT/production/_ext/1360937237/FFT.o
+                0x9d006348                Exponent
 
 .text.TMR2_Initialize
-                0x9d004468       0x3c
+                0x9d006384       0x3c
  .text.TMR2_Initialize
-                0x9d004468       0x3c build/FFT/production/_ext/1317415596/plib_tmr2.o
-                0x9d004468                TMR2_Initialize
+                0x9d006384       0x3c build/FFT/production/_ext/1317415596/plib_tmr2.o
+                0x9d006384                TMR2_Initialize
 
 .text.TMR3_Initialize
-                0x9d0044a4       0x3c
+                0x9d0063c0       0x3c
  .text.TMR3_Initialize
-                0x9d0044a4       0x3c build/FFT/production/_ext/1317415596/plib_tmr3.o
-                0x9d0044a4                TMR3_Initialize
+                0x9d0063c0       0x3c build/FFT/production/_ext/1317415596/plib_tmr3.o
+                0x9d0063c0                TMR3_Initialize
 
 .text._DRV_USART_RemoveTransferObjFromList
-                0x9d0044e0       0x38
+                0x9d0063fc       0x38
  .text._DRV_USART_RemoveTransferObjFromList
-                0x9d0044e0       0x38 build/FFT/production/_ext/1891070335/drv_usart.o
+                0x9d0063fc       0x38 build/FFT/production/_ext/1891070335/drv_usart.o
 
-.text.updateNeoData
-                0x9d004518       0x2c
- .text.updateNeoData
-                0x9d004518       0x2c build/FFT/production/_ext/1360937237/neopixel.o
-                0x9d004518                updateNeoData
+.text           0x9d006434       0x34
+ .text          0x9d006434       0x34 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(sqrtfd.o)
+                0x9d006434                _sqrtfd
+
+.text.setLEDColor
+                0x9d006468       0x30
+ .text.setLEDColor
+                0x9d006468       0x30 build/FFT/production/_ext/1360937237/neopixel.o
+                0x9d006468                setLEDColor
+
+.rodata         0x9d006498       0x30
+ .rodata        0x9d006498       0x30 build/FFT/production/_ext/1360937237/FFT.o
+
+.text.ADCHS_ChannelResultIsReady
+                0x9d0064c8       0x30
+ .text.ADCHS_ChannelResultIsReady
+                0x9d0064c8       0x30 build/FFT/production/_ext/961138470/plib_adchs.o
+                0x9d0064c8                ADCHS_ChannelResultIsReady
+
+.rodata         0x9d0064f8       0x30
+ .rodata        0x9d0064f8       0x30 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
+
+.text.setupMicrophoneGather
+                0x9d006528       0x2c
+ .text.setupMicrophoneGather
+                0x9d006528       0x2c build/FFT/production/_ext/1360937237/ADCGather.o
+                0x9d006528                setupMicrophoneGather
 
 .text._mon_putc
-                0x9d004544       0x2c
+                0x9d006554       0x2c
  .text._mon_putc
-                0x9d004544       0x2c build/FFT/production/_ext/489647995/xc32_monitor.o
-                0x9d004544                _mon_putc
+                0x9d006554       0x2c build/FFT/production/_ext/489647995/xc32_monitor.o
+                0x9d006554                _mon_putc
 
 .text.OCMP6_Initialize
-                0x9d004570       0x28
+                0x9d006580       0x28
  .text.OCMP6_Initialize
-                0x9d004570       0x28 build/FFT/production/_ext/2109630876/plib_ocmp6.o
-                0x9d004570                OCMP6_Initialize
+                0x9d006580       0x28 build/FFT/production/_ext/2109630876/plib_ocmp6.o
+                0x9d006580                OCMP6_Initialize
 
 .text.OCMP4_Initialize
-                0x9d004598       0x28
+                0x9d0065a8       0x28
  .text.OCMP4_Initialize
-                0x9d004598       0x28 build/FFT/production/_ext/2109630876/plib_ocmp4.o
-                0x9d004598                OCMP4_Initialize
+                0x9d0065a8       0x28 build/FFT/production/_ext/2109630876/plib_ocmp4.o
+                0x9d0065a8                OCMP4_Initialize
 
 .text.OCMP2_Initialize
-                0x9d0045c0       0x28
+                0x9d0065d0       0x28
  .text.OCMP2_Initialize
-                0x9d0045c0       0x28 build/FFT/production/_ext/2109630876/plib_ocmp2.o
-                0x9d0045c0                OCMP2_Initialize
+                0x9d0065d0       0x28 build/FFT/production/_ext/2109630876/plib_ocmp2.o
+                0x9d0065d0                OCMP2_Initialize
 
 .text.OCMP3_Initialize
-                0x9d0045e8       0x28
+                0x9d0065f8       0x28
  .text.OCMP3_Initialize
-                0x9d0045e8       0x28 build/FFT/production/_ext/2109630876/plib_ocmp3.o
-                0x9d0045e8                OCMP3_Initialize
+                0x9d0065f8       0x28 build/FFT/production/_ext/2109630876/plib_ocmp3.o
+                0x9d0065f8                OCMP3_Initialize
 
-.text.main      0x9d004610       0x20
- .text.main     0x9d004610       0x20 build/FFT/production/_ext/1360937237/main.o
-                0x9d004610                main
+.text.ADCHS_ChannelConversionStart
+                0x9d006620       0x28
+ .text.ADCHS_ChannelConversionStart
+                0x9d006620       0x28 build/FFT/production/_ext/961138470/plib_adchs.o
+                0x9d006620                ADCHS_ChannelConversionStart
 
-.text._DRV_USART_TX_PLIB_CallbackHandler
-                0x9d004630       0x20
- .text._DRV_USART_TX_PLIB_CallbackHandler
-                0x9d004630       0x20 build/FFT/production/_ext/1891070335/drv_usart.o
+.text.updateNeoData
+                0x9d006648       0x24
+ .text.updateNeoData
+                0x9d006648       0x24 build/FFT/production/_ext/1360937237/neopixel.o
+                0x9d006648                updateNeoData
+
+.text.Swap      0x9d00666c       0x24
+ .text.Swap     0x9d00666c       0x24 build/FFT/production/_ext/1360937237/FFT.o
+                0x9d00666c                Swap
 
 .text.APP_Initialize
-                0x9d004650       0x1c
+                0x9d006690       0x24
  .text.APP_Initialize
-                0x9d004650       0x1c build/FFT/production/_ext/1360937237/app.o
-                0x9d004650                APP_Initialize
+                0x9d006690       0x24 build/FFT/production/_ext/1360937237/app.o
+                0x9d006690                APP_Initialize
+
+.text.main      0x9d0066b4       0x20
+ .text.main     0x9d0066b4       0x20 build/FFT/production/_ext/1360937237/main.o
+                0x9d0066b4                main
+
+.text._DRV_USART_TX_PLIB_CallbackHandler
+                0x9d0066d4       0x20
+ .text._DRV_USART_TX_PLIB_CallbackHandler
+                0x9d0066d4       0x20 build/FFT/production/_ext/1891070335/drv_usart.o
 
 .text.SYS_Tasks
-                0x9d00466c       0x1c
+                0x9d0001e4       0x1c
  .text.SYS_Tasks
-                0x9d00466c       0x1c build/FFT/production/_ext/1272119167/tasks.o
-                0x9d00466c                SYS_Tasks
+                0x9d0001e4       0x1c build/FFT/production/_ext/1272119167/tasks.o
+                0x9d0001e4                SYS_Tasks
 
-.text           0x9d004688       0x18
- .text          0x9d004688       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-nmi-handler.o)
-                0x9d004688                _nmi_handler
+.text._sqrtx    0x9d0066f4       0x1c
+ .text._sqrtx   0x9d0066f4       0x1c c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(pic32_w_sqrt.o)
+                0x9d0066f4                _sqrtx
+
+.text.getvRealElem
+                0x9d006710       0x18
+ .text.getvRealElem
+                0x9d006710       0x18 build/FFT/production/_ext/1360937237/ADCGather.o
+                0x9d006710                getvRealElem
+
+.text.ADCHS_ChannelResultGet
+                0x9d006728       0x18
+ .text.ADCHS_ChannelResultGet
+                0x9d006728       0x18 build/FFT/production/_ext/961138470/plib_adchs.o
+                0x9d006728                ADCHS_ChannelResultGet
+
+.text           0x9d006740       0x18
+ .text          0x9d006740       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-nmi-handler.o)
+                0x9d006740                _nmi_handler
+
+.rodata         0x9d006758       0x18
+ .rodata        0x9d006758       0x18 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(k_standard.o)
 
 .text.OCMP6_Enable
-                0x9d0046a0       0x14
+                0x9d006770       0x14
  .text.OCMP6_Enable
-                0x9d0046a0       0x14 build/FFT/production/_ext/2109630876/plib_ocmp6.o
-                0x9d0046a0                OCMP6_Enable
+                0x9d006770       0x14 build/FFT/production/_ext/2109630876/plib_ocmp6.o
+                0x9d006770                OCMP6_Enable
 
 .text.OCMP4_Enable
-                0x9d0046b4       0x14
+                0x9d006784       0x14
  .text.OCMP4_Enable
-                0x9d0046b4       0x14 build/FFT/production/_ext/2109630876/plib_ocmp4.o
-                0x9d0046b4                OCMP4_Enable
+                0x9d006784       0x14 build/FFT/production/_ext/2109630876/plib_ocmp4.o
+                0x9d006784                OCMP4_Enable
 
 .text.OCMP2_Enable
-                0x9d0046c8       0x14
+                0x9d006798       0x14
  .text.OCMP2_Enable
-                0x9d0046c8       0x14 build/FFT/production/_ext/2109630876/plib_ocmp2.o
-                0x9d0046c8                OCMP2_Enable
-
-.text.OCMP2_Disable
-                0x9d0046dc       0x14
- .text.OCMP2_Disable
-                0x9d0046dc       0x14 build/FFT/production/_ext/2109630876/plib_ocmp2.o
-                0x9d0046dc                OCMP2_Disable
+                0x9d006798       0x14 build/FFT/production/_ext/2109630876/plib_ocmp2.o
+                0x9d006798                OCMP2_Enable
 
 .text.OCMP3_Enable
-                0x9d0046f0       0x14
+                0x9d0067ac       0x14
  .text.OCMP3_Enable
-                0x9d0046f0       0x14 build/FFT/production/_ext/2109630876/plib_ocmp3.o
-                0x9d0046f0                OCMP3_Enable
+                0x9d0067ac       0x14 build/FFT/production/_ext/2109630876/plib_ocmp3.o
+                0x9d0067ac                OCMP3_Enable
 
 .text.UART1_ReadCallbackRegister
-                0x9d004704       0x14
+                0x9d0067c0       0x14
  .text.UART1_ReadCallbackRegister
-                0x9d004704       0x14 build/FFT/production/_ext/2109807859/plib_uart1.o
-                0x9d004704                UART1_ReadCallbackRegister
+                0x9d0067c0       0x14 build/FFT/production/_ext/2109807859/plib_uart1.o
+                0x9d0067c0                UART1_ReadCallbackRegister
 
 .text.UART1_WriteCallbackRegister
-                0x9d004718       0x14
+                0x9d0067d4       0x14
  .text.UART1_WriteCallbackRegister
-                0x9d004718       0x14 build/FFT/production/_ext/2109807859/plib_uart1.o
-                0x9d004718                UART1_WriteCallbackRegister
+                0x9d0067d4       0x14 build/FFT/production/_ext/2109807859/plib_uart1.o
+                0x9d0067d4                UART1_WriteCallbackRegister
 
 .text.TMR2_Start
-                0x9d00472c       0x14
+                0x9d0067e8       0x14
  .text.TMR2_Start
-                0x9d00472c       0x14 build/FFT/production/_ext/1317415596/plib_tmr2.o
-                0x9d00472c                TMR2_Start
+                0x9d0067e8       0x14 build/FFT/production/_ext/1317415596/plib_tmr2.o
+                0x9d0067e8                TMR2_Start
 
 .text.TMR2_Stop
-                0x9d004740       0x14
+                0x9d0067fc       0x14
  .text.TMR2_Stop
-                0x9d004740       0x14 build/FFT/production/_ext/1317415596/plib_tmr2.o
-                0x9d004740                TMR2_Stop
+                0x9d0067fc       0x14 build/FFT/production/_ext/1317415596/plib_tmr2.o
+                0x9d0067fc                TMR2_Stop
 
-.text.TMR2_InterruptEnable
-                0x9d004754       0x14
- .text.TMR2_InterruptEnable
-                0x9d004754       0x14 build/FFT/production/_ext/1317415596/plib_tmr2.o
-                0x9d004754                TMR2_InterruptEnable
+.text.TMR3_Start
+                0x9d006810       0x14
+ .text.TMR3_Start
+                0x9d006810       0x14 build/FFT/production/_ext/1317415596/plib_tmr3.o
+                0x9d006810                TMR3_Start
 
-.text.UART1_ReadIsBusy
-                0x9d0001f0        0xc
- .text.UART1_ReadIsBusy
-                0x9d0001f0        0xc build/FFT/production/_ext/2109807859/plib_uart1.o
-                0x9d0001f0                UART1_ReadIsBusy
+.text.TMR3_Stop
+                0x9d006824       0x14
+ .text.TMR3_Stop
+                0x9d006824       0x14 build/FFT/production/_ext/1317415596/plib_tmr3.o
+                0x9d006824                TMR3_Stop
 
-.text.UART1_ReadCountGet
-                0x9d004768        0xc
- .text.UART1_ReadCountGet
-                0x9d004768        0xc build/FFT/production/_ext/2109807859/plib_uart1.o
-                0x9d004768                UART1_ReadCountGet
+.rodata         0x9d006838       0x10
+ .rodata        0x9d006838       0x10 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_rint.o)
 
-.text.UART1_WriteIsBusy
-                0x9d004774        0xc
- .text.UART1_WriteIsBusy
-                0x9d004774        0xc build/FFT/production/_ext/2109807859/plib_uart1.o
-                0x9d004774                UART1_WriteIsBusy
-
-.text.UART1_WriteCountGet
-                0x9d004780        0xc
- .text.UART1_WriteCountGet
-                0x9d004780        0xc build/FFT/production/_ext/2109807859/plib_uart1.o
-                0x9d004780                UART1_WriteCountGet
-
-.text.TMR2_CallbackRegister
-                0x9d00478c        0xc
- .text.TMR2_CallbackRegister
-                0x9d00478c        0xc build/FFT/production/_ext/1317415596/plib_tmr2.o
-                0x9d00478c                TMR2_CallbackRegister
+.text.getNeopixelDisabled
+                0x9d000174        0xc
+ .text.getNeopixelDisabled
+                0x9d000174        0xc build/FFT/production/_ext/1360937237/neopixel.o
+                0x9d000174                getNeopixelDisabled
 
 .text.setFFTUpdate
-                0x9d004798        0x8
+                0x9d006848        0xc
  .text.setFFTUpdate
-                0x9d004798        0x8 build/FFT/production/_ext/1360937237/FFT.o
-                0x9d004798                setFFTUpdate
+                0x9d006848        0xc build/FFT/production/_ext/1360937237/FFT.o
+                0x9d006848                setFFTUpdate
+
+.text.getvReal  0x9d006854        0xc
+ .text.getvReal
+                0x9d006854        0xc build/FFT/production/_ext/1360937237/ADCGather.o
+                0x9d006854                getvReal
+
+.text.getvImag  0x9d006860        0xc
+ .text.getvImag
+                0x9d006860        0xc build/FFT/production/_ext/1360937237/ADCGather.o
+                0x9d006860                getvImag
+
+.text.UART1_ReadIsBusy
+                0x9d00686c        0xc
+ .text.UART1_ReadIsBusy
+                0x9d00686c        0xc build/FFT/production/_ext/2109807859/plib_uart1.o
+                0x9d00686c                UART1_ReadIsBusy
+
+.text.UART1_ReadCountGet
+                0x9d006878        0xc
+ .text.UART1_ReadCountGet
+                0x9d006878        0xc build/FFT/production/_ext/2109807859/plib_uart1.o
+                0x9d006878                UART1_ReadCountGet
+
+.text.UART1_WriteIsBusy
+                0x9d006884        0xc
+ .text.UART1_WriteIsBusy
+                0x9d006884        0xc build/FFT/production/_ext/2109807859/plib_uart1.o
+                0x9d006884                UART1_WriteIsBusy
+
+.text.UART1_WriteCountGet
+                0x9d006890        0xc
+ .text.UART1_WriteCountGet
+                0x9d006890        0xc build/FFT/production/_ext/2109807859/plib_uart1.o
+                0x9d006890                UART1_WriteCountGet
+
+.text.TMR2_CallbackRegister
+                0x9d00689c        0xc
+ .text.TMR2_CallbackRegister
+                0x9d00689c        0xc build/FFT/production/_ext/1317415596/plib_tmr2.o
+                0x9d00689c                TMR2_CallbackRegister
+
+.text.TMR3_CallbackRegister
+                0x9d0068a8        0xc
+ .text.TMR3_CallbackRegister
+                0x9d0068a8        0xc build/FFT/production/_ext/1317415596/plib_tmr3.o
+                0x9d0068a8                TMR3_CallbackRegister
 
 .text.SYS_DMA_AddressingModeSetup
-                0x9d0047a0        0x8
+                0x9d0068b4        0x8
  .text.SYS_DMA_AddressingModeSetup
-                0x9d0047a0        0x8 build/FFT/production/_ext/980732774/sys_dma.o
-                0x9d0047a0                SYS_DMA_AddressingModeSetup
+                0x9d0068b4        0x8 build/FFT/production/_ext/980732774/sys_dma.o
+                0x9d0068b4                SYS_DMA_AddressingModeSetup
 
 .text.SYS_DMA_DataWidthSetup
-                0x9d0047a8        0x8
+                0x9d0068bc        0x8
  .text.SYS_DMA_DataWidthSetup
-                0x9d0047a8        0x8 build/FFT/production/_ext/980732774/sys_dma.o
-                0x9d0047a8                SYS_DMA_DataWidthSetup
+                0x9d0068bc        0x8 build/FFT/production/_ext/980732774/sys_dma.o
+                0x9d0068bc                SYS_DMA_DataWidthSetup
 
 .text.SYS_DMA_ChannelTransfer
-                0x9d0047b0        0x8
+                0x9d0068c4        0x8
  .text.SYS_DMA_ChannelTransfer
-                0x9d0047b0        0x8 build/FFT/production/_ext/980732774/sys_dma.o
-                0x9d0047b0                SYS_DMA_ChannelTransfer
+                0x9d0068c4        0x8 build/FFT/production/_ext/980732774/sys_dma.o
+                0x9d0068c4                SYS_DMA_ChannelTransfer
 
 .text._on_reset
-                0x9d0047b8        0x8
+                0x9d0068cc        0x8
  .text._on_reset
-                0x9d0047b8        0x8 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
-                0x9d0047b8                _on_reset
+                0x9d0068cc        0x8 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-reset.o)
+                0x9d0068cc                _on_reset
 
 .text._on_bootstrap
-                0x9d0047c0        0x8
+                0x9d0068d4        0x8
  .text._on_bootstrap
-                0x9d0047c0        0x8 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
-                0x9d0047c0                _on_bootstrap
+                0x9d0068d4        0x8 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libpic32.a(default-on-bootstrap.o)
+                0x9d0068d4                _on_bootstrap
+
+.rodata         0x9d0068e0        0x8
+ .rodata        0x9d0068e0        0x8 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(w_pow.o)
+
+.text.scalbn    0x9d0068e8        0x8
+ .text.scalbn   0x9d0068e8        0x8 c:/program files (x86)/microchip/xc32/v2.20/bin/bin/../../lib/gcc/pic32mx/4.8.3/../../../../pic32mx/lib/fpu64\libmfd.a(s_scalbn.o)
+                0x9d0068e8                scalbn

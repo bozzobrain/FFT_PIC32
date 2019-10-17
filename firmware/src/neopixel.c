@@ -47,7 +47,7 @@ volatile bool neopixelDisabled  = true;
 bool resetTriggered             = false;
 uint16_t periodCounter          = 0;
 uint16_t neoContext             = 1;
-uint8_t pixelCounter            = 0;
+uint16_t pixelCounter            = 0;
 uint32_t bitMask                = 0x800000;
 
 volatile uint32_t pixelData[NUMBER_LEDS];
@@ -66,7 +66,8 @@ void setupNeopixel(void)
     
     //Stop modules TMR and OC
     TMR2_Stop();
-    OCMP2_Disable();
+    TMR3_Stop();
+    //OCMP2_Disable();
     
     //Set interrupt callbacks
     TMR2_CallbackRegister((void *)TMR2InterruptCallback, neoContext);
@@ -88,7 +89,7 @@ void setupNeopixel(void)
     disableNEOUpdate = true;
 }
 
-void setLEDColor(uint8_t n, uint8_t R, uint8_t G, uint8_t B)
+void setLEDColor(uint16_t n, uint8_t R, uint8_t G, uint8_t B)
 {
     pixelData[n-1] = 0x00000000 | ((uint32_t)(G)<<16) | ((uint32_t)(R)<<8) | ((B));
 }
@@ -97,13 +98,17 @@ void updateNeoData(void)
 {
     disableNEOUpdate = false;
     neopixelDisabled = false;
-    TMR2_InterruptEnable();
+    //TMR2_InterruptEnable();
     TMR2_Start();    
 }
 
 bool getUpdateStatus(void)
 {
     return disableNEOUpdate;
+}
+bool getNeopixelDisabled(void)
+{
+    return neopixelDisabled;
 }
 
 void testNEO(void)
@@ -121,15 +126,13 @@ void testNEO(void)
 
     updateNeoData();
     while(!neopixelDisabled);
+    TMR3_Start();
 }
 
 void TMR2InterruptCallback(uint32_t status, uintptr_t context)
 {
-    //UBaseType_t uxSavedInterruptStatus=taskENTER_CRITICAL_FROM_ISR();
-    //__builtin_disable_interrupts();
-    
-    //taskDISABLE_INTERRUPTS();
-    //LED3_Toggle();
+    LED3_Toggle();
+   
     if(disableNEOUpdate )//&& (LEDSTRIP1 != 0))
     {
         LEDSTRIP1 = 0;
@@ -137,7 +140,8 @@ void TMR2InterruptCallback(uint32_t status, uintptr_t context)
         LEDSTRIP3 = 0;
         LEDSTRIP4 = 0;
         TMR2_Stop(); 
-        setFFTUpdate(false);
+        //TMR3_Start();
+        //setFFTUpdate(false);
         neopixelDisabled=true;
     }
     else
@@ -181,10 +185,6 @@ void TMR2InterruptCallback(uint32_t status, uintptr_t context)
             }
         }
     }
-    //__builtin_enable_interrupts();
-    
-    //taskENABLE_INTERRUPTS();
-    //taskEXIT_CRITICAL_FROM_ISR(uxSavedInterruptStatus);
 }
 
 

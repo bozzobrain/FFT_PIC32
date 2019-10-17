@@ -34,6 +34,8 @@
 #include "config/FFT/peripheral/gpio/plib_gpio.h"
 #include <stdio.h>
 
+#include "config/FFT/peripheral/tmr/plib_tmr3.h"
+
 
 APP_DATA appData;
 
@@ -51,7 +53,9 @@ void APP_Initialize ( void )
     appData.state = APP_STATE_INIT;
 
     setupNeopixel();
-    //setupMicrophoneGather();
+    setupMicrophoneGather();
+    
+    //TMR3_Stop();
 }
 
 
@@ -83,14 +87,18 @@ void APP_Tasks ( void )
 
         case APP_STATE_SERVICE_TASKS:
         {
-//            updateFFTDisplay();
+            int timesIdle = updateFFTDisplay();
+            if(timesIdle > 100)
+            {
+//                testNEO();
+            }
            //vTaskDelay(20/portTICK_PERIOD_MS);
             
-            int i=0;
-            for (i=0xFFFFFF;i>0;i--);
-
-            
-            testNEO();
+//            int i=0;
+//            for (i=0xFFF;i>0;i--);
+//
+//            if(getNeopixelDisabled())
+//                testNEO();
             LED1_Toggle();
             break;
         }
