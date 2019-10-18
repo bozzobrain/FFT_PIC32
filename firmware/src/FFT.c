@@ -212,7 +212,7 @@ int updateFFTDisplay(void)
             vRealFilt[filterCounter][i] = getvRealElem(i);
             double total=0;
             int j=0;
-            for(j=0; j<FILTER_DEPTH-1;j++)
+            for(j=0; j<FILTER_DEPTH;j++)
             {
               total += vRealFilt[j][i];
             }
@@ -220,7 +220,7 @@ int updateFFTDisplay(void)
             vRealFilt[FILTER_DEPTH][i] = total/FILTER_DEPTH;
 
             //vRealSmoother[i] = vRealFilt[FILTER_DEPTH][i];                    
-            vRealSmoother[i] = (vRealSmoother[i] + (double)vRealFilt[FILTER_DEPTH][i]) / 2.0; //vRealFilt[FILTER_DEPTH][i];//
+            vRealSmoother[i]=((vRealSmoother[i]*PREV_WEIGHT) + (vRealFilt[FILTER_DEPTH][i]*(1.0-PREV_WEIGHT)));
         #else                       
             vRealSmoother[i]=((vRealSmoother[i]*PREV_WEIGHT) + (getvRealElem(i)*(1.0-PREV_WEIGHT)));
 
@@ -288,7 +288,7 @@ uint16_t DisplayFFT(volatile double * values)
         if(values[j] > lowLimit/2)
         {
           float overLimitValue = (values[j]-lowLimit/2);
-          brightnessScaling += (overLimitValue/lowLimit) *2;
+          brightnessScaling += (overLimitValue/lowLimit) *LOW_OVERDRIVE;
         }
         
 //        brightnessScaling = (pow(values[j],2)/(lowLimit))/200.0;
@@ -322,11 +322,11 @@ uint16_t DisplayFFT(volatile double * values)
     {
         brightnessScaling = ((values[j])/(midLimit));
 //        
-//        if(values[j] > midLimit/2)
-//        {
-//          float overLimitValue = (values[j]-midLimit/2);
-//          brightnessScaling += (overLimitValue/midLimit) *2;
-//        }
+        if(values[j] > midLimit/2)
+        {
+          float overLimitValue = (values[j]-midLimit/2);
+          brightnessScaling += (overLimitValue/midLimit) *MID_OVERDRIVE;
+        }
         
 //        brightnessScaling = (pow(values[j],2)/(midLimit))/200.0;
         
@@ -353,11 +353,11 @@ uint16_t DisplayFFT(volatile double * values)
     else 
     {
         brightnessScaling = ((values[j])/(highLimit));
-//        if(values[j] > highLimit/2)
-//        {
-//          float overLimitValue = (values[j]-highLimit/2);
-//          brightnessScaling += (overLimitValue/highLimit) *2;
-//        }
+        if(values[j] > highLimit/2)
+        {
+          float overLimitValue = (values[j]-highLimit/2);
+          brightnessScaling += (overLimitValue/highLimit) *HIGH_OVERDRIVE;
+        }
 //        
         
 //        brightnessScaling = (pow(values[j],2)/(highLimit))/200.0;

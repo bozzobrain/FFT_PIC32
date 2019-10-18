@@ -23,35 +23,38 @@
 
 
 #define USE_FILTER
-//#define USE_BETTER_FILTER
-#define PREV_WEIGHT                             0.15
-#define BRIGHTNESS_LIMIT                        50U
+#define USE_BETTER_FILTER
+#define PREV_WEIGHT                             0.07
+#define BRIGHTNESS_LIMIT                        60
 
-#define SAMPLING_FREQUENCY_BASE                 10000U
+#define SAMPLING_FREQUENCY_BASE                 20000U
 #define LIMIT_SCALER_BASE                       1
 #define SAMPLES                                 1024
 
 #define FILTER_DEPTH                            2
-#define WEIGHT_PREVIOUS                         0.75
 //Adjust the number of LEDs per bin (higher equals less representation and a lower frequency represented
-#define NUMBER_LEDS_PER_SAMPLE                  1//(((NUMBER_LEDS/ (SAMPLES))))
+#define NUMBER_LEDS_PER_SAMPLE                  2//(((NUMBER_LEDS/ (SAMPLES))))
 
-#define LOW_GROUP_BASE                        (20)
+#define LOW_GROUP_BASE                        (8)
 #define MID_GROUP_BASE                        (60)
 
-#define BRIGHTNESS_SCALER                     0.05
+//#define BRIGHTNESS_SCALER                     0.05
 #define CUTOFF_LIMIT_LOW_BASE                 0.3     //0.06 
-#define CUTOFF_LIMIT_MID_BASE                 0.2     
-#define CUTOFF_LIMIT_HIGH_BASE                0.2      
+#define CUTOFF_LIMIT_MID_BASE                 0.3     
+#define CUTOFF_LIMIT_HIGH_BASE                0.3      
 
-#define FFT_MAG_LIMIT_LOWS_BASE               10000       //35000
-#define FFT_MAG_LIMIT_MIDS_BASE               10000       //20000              //20000 (PIANO) (256 samples)
-#define FFT_MAG_LIMIT_HIGHS_BASE              10000       //28000             //22000 (PIANO)
-#define FFT_MAG_LIMIT_MIN                     350
+#define LOW_OVERDRIVE                           2.5
+#define MID_OVERDRIVE                           4
+#define HIGH_OVERDRIVE                          2.5
 
-#define BRIGHTNESS_LOW_BASE                   0.01
-#define BRIGHTNESS_MID_BASE                   BRIGHTNESS_SCALER
-#define BRIGHTNESS_HIGH_BASE                  BRIGHTNESS_SCALER
+#define FFT_MAG_LIMIT_LOWS_BASE                 15000       //35000
+#define FFT_MAG_LIMIT_MIDS_BASE                 15000       //20000              //20000 (PIANO) (256 samples)
+#define FFT_MAG_LIMIT_HIGHS_BASE                15000       //28000             //22000 (PIANO)
+#define FFT_MAG_LIMIT_MIN                       350
+
+#define BRIGHTNESS_LOW_BASE                     0.01
+#define BRIGHTNESS_MID_BASE                     0.01
+#define BRIGHTNESS_HIGH_BASE                    0.01
 
 #define FFT_MAG_LIMIT_VOLUME_BASE             1000
 
