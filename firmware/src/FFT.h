@@ -21,6 +21,7 @@
 #include "app.h"
 #include <math.h>
 
+#define ANALOG_CONTROL
 
 #define USE_FILTER
 #define USE_BETTER_FILTER
@@ -33,9 +34,9 @@
 
 #define FILTER_DEPTH                            2
 //Adjust the number of LEDs per bin (higher equals less representation and a lower frequency represented
-#define NUMBER_LEDS_PER_SAMPLE                  2//(((NUMBER_LEDS/ (SAMPLES))))
+#define NUMBER_LEDS_PER_SAMPLE                  3//(((NUMBER_LEDS/ (SAMPLES))))
 
-#define LOW_GROUP_BASE                        (8)
+#define LOW_GROUP_BASE                        (12)
 #define MID_GROUP_BASE                        (60)
 
 //#define BRIGHTNESS_SCALER                     0.05
@@ -47,8 +48,8 @@
 #define MID_OVERDRIVE                           4
 #define HIGH_OVERDRIVE                          2.5
 
-#define FFT_MAG_LIMIT_LOWS_BASE                 15000       //35000
-#define FFT_MAG_LIMIT_MIDS_BASE                 15000       //20000              //20000 (PIANO) (256 samples)
+#define FFT_MAG_LIMIT_LOWS_BASE                 19000       //35000
+#define FFT_MAG_LIMIT_MIDS_BASE                 18000       //20000              //20000 (PIANO) (256 samples)
 #define FFT_MAG_LIMIT_HIGHS_BASE                15000       //28000             //22000 (PIANO)
 #define FFT_MAG_LIMIT_MIN                       350
 

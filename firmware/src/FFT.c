@@ -190,11 +190,34 @@ int timesIdle = 0;
 uint16_t activeLEDs=0;
 int updateFFTDisplay(void)
 {
+    
     //static int timesIdle = 0;
     if(doFFT)
     {
-        //vTaskResume(FFT_Task_Handle);
-
+#ifdef ANALOG_CONTROL
+        //Scaling 0->1.5););
+        float lowScaling = (getAnalog1()*(1.5/4096))+0.25;
+        float midScaling = (getAnalog2()*(1.5/4096))+0.25;
+        float highScaling = (getAnalog3()*(1.5/4096))+0.25;
+        
+        lowLimit = FFT_MAG_LIMIT_LOWS_BASE *lowScaling;
+        midLimit = FFT_MAG_LIMIT_MIDS_BASE *midScaling;
+        highLimit = FFT_MAG_LIMIT_HIGHS_BASE* highScaling; //*analogScaling;
+        
+        if(lowLimit<FFT_MAG_LIMIT_MIN)
+        {
+            lowLimit = FFT_MAG_LIMIT_MIN;
+        }
+        if(midLimit<FFT_MAG_LIMIT_MIN)
+        {
+            midLimit = FFT_MAG_LIMIT_MIN;
+        }
+        if(highLimit<FFT_MAG_LIMIT_MIN)
+        {
+            highLimit = FFT_MAG_LIMIT_MIN;
+        }
+#endif
+        
         //Print ADC values
         //printFFT(vReal);
 
@@ -248,6 +271,9 @@ int updateFFTDisplay(void)
         //printFFT(vReal);
 
         doFFT=false;
+#ifdef ANALOG_CONTROL
+        startAlternateADCSample();
+#endif
         TMR3_Start();
         LED2_Toggle();
         timesIdle=checkForIdle(activeLEDs, timesIdle);

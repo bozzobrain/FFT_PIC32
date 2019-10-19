@@ -67,8 +67,8 @@
           <Name dnOrder="1">plib_adchs.c</Name>
           <LogicalPath dnOrder="2">config/FFT/peripheral/adchs/</LogicalPath>
           <PhysicalPath dnOrder="3">/peripheral/adchs/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">490386BBA0F7370E4E478C609B414190</GeneratedChecksum>
-          <UserChecksum dnOrder="5">490386BBA0F7370E4E478C609B414190</UserChecksum>
+          <GeneratedChecksum dnOrder="4">C567B8A71363F87ABAAFBB38DF6DF119</GeneratedChecksum>
+          <UserChecksum dnOrder="5">C567B8A71363F87ABAAFBB38DF6DF119</UserChecksum>
         </File>
         <File dnOrder="8">
           <Type dnOrder="0">SOURCE</Type>
@@ -267,8 +267,8 @@
           <Name dnOrder="1">plib_adchs.h</Name>
           <LogicalPath dnOrder="2">config/FFT/peripheral/adchs/</LogicalPath>
           <PhysicalPath dnOrder="3">/peripheral/adchs/</PhysicalPath>
-          <GeneratedChecksum dnOrder="4">6ED12F0BB21A76D27863F0214CDF09E2</GeneratedChecksum>
-          <UserChecksum dnOrder="5">6ED12F0BB21A76D27863F0214CDF09E2</UserChecksum>
+          <GeneratedChecksum dnOrder="4">04A94C0BB632D6C47FDFEFB902B36DDE</GeneratedChecksum>
+          <UserChecksum dnOrder="5">04A94C0BB632D6C47FDFEFB902B36DDE</UserChecksum>
         </File>
         <File dnOrder="33">
           <Type dnOrder="0">HEADER</Type>
@@ -451,7 +451,7 @@
       <Setting dnOrder="1" key="DFPPath" value=".\dev_packs\Microchip\PIC32MZ_EF_DFP\1.0.29\atdf\PIC32MZ2048EFG100.atdf"/>
       <Setting dnOrder="2" key="FORCE_OPTIMIZATION" value="false"/>
       <Setting dnOrder="3" key="GENERATE_BACKUP" value="true"/>
-      <Setting dnOrder="4" key="MERGE_STRATEGY" value="OVERWRITE"/>
+      <Setting dnOrder="4" key="MERGE_STRATEGY" value="ALL"/>
       <Setting dnOrder="5" key="PackageFilter" value="core;csp;micrium_ucos3;usb;"/>
     </Settings>
   </Configurator>

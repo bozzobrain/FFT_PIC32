@@ -74,6 +74,7 @@ extern "C" {
 /*  The following data type definitions are used by the functions in this
     interface and should be considered part it.
 */
+#define CHANNEL_2 (2U)
 #define MICROPHONE_CHANNEL (4U)
 // *****************************************************************************
 // *****************************************************************************
