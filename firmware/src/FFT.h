@@ -44,9 +44,13 @@
 #define CUTOFF_LIMIT_MID_BASE                 0.3     
 #define CUTOFF_LIMIT_HIGH_BASE                0.3      
 
-#define LOW_OVERDRIVE                           2.5
-#define MID_OVERDRIVE                           4
-#define HIGH_OVERDRIVE                          2.5
+#define LOW_OVERDRIVE                           3
+#define MID_OVERDRIVE                           8
+#define HIGH_OVERDRIVE                          3
+
+#define LOW_OVERDRIVE_VALUE                     0.75
+#define MID_OVERDRIVE_VALUE                     0.75
+#define HIGH_OVERDRIVE_VALUE                    0.75
 
 #define FFT_MAG_LIMIT_LOWS_BASE                 19000       //35000
 #define FFT_MAG_LIMIT_MIDS_BASE                 18000       //20000              //20000 (PIANO) (256 samples)

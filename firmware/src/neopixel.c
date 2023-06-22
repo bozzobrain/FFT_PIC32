@@ -113,20 +113,29 @@ bool getNeopixelDisabled(void)
 
 void testNEO(void)
 {
-    static uint8_t red = 255;
-    red++;
-    if(red > 255)
-        red = 0;
-
+    static bool up_down = true;
+    static uint8_t red = 45;
+    if(up_down)
+    {
+        red++;
+        if(red >= 128)
+            up_down = false;
+    }
+    else
+    {
+        red--;
+        if(red <= 45)
+            up_down = true;
+    }
     int i=0;
     for (i=1;i<=NUMBER_LEDS;i++)
     {
-        setLEDColor(i,red,0,0);
+        setLEDColor(i,196,red,128);
     }
 
     updateNeoData();
     while(!neopixelDisabled);
-    TMR3_Start();
+    //TMR3_Start();
 }
 
 void TMR2InterruptCallback(uint32_t status, uintptr_t context)

@@ -77,7 +77,7 @@ void APP_Tasks ( void )
         case APP_STATE_INIT:
         {
             bool appInitialized = true;
-            
+            TMR3_Start();
             if (appInitialized)
             {
                 appData.state = APP_STATE_SERVICE_TASKS;
@@ -87,19 +87,23 @@ void APP_Tasks ( void )
 
         case APP_STATE_SERVICE_TASKS:
         {
-            int timesIdle = updateFFTDisplay();
-            if(timesIdle > 100)
-            {
+            updateFFTDisplay();
+//                      int timesIdle = updateFFTDisplay();
+  
+            //if(timesIdle > 100)
+//            {
 //                testNEO();
-            }
-           //vTaskDelay(20/portTICK_PERIOD_MS);
+//            }
             
+            // Simply make neopixels do neopixels stuff
+//              testNEO();
 //            int i=0;
-//            for (i=0xFFF;i>0;i--);
+//            for (i=0x7FFF;i>0;i--);
 //
 //            if(getNeopixelDisabled())
 //                testNEO();
             LED1_Toggle();
+//            vTaskDelay(20/portTICK_PERIOD_MS);
             break;
         }
 

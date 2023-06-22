@@ -1,0 +1,8 @@
+*build\
+*production\
+*\.generated_files
+*.o
+*.o.d
+*.o
+*.o
+*.d

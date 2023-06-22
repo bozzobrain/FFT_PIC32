@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <project>                                  
-  <executable name="dist/FFT/production/FFT.X.production.elf">                 
+  <executable name="dist/FFT/debug/FFT.X.debug.elf">                 
     <memory name="program">                 
       <units>bytes</units>                 
       <length>2098304</length>                 
-      <used>22908</used>                     
-      <free>2075396</free>                     
+      <used>22468</used>                     
+      <free>2075836</free>                     
     </memory>                              
     <memory name="data">              
       <units>bytes</units>                 
-      <length>524288</length>                 
-      <used>50984</used>                     
-      <free>473304</free>                     
+      <length>525184</length>                 
+      <used>52776</used>                     
+      <free>472408</free>                     
     </memory>                              
   </executable>                            
 </project>                                 

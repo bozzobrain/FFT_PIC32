@@ -311,9 +311,9 @@ uint16_t DisplayFFT(volatile double * values)
 
         brightnessScaling = ((values[j])/(lowLimit));
 //        
-        if(values[j] > lowLimit/2)
+        if(values[j] > (lowLimit*LOW_OVERDRIVE_VALUE))
         {
-          float overLimitValue = (values[j]-lowLimit/2);
+          float overLimitValue = (values[j]-(lowLimit*LOW_OVERDRIVE_VALUE));
           brightnessScaling += (overLimitValue/lowLimit) *LOW_OVERDRIVE;
         }
         
@@ -348,9 +348,9 @@ uint16_t DisplayFFT(volatile double * values)
     {
         brightnessScaling = ((values[j])/(midLimit));
 //        
-        if(values[j] > midLimit/2)
+        if(values[j] > (midLimit*MID_OVERDRIVE_VALUE))
         {
-          float overLimitValue = (values[j]-midLimit/2);
+          float overLimitValue = (values[j]-(midLimit*MID_OVERDRIVE_VALUE));
           brightnessScaling += (overLimitValue/midLimit) *MID_OVERDRIVE;
         }
         
@@ -379,9 +379,9 @@ uint16_t DisplayFFT(volatile double * values)
     else 
     {
         brightnessScaling = ((values[j])/(highLimit));
-        if(values[j] > highLimit/2)
+        if(values[j] > (highLimit*HIGH_OVERDRIVE_VALUE))
         {
-          float overLimitValue = (values[j]-highLimit/2);
+          float overLimitValue = (values[j]-(highLimit*HIGH_OVERDRIVE_VALUE));
           brightnessScaling += (overLimitValue/highLimit) *HIGH_OVERDRIVE;
         }
 //        
