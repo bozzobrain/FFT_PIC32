@@ -3,6 +3,6 @@
 *\.generated_files
 *.o
 *.o.d
-*.o
-*.o
-*.d
+*.log
+*log.inx
+*.disasm
